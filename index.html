@@ -56,6 +56,14 @@
     button:active {
       transform: scale(0.97);
     }
+
+    .correct {
+      background: #4CAF50 !important;
+    }
+
+    .wrong {
+      background: #f44336 !important;
+    }
   </style>
 </head>
 
@@ -67,18 +75,22 @@
 
 // 🔥 Question bank
 let allQuestions = [
-  { q: "Espresso is?", options: ["Strong coffee", "Cold drink", "Tea"], answer: 0 },
-  { q: "Which coffee has more milk?", options: ["Latte", "Espresso", "Black coffee"], answer: 0 },
-  { q: "Coffee was first discovered in?", options: ["India", "Ethiopia", "USA"], answer: 1 },
-  { q: "Cold brew is served?", options: ["Hot", "Cold", "Frozen"], answer: 1 },
-  { q: "Which is strongest?", options: ["Americano", "Espresso", "Latte"], answer: 1 },
-  { q: "Cappuccino contains?", options: ["Milk foam", "Ice cream", "Chocolate only"], answer: 0 }
+  { q: "Espresso is?", options: ["Strong coffee", "Cold drink", "Tea"], answer: "Strong coffee" },
+  { q: "Which coffee has more milk?", options: ["Latte", "Espresso", "Black coffee"], answer: "Latte" },
+  { q: "Coffee was first discovered in?", options: ["India", "Ethiopia", "USA"], answer: "Ethiopia" },
+  { q: "Cold brew is served?", options: ["Hot", "Cold", "Frozen"], answer: "Cold" },
+  { q: "Which is strongest?", options: ["Americano", "Espresso", "Latte"], answer: "Espresso" },
+  { q: "Cappuccino contains?", options: ["Milk foam", "Ice cream", "Chocolate only"], answer: "Milk foam" }
 ];
+
+// 🔀 Shuffle function
+function shuffle(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
 
 // 🔀 Get random 3 questions
 function getRandomQuestions() {
-  let shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 3);
+  return shuffle([...allQuestions]).slice(0, 3);
 }
 
 let questions = [];
@@ -96,7 +108,7 @@ function showStart() {
 
 // 🚀 Start quiz
 function startQuiz() {
-  questions = getRandomQuestions(); // random set
+  questions = getRandomQuestions();
   current = 0;
   score = 0;
   showQuestion();
@@ -105,11 +117,12 @@ function startQuiz() {
 // ❓ Show question
 function showQuestion() {
   let q = questions[current];
+  let options = shuffle([...q.options]);
 
   let optionsHTML = "";
-  for (let i = 0; i < q.options.length; i++) {
-    optionsHTML += `<button onclick="checkAnswer(${i})">${q.options[i]}</button>`;
-  }
+  options.forEach(opt => {
+    optionsHTML += `<button onclick="checkAnswer('${opt}', this)">${opt}</button>`;
+  });
 
   document.getElementById("app").innerHTML = `
     <h3>${q.q}</h3>
@@ -118,21 +131,37 @@ function showQuestion() {
 }
 
 // ✅ Check answer
-function checkAnswer(selected) {
-  if (selected === questions[current].answer) {
+function checkAnswer(selected, btn) {
+  let correctAnswer = questions[current].answer;
+
+  let buttons = document.querySelectorAll("button");
+
+  buttons.forEach(b => b.disabled = true);
+
+  if (selected === correctAnswer) {
+    btn.classList.add("correct");
     score++;
-  }
-
-  current++;
-
-  if (current < questions.length) {
-    showQuestion();
   } else {
-    showResult();
+    btn.classList.add("wrong");
+
+    buttons.forEach(b => {
+      if (b.innerText === correctAnswer) {
+        b.classList.add("correct");
+      }
+    });
   }
+
+  setTimeout(() => {
+    current++;
+    if (current < questions.length) {
+      showQuestion();
+    } else {
+      showResult();
+    }
+  }, 800);
 }
 
-// 🎉 Result screen
+// 🎉 Result
 function showResult() {
   let reward = "";
   if (score === 3) reward = "₹10 OFF 🎉";
@@ -146,7 +175,6 @@ function showResult() {
   `;
 }
 
-// Load first screen
 showStart();
 
 </script>
