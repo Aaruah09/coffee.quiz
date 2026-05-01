@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Quiz ☕</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+let questions = [
+  {
+    q: "Espresso is?",
+    options: ["Strong coffee", "Cold drink", "Tea"],
+    answer: 0
+  },
+  {
+    q: "Which coffee has more milk?",
+    options: ["Latte", "Espresso", "Black coffee"],
+    answer: 0
+  },
+  {
+    q: "Coffee was first discovered in?",
+    options: ["India", "Ethiopia", "USA"],
+    answer: 1
+  }
+];
+
+let current = 0;
+let score = 0;
+
+function showStart() {
+  document.getElementById("app").innerHTML = `
+    <h2>Coffee Quiz ☕</h2>
+    <p>Answer 3 questions & win rewards</p>
+    <button onclick="startQuiz()">Start</button>
+  `;
+}
+
+function startQuiz() {
+  current = 0;
+  score = 0;
+  showQuestion();
+}
+
+function showQuestion() {
+  let q = questions[current];
+
+  let optionsHTML = "";
+  for (let i = 0; i < q.options.length; i++) {
+    optionsHTML += `<button onclick="checkAnswer(${i})">${q.options[i]}</button>`;
+  }
+
+  document.getElementById("app").innerHTML = `
+    <h3>${q.q}</h3>
+    ${optionsHTML}
+  `;
+}
+
+function checkAnswer(selected) {
+  if (selected === questions[current].answer) {
+    score++;
+  }
+
+  current++;
+
+  if (current < questions.length) {
+    showQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function showResult() {
+  let reward = "";
+  if (score === 3) reward = "₹10 OFF 🎉";
+  else if (score === 2) reward = "₹5 OFF 👍";
+  else reward = "Try Again 😅";
+
+  document.getElementById("app").innerHTML = `
+    <h2>You scored ${score}/3</h2>
+    <h3>${reward}</h3>
+    <button onclick="showStart()">Play Again</button>
+  `;
+}
+
+showStart();
+</script>
+
+</body>
+</html>
