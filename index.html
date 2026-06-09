@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coffee Quizz ☕</title>
+  <title>Coffee Quiz ☕</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -27,13 +27,21 @@
     }
 
     h2, h3 {
-      margin-bottom: 20px;
       color: #333;
     }
 
     p {
       color: #777;
-      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-family: Poppins;
     }
 
     button {
@@ -50,7 +58,7 @@
     }
 
     button:hover {
-      background: #582b5a;
+      background: #5a3e2b;
     }
 
     button:active {
@@ -73,7 +81,6 @@
 
 <script>
 
-// 🔥 Question bank
 let allQuestions = [
   { q: "Espresso is?", options: ["Strong coffee", "Cold drink", "Tea"], answer: "Strong coffee" },
   { q: "Which coffee has more milk?", options: ["Latte", "Espresso", "Black coffee"], answer: "Latte" },
@@ -83,12 +90,10 @@ let allQuestions = [
   { q: "Cappuccino contains?", options: ["Milk foam", "Ice cream", "Chocolate only"], answer: "Milk foam" }
 ];
 
-// 🔀 Shuffle function
 function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5);
 }
 
-// 🔀 Get random 3 questions
 function getRandomQuestions() {
   return shuffle([...allQuestions]).slice(0, 3);
 }
@@ -97,81 +102,137 @@ let questions = [];
 let current = 0;
 let score = 0;
 
-// 🟢 Start screen
+let playerName = "";
+let playerMobile = "";
+
 function showStart() {
   document.getElementById("app").innerHTML = `
     <h2>☕ Coffee Quiz</h2>
-    <p>3 quick questions. Win rewards.</p>
-    <button onclick="startQuiz()">Start</button>
+    <p>Enter your details to play</p>
+
+    <input
+      id="name"
+      type="text"
+      placeholder="Your Name"
+    >
+
+    <input
+      id="mobile"
+      type="tel"
+      maxlength="10"
+      placeholder="Mobile Number"
+    >
+
+    <button onclick="startQuiz()">Start Quiz</button>
   `;
 }
 
-// 🚀 Start quiz
 function startQuiz() {
+
+  playerName = document.getElementById("name").value.trim();
+  playerMobile = document.getElementById("mobile").value.trim();
+
+  if(playerName === "") {
+    alert("Please enter your name");
+    return;
+  }
+
+  if(!/^[0-9]{10}$/.test(playerMobile)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return;
+  }
+
   questions = getRandomQuestions();
   current = 0;
   score = 0;
+
   showQuestion();
 }
 
-// ❓ Show question
 function showQuestion() {
+
   let q = questions[current];
   let options = shuffle([...q.options]);
 
   let optionsHTML = "";
+
   options.forEach(opt => {
-    optionsHTML += `<button onclick="checkAnswer('${opt}', this)">${opt}</button>`;
+    optionsHTML += `
+      <button onclick="checkAnswer('${opt}', this)">
+        ${opt}
+      </button>
+    `;
   });
 
   document.getElementById("app").innerHTML = `
-    <h3>${q.q}</h3>
+    <h3>Question ${current + 1}/3</h3>
+    <p>${q.q}</p>
     ${optionsHTML}
   `;
 }
 
-// ✅ Check answer
 function checkAnswer(selected, btn) {
+
   let correctAnswer = questions[current].answer;
 
   let buttons = document.querySelectorAll("button");
 
   buttons.forEach(b => b.disabled = true);
 
-  if (selected === correctAnswer) {
+  if(selected === correctAnswer) {
+
     btn.classList.add("correct");
     score++;
+
   } else {
+
     btn.classList.add("wrong");
 
     buttons.forEach(b => {
-      if (b.innerText === correctAnswer) {
+      if(b.innerText === correctAnswer) {
         b.classList.add("correct");
       }
     });
   }
 
   setTimeout(() => {
+
     current++;
-    if (current < questions.length) {
+
+    if(current < questions.length) {
       showQuestion();
     } else {
       showResult();
     }
+
   }, 800);
 }
 
-// 🎉 Result
 function showResult() {
+
   let reward = "";
-  if (score === 3) reward = "₹10 OFF 🎉";
-  else if (score === 2) reward = "₹5 OFF 👍";
-  else reward = "Try Again 😅";
+
+  if(score === 3) {
+    reward = "₹10 OFF 🎉";
+  }
+  else if(score === 2) {
+    reward = "₹5 OFF 👍";
+  }
+  else {
+    reward = "Try Again 😅";
+  }
 
   document.getElementById("app").innerHTML = `
     <h2>🔥 You scored ${score}/3</h2>
+
+    <p><strong>Name:</strong> ${playerName}</p>
+    <p><strong>Mobile:</strong> ${playerMobile}</p>
+
     <h3>${reward}</h3>
-    <button onclick="showStart()">Play Again</button>
+
+    <button onclick="showStart()">
+      Play Again
+    </button>
   `;
 }
 
