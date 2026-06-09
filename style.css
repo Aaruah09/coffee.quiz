@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Sora',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #1b120d,
+        #4a2c1a,
+        #8b5e3c
+    );
+}
+
+#app{
+    width:92%;
+    max-width:420px;
+
+    background:rgba(255,255,255,0.96);
+
+    padding:30px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+}
+
+.cafe{
+    font-size:32px;
+    font-weight:700;
+    color:#5b3924;
+    margin-bottom:5px;
+}
+
+.tag{
+    color:#888;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#2d1b12;
+    margin-bottom:10px;
+}
+
+p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+
+    border:1px solid #ddd;
+    border-radius:14px;
+
+    font-size:16px;
+    margin-top:10px;
+
+    outline:none;
+}
+
+input:focus{
+    border-color:#8b5e3c;
+}
+
+button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#6f4e37;
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-top:12px;
+
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.correct{
+    background:#4CAF50 !important;
+}
+
+.wrong{
+    background:#f44336 !important;
+}
+
+.reward{
+    font-size:38px;
+    font-weight:700;
+    color:#6f4e37;
+    margin:15px 0;
+}
+
+#timer{
+    font-size:30px;
+    font-weight:700;
+    color:#6f4e37;
+}
