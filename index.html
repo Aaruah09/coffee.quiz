@@ -43,6 +43,16 @@ color:#777;
 margin-bottom:20px;
 }
 
+.category-tag {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #6f4e37;
+font-weight: 700;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
 h2,h3{
 color:#2d1b12;
 }
@@ -71,12 +81,19 @@ transition:.2s;
 margin-top:10px;
 }
 
-button:hover{
+button:hover:not(:disabled){
 transform:translateY(-2px);
 }
 
-.correct{background:#4CAF50!important;}
-.wrong{background:#f44336!important;}
+/* Subtly shift text alignment for long mid-level question blocks */
+.option-btn {
+text-align: left;
+padding-left: 20px;
+font-weight: 400;
+}
+
+.correct{background:#4CAF50!important; color: white !important;}
+.wrong{background:#f44336!important; color: white !important;}
 
 .reward{
 font-size:34px;
@@ -95,7 +112,7 @@ color:#6f4e37;
 
 <body>
 
-<div id="app"></div>
+<div id="app">Loading Quiz Data Asset...</div>
 
 <script>
 
@@ -108,25 +125,35 @@ const messages=[
 ["✨ A little challenge while you wait.","Your reward might be closer than you think."]
 ];
 
-const allQuestions=[
-{q:"Espresso is?",options:["Strong coffee","Cold drink","Tea"],answer:"Strong coffee"},
-{q:"Which coffee has more milk?",options:["Latte","Espresso","Black coffee"],answer:"Latte"},
-{q:"Coffee was first discovered in?",options:["India","Ethiopia","USA"],answer:"Ethiopia"},
-{q:"Cold brew is served?",options:["Hot","Cold","Frozen"],answer:"Cold"},
-{q:"Which is strongest?",options:["Americano","Espresso","Latte"],answer:"Espresso"},
-{q:"Cappuccino contains?",options:["Milk foam","Ice cream","Chocolate only"],answer:"Milk foam"}
-];
-
+// Managed dynamically from external JSON payload
+let allQuestions=[];
 let questions=[];
 let current=0;
 let score=0;
 
+// Initialize and pull JSON asset locally asynchronously
+async function initQuizEngine() {
+try {
+const response = await fetch('questions.json');
+if (!response.ok) throw new Error('Data payload missing.');
+allQuestions = await response.json();
+showHome();
+} catch (error) {
+document.getElementById("app").innerHTML = `<h2>⚠️ Error: Missing questions.json in the project root directory.</h2>`;
+console.error(error);
+}
+}
+
+// Fisher-Yates shuffle engine to prevent pattern predictability 
 function shuffle(arr){
-return arr.sort(()=>Math.random()-0.5);
+for (let i = arr.length - 1; i > 0; i--) {
+const j = Math.floor(Math.random() * (i + 1));
+[arr[i], arr[j]] = [arr[j], arr[i]];
+}
+return arr;
 }
 
 function showHome(){
-
 const nextPlay=localStorage.getItem("nextPlay");
 
 if(nextPlay && Date.now()<Number(nextPlay)){
@@ -148,7 +175,6 @@ document.getElementById("app").innerHTML=`
 }
 
 function showNamePage(){
-
 const saved=localStorage.getItem("playerName")||"";
 
 document.getElementById("app").innerHTML=`
@@ -163,7 +189,6 @@ document.getElementById("app").innerHTML=`
 }
 
 function startQuiz(){
-
 const name=document.getElementById("name").value.trim();
 
 if(name===""){
@@ -173,6 +198,7 @@ return;
 
 localStorage.setItem("playerName",name);
 
+// Slices a random 3-question set out of the 100 available choices
 questions=shuffle([...allQuestions]).slice(0,3);
 current=0;
 score=0;
@@ -181,38 +207,37 @@ showQuestion();
 }
 
 function showQuestion(){
-
 let q=questions[current];
-let options=shuffle([...q.options]);
+let optionKeys=Object.keys(q.options);
 
 let html=`
 <div class="cafe">☕ Vasasi</div>
+<div class="category-tag">${q.category}</div>
 <h3>Question ${current+1}/3</h3>
-<p>${q.q}</p>
+<p style="text-align: left; font-weight: 600; line-height: 1.4; color: #2d1b12;">${q.question}</p>
 `;
 
-options.forEach(opt=>{
-html+=`<button onclick="checkAnswer('${opt}',this)">${opt}</button>`;
+optionKeys.forEach(key=>{
+html+=`<button class="option-btn" data-key="${key}" onclick="checkAnswer('${key}',this)"><strong>${key}.</strong> ${q.options[key]}</button>`;
 });
 
 document.getElementById("app").innerHTML=html;
 }
 
-function checkAnswer(selected,btn){
+function checkAnswer(selectedKey,btn){
+let correctKey=questions[current].correctAnswer;
+let buttons=document.querySelectorAll("#app button");
 
-let correct=questions[current].answer;
-
-let buttons=document.querySelectorAll("button");
 buttons.forEach(b=>b.disabled=true);
 
-if(selected===correct){
+if(selectedKey===correctKey){
 btn.classList.add("correct");
 score++;
 }else{
 btn.classList.add("wrong");
 
 buttons.forEach(b=>{
-if(b.innerText===correct){
+if(b.getAttribute("data-key")===correctKey){
 b.classList.add("correct");
 }
 });
@@ -226,20 +251,19 @@ showQuestion();
 }else{
 showResult();
 }
-
-},800);
+},1200);
 }
 
 function showResult(){
-
 let reward="Try Again 😅";
 
-if(score===3) reward="₹10 OFF 🎉";
-else if(score===2) reward="₹5 OFF 👍";
+if(score===3) reward="Double Shot Upgrade! 🎫🎉";
+else if(score===2) reward="₹10 OFF 👍";
 
+// Set to a realistic 24-hour lock out cycle to protect operational margins
 localStorage.setItem(
-  "nextPlay",
-  Date.now() + (5 * 1000)
+"nextPlay",
+Date.now() + (24 * 60 * 60 * 1000)
 );
 
 const name=localStorage.getItem("playerName")||"Friend";
@@ -266,7 +290,6 @@ startTimer();
 }
 
 function showCooldown(){
-
 const name=localStorage.getItem("playerName")||"Friend";
 
 document.getElementById("app").innerHTML=`
@@ -283,9 +306,7 @@ startTimer();
 }
 
 function startTimer(){
-
 const interval=setInterval(()=>{
-
 const nextPlay=Number(localStorage.getItem("nextPlay"));
 const remaining=nextPlay-Date.now();
 
@@ -301,11 +322,11 @@ const m=Math.floor((remaining%3600000)/60000);
 const s=Math.floor((remaining%60000)/1000);
 
 document.getElementById("timer").innerText=`${h}h ${m}m ${s}s`;
-
 },1000);
 }
 
-showHome();
+// Global invocation entry point
+initQuizEngine();
 
 </script>
 
