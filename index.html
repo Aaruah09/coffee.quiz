@@ -237,7 +237,10 @@ let reward="Try Again 😅";
 if(score===3) reward="₹10 OFF 🎉";
 else if(score===2) reward="₹5 OFF 👍";
 
-localStorage.setItem("nextPlay",Date.now()+(8*60*60*1000));
+localStorage.setItem(
+  "nextPlay",
+  Date.now() + (5 * 1000)
+);
 
 const name=localStorage.getItem("playerName")||"Friend";
 
