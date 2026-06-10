@@ -1,1302 +1,1302 @@
 [
   {
     "id": 1,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which country is the native birthplace of the Coffea Arabica plant?",
+    "category": "Cafe Menu Classics",
+    "question": "What is a standard Caffè Americano made of?",
     "options": {
-      "A": "Brazil",
-      "B": "Colombia",
-      "C": "Ethiopia",
-      "D": "Yemen"
+      "A": "Espresso and hot water",
+      "B": "Brewed coffee and milk",
+      "C": "Espresso and steamed milk",
+      "D": "Black coffee only"
     },
-    "correctAnswer": "C",
-    "explanation": "Coffea Arabica originates from the high-altitude forests of Ethiopia."
+    "correctAnswer": "A",
+    "explanation": "An Americano is simply espresso shots diluted with hot water."
   },
   {
     "id": 2,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is the main structural difference between a peaberry bean and a normal coffee bean?",
+    "category": "Cafe Menu Classics",
+    "question": "Which of these drinks has the highest proportion of milk?",
     "options": {
-      "A": "Peaberries are much larger.",
-      "B": "A peaberry is a single rounded bean inside the cherry instead of two flat-sided beans.",
-      "C": "Peaberries contain zero caffeine.",
-      "D": "Peaberries have two distinct shells."
+      "A": "Caffè Latte",
+      "B": "Cortado",
+      "C": "Cappuccino",
+      "D": "Macchiato"
     },
-    "correctAnswer": "B",
-    "explanation": "A peaberry is a natural mutation where only one seed fertilizes and develops into a round bean."
+    "correctAnswer": "A",
+    "explanation": "A Latte is a milk-forward drink with a large volume of steamed milk."
   },
   {
     "id": 3,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which coffee processing method involves drying the bean with the mucilage layer still fully intact?",
+    "category": "Cafe Menu Classics",
+    "question": "What does the Italian word 'Macchiato' translate to?",
     "options": {
-      "A": "Washed process",
-      "B": "Honey process",
-      "C": "Wet hulled process",
-      "D": "Swiss Water process"
+      "A": "Sweetened",
+      "B": "Marked or stained",
+      "C": "Strong coffee",
+      "D": "Frothy milk"
     },
     "correctAnswer": "B",
-    "explanation": "The honey (or natural pulped) process leaves varying amounts of sticky mucilage on the bean during drying."
+    "explanation": "Macchiato means 'marked', referring to espresso marked with a dollop of milk foam."
   },
   {
     "id": 4,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Compared to Arabica, Robusta coffee beans generally have:",
+    "category": "Cafe Menu Classics",
+    "question": "What is a Cortado traditionally served in?",
     "options": {
-      "A": "Higher acidity and less caffeine",
-      "B": "Lower caffeine and higher lipid content",
-      "C": "Twice the caffeine content and lower sugar content",
-      "D": "More complex floral notes"
+      "A": "A large ceramic bowl",
+      "B": "A small glass",
+      "C": "A tall plastic cup",
+      "D": "An insulated travel mug"
     },
-    "correctAnswer": "C",
-    "explanation": "Robusta has roughly double the caffeine of Arabica and less natural sugar, making it more bitter."
+    "correctAnswer": "B",
+    "explanation": "Cortados are traditionally served in small 4oz or 4.5oz glass tumblers."
   },
   {
     "id": 5,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What does the term 'Strictly Hard Bean' (SHB) usually indicate about a coffee's origin?",
+    "category": "Cafe Menu Classics",
+    "question": "A Mocha is a classic combination of espresso, milk, and what?",
     "options": {
-      "A": "The coffee was grown at a high altitude.",
-      "B": "The beans were over-roasted.",
-      "C": "The coffee is highly resistant to water.",
-      "D": "The beans are purely Robusta."
+      "A": "Caramel syrup",
+      "B": "Chocolate",
+      "C": "Vanilla extract",
+      "D": "Cinnamon powder"
     },
-    "correctAnswer": "A",
-    "explanation": "High altitudes cause coffee cherries to grow slower, creating a denser, harder bean with more concentrated sugars."
+    "correctAnswer": "B",
+    "explanation": "A Mocha adds chocolate syrup or powder to a traditional latte recipe."
   },
   {
     "id": 6,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is the primary flavor characteristic associated with 'Washed' (Wet processed) coffees?",
+    "category": "Cafe Menu Classics",
+    "question": "What constitutes a 'Caffè Breve'?",
     "options": {
-      "A": "Heavy body and low acidity",
-      "B": "Clean profile with high, crisp acidity",
-      "C": "Fermented and boozy notes",
-      "D": "Earthy and musty undertones"
+      "A": "Using condensed milk",
+      "B": "Using half-and-half cream",
+      "C": "Adding ice cream",
+      "D": "Adding oat milk"
     },
     "correctAnswer": "B",
-    "explanation": "The washed process removes all fruit pulp before drying, yielding a clean cup that highlights the bean's inherent acidity."
+    "explanation": "Breve utilizes rich half-and-half cream instead of standard whole milk."
   },
   {
     "id": 7,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which coffee-producing region is famous for the 'Giling Basah' (Wet Hulled) processing method?",
+    "category": "Cafe Menu Classics",
+    "question": "If you order a 'Dry' Cappuccino, what are you asking for?",
     "options": {
-      "A": "Central America",
-      "B": "Sumatra, Indonesia",
-      "C": "East Africa",
-      "D": "Hawaii"
+      "A": "No espresso shots",
+      "B": "More foam, less liquid milk",
+      "C": "Extra sugar",
+      "D": "A cold version"
     },
     "correctAnswer": "B",
-    "explanation": "Wet hulling is unique to Indonesia, particularly Sumatra, giving the coffee a distinct earthy, low-acid profile."
+    "explanation": "A dry cappuccino reduces liquid milk to prioritize a thick, airy layer of foam."
   },
   {
     "id": 8,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What part of the coffee plant is used to make 'Cascara' tea?",
+    "category": "Cafe Menu Classics",
+    "question": "What is an 'Affogato'?",
     "options": {
-      "A": "The leaves",
-      "B": "The roots",
-      "C": "The dried skins and pulp of the coffee cherry",
-      "D": "The silver skin of the roasted bean"
+      "A": "Espresso over ice cream",
+      "B": "A triple shot of espresso",
+      "C": "Coffee mixed with tea",
+      "D": "A blended ice drink"
     },
-    "correctAnswer": "C",
-    "explanation": "Cascara is Spanish for husk; it is the dried fruit skin leftover after the beans are removed."
+    "correctAnswer": "A",
+    "explanation": "Affogato means 'drowned' in Italian; it is hot espresso poured over vanilla ice cream."
   },
   {
     "id": 9,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What causes the 'Potato Defect' found occasionally in East African coffees?",
+    "category": "Cafe Menu Classics",
+    "question": "What country did the Flat White originate from?",
     "options": {
-      "A": "Growing coffee next to potato fields",
-      "B": "A specific species of airborne fungus",
-      "C": "A chemical reaction triggered by a stink bug bite on the cherry",
-      "D": "Improper storage in plastic bags"
+      "A": "Italy",
+      "B": "Australia & New Zealand",
+      "C": "USA",
+      "D": "France"
     },
-    "correctAnswer": "C",
-    "explanation": "The Antestia bug punctures the cherry, introducing a bacteria that gives the brewed coffee a raw potato smell."
+    "correctAnswer": "B",
+    "explanation": "The Flat White was popularized in the cafes of Australia and New Zealand during the 1980s."
   },
   {
     "id": 10,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which of these coffee varieties is a natural mutation of Bourbon discovered in Brazil?",
+    "category": "Cafe Menu Classics",
+    "question": "What is the difference between a Latte and a Flat White?",
     "options": {
-      "A": "Caturra",
-      "B": "Geisha",
-      "C": "Typica",
-      "D": "SL28"
+      "A": "Flat White has less foam",
+      "B": "Latte uses chocolate",
+      "C": "Flat White is always cold",
+      "D": "Latte uses water"
     },
     "correctAnswer": "A",
-    "explanation": "Caturra is a dwarf mutation of the Bourbon variety, known for high yields and good quality."
+    "explanation": "Flat Whites feature a stronger coffee profile and a thinner layer of fine microfoam."
   },
   {
     "id": 11,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is the primary purpose of a coffee 'Brix' refractometer during harvest?",
+    "category": "Cafe Menu Classics",
+    "question": "What is an 'Espresso Con Panna'?",
     "options": {
-      "A": "Measuring bean density",
-      "B": "Measuring the sugar content of the ripe coffee cherries",
-      "C": "Testing water purity for washing",
-      "D": "Calculating the moisture level of roasted beans"
+      "A": "Espresso with whipped cream",
+      "B": "Espresso with caramel",
+      "C": "Espresso with lemon peel",
+      "D": "Espresso with cocoa powder"
     },
-    "correctAnswer": "B",
-    "explanation": "Farmers use Brix refractometers to determine the optimal picking time by measuring sugar levels in the cherry juice."
+    "correctAnswer": "A",
+    "explanation": "Con Panna means 'with cream' in Italian, specifically referring to whipped cream on top."
   },
   {
     "id": 12,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which botanical family does the coffee plant belong to?",
+    "category": "Cafe Menu Classics",
+    "question": "Which of these drinks does NOT traditionally contain milk?",
     "options": {
-      "A": "Solanaceae",
-      "B": "Rubiaceae",
-      "C": "Rosaceae",
-      "D": "Fabaceae"
+      "A": "Macchiato",
+      "B": "Long Black",
+      "C": "Cortado",
+      "D": "Flat White"
     },
     "correctAnswer": "B",
-    "explanation": "Coffee belongs to the Rubiaceae family, which consists mostly of tropical trees and shrubs."
+    "explanation": "A Long Black is similar to an Americano, combining hot water and espresso shots."
   },
   {
     "id": 13,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What does the designation 'Supremo' mean on a bag of Colombian coffee?",
+    "category": "Cafe Menu Classics",
+    "question": "What drink is made of equal parts espresso and warm milk?",
     "options": {
-      "A": "It is the highest flavor grade.",
-      "B": "It refers to the specific farm elevation.",
-      "C": "It relates strictly to a large bean size screen.",
-      "D": "It means the coffee is a blend of regions."
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Latte",
+      "D": "Cappuccino"
     },
-    "correctAnswer": "C",
-    "explanation": "In Colombia, Supremo is a sizing classification, meaning the beans are larger than the 'Excelso' grade."
+    "correctAnswer": "A",
+    "explanation": "A Cortado uses a balanced 1:1 ratio of espresso to smoothly textured warm milk."
   },
   {
     "id": 14,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Monsooned Malabar coffee mimics historical trade routes by exposing raw beans to:",
+    "category": "Cafe Menu Classics",
+    "question": "In a cafe, what does a 'Doppio' refer to?",
     "options": {
-      "A": "High heat over open flames",
-      "B": "Humid monsoon winds and rain for several months",
-      "C": "Saltwater immersion",
-      "D": "Underground fermentation pits"
+      "A": "A double shot of espresso",
+      "B": "A coffee with two sugars",
+      "C": "A blend of two beans",
+      "D": "A large size cup"
     },
-    "correctAnswer": "B",
-    "explanation": "This exposure reduces acidity and increases body, replicating the flavors of historical long-sea voyages."
+    "correctAnswer": "A",
+    "explanation": "Doppio is the Italian word for double, meaning a standard double espresso shot."
   },
   {
     "id": 15,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is the 'silverskin' of a coffee bean?",
+    "category": "Cafe Menu Classics",
+    "question": "What is a 'Red Eye' coffee?",
     "options": {
-      "A": "The outer skin of the cherry",
-      "B": "The parchment layer",
-      "C": "The thin innermost skin adhering directly to the coffee seed",
-      "D": "The layer of mold that forms during fermentation"
+      "A": "Drip coffee with a shot of espresso",
+      "B": "Coffee with cherry syrup",
+      "C": "An extra hot latte",
+      "D": "Decaf coffee"
     },
-    "correctAnswer": "C",
-    "explanation": "Silverskin is the thin epidermis covering the bean; it comes off as 'chaff' during the roasting process."
+    "correctAnswer": "A",
+    "explanation": "A Red Eye adds a punch of a single espresso shot into a standard cup of drip coffee."
   },
   {
     "id": 16,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which country is famous for producing 'Blue Mountain' coffee?",
+    "category": "Cafe Menu Classics",
+    "question": "What distinguishes an Iced Latte from Cold Brew?",
     "options": {
-      "A": "Kenya",
-      "B": "Jamaica",
-      "C": "Ethiopia",
-      "D": "Costa Rica"
+      "A": "Iced Latte uses fresh milk",
+      "B": "Cold Brew has more ice",
+      "C": "Iced Latte is sweeter",
+      "D": "There is no difference"
     },
-    "correctAnswer": "B",
-    "explanation": "Jamaica Blue Mountain is a highly sought-after, smooth, and mild single-origin coffee."
+    "correctAnswer": "A",
+    "explanation": "An Iced Latte combines espresso and cold milk over ice; Cold Brew is pure coffee steeped over time."
   },
   {
     "id": 17,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What does 'shade-grown' coffee imply for biodiversity?",
+    "category": "Cafe Menu Classics",
+    "question": "Traditional Macchiatos are served in what size cup?",
     "options": {
-      "A": "It destroys local ecosystems.",
-      "B": "It preserves native forest canopies and provides habitats for migratory birds.",
-      "C": "It requires double the chemical pesticides.",
-      "D": "It speeds up the maturation process artificially."
+      "A": "2oz to 3oz demitasse",
+      "B": "12oz medium cup",
+      "C": "16oz tall glass",
+      "D": "8oz standard ceramic"
     },
-    "correctAnswer": "B",
-    "explanation": "Shade-grown coffee integrates into existing forests, protecting wildlife habitats and maintaining ecological balance."
+    "correctAnswer": "A",
+    "explanation": "Because it is just espresso and a spot of foam, it belongs in a tiny demitasse cup."
   },
   {
     "id": 18,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is 'Kopi Luwak' famously known for?",
+    "category": "Cafe Menu Classics",
+    "question": "What flavor profile defines a classic 'Irish Coffee'?",
     "options": {
-      "A": "Being aged for 20 years",
-      "B": "Being roasted with sugar or butter",
-      "C": "Being digested and excreted by the Asian palm civet",
-      "D": "Being grown in complete darkness"
+      "A": "Coffee, whiskey, and cream",
+      "B": "Coffee with peppermint",
+      "C": "Coffee with chocolate chip",
+      "D": "Coffee with hazelnut"
     },
-    "correctAnswer": "C",
-    "explanation": "Civets eat the ripest coffee cherries, and the partially digested beans are collected from their droppings."
+    "correctAnswer": "A",
+    "explanation": "Classic Irish coffee mixes hot coffee, Irish whiskey, sugar, and a thick layer of cream."
   },
   {
     "id": 19,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "Which coffee variety is world-renowned for its distinct floral, tea-like profile and high auction prices?",
+    "category": "Cafe Menu Classics",
+    "question": "What is a 'Dirty Chai'?",
     "options": {
-      "A": "Catimor",
-      "B": "Robusta",
-      "C": "Geisha (Gesha)",
-      "D": "Mundo Novo"
+      "A": "Chai latte with an espresso shot",
+      "B": "Chai tea with chocolate syrup",
+      "C": "Chai tea made with skim milk",
+      "D": "Chai tea with cold water"
     },
-    "correctAnswer": "C",
-    "explanation": "Geisha, originally from Ethiopia but popularized by Panama, has a distinct bergamot and jasmine flavor profile."
+    "correctAnswer": "A",
+    "explanation": "A 'dirty' chai adds a shot of bitter espresso into a sweet spices-and-milk chai latte."
   },
   {
     "id": 20,
-    "category": "Coffee Botany, Origin & Processing",
-    "question": "What is the maximum safe moisture content percentage for green coffee beans ready for export?",
+    "category": "Cafe Menu Classics",
+    "question": "A classic cappuccino is divided into what layout proportions?",
     "options": {
-      "A": "5%–7%",
-      "B": "9%–12%",
-      "C": "15%–18%",
-      "D": "20%–25%"
+      "A": "Equal thirds of components",
+      "B": "Mostly liquid milk",
+      "C": "90% foam, 10% coffee",
+      "D": "Half water, half milk"
     },
-    "correctAnswer": "B",
-    "explanation": "Keeping moisture between 9% and 12% prevents mold growth while keeping the bean stable for transport."
+    "correctAnswer": "A",
+    "explanation": "The traditional rule for a cappuccino is 1/3 espresso, 1/3 steamed milk, and 1/3 milk foam."
   },
   {
     "id": 21,
-    "category": "Espresso Science & Extraction",
-    "question": "If an espresso shot takes 12 seconds to extract a target yield, the coffee is likely:",
+    "category": "Fun Coffee Trivia",
+    "question": "Which coffee bean variety is known to have more natural caffeine?",
     "options": {
-      "A": "Over-extracted and bitter",
-      "B": "Under-extracted and sour",
-      "C": "Perfectly balanced",
-      "D": "Too fine in grind size"
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
     },
     "correctAnswer": "B",
-    "explanation": "Fast shots indicate water rushed through too quickly, failing to pull out the balancing sugars and leaving it under-extracted and sour."
+    "explanation": "Robusta beans contain roughly double the caffeine concentration of Arabica beans."
   },
   {
     "id": 22,
-    "category": "Espresso Science & Extraction",
-    "question": "What does 'channeling' mean during espresso extraction?",
+    "category": "Fun Coffee Trivia",
+    "question": "Biologically speaking, what part of the plant is a coffee bean?",
     "options": {
-      "A": "Water finding paths of least resistance through cracks or gaps in the coffee puck",
-      "B": "Moving the steam wand back and forth",
-      "C": "Pouring milk down the side of a glass",
-      "D": "Switching the pump off mid-shot"
+      "A": "A root node",
+      "B": "A seed of a fruit",
+      "C": "A dried flower bud",
+      "D": "A section of bark"
     },
-    "correctAnswer": "A",
-    "explanation": "Channeling leads to uneven extraction where some parts of the puck are over-extracted and others are untouched."
+    "correctAnswer": "B",
+    "explanation": "Coffee beans are actually the internal seeds of bright red fruits called coffee cherries."
   },
   {
     "id": 23,
-    "category": "Espresso Science & Extraction",
-    "question": "What traditional espresso variable defines a 'Ristretto'?",
+    "category": "Fun Coffee Trivia",
+    "question": "Which of these regions is famous for 'Monsooned' coffee?",
     "options": {
-      "A": "A short pull using a restricted volume of water, roughly a 1:1 to 1:1.5 brew ratio",
-      "B": "Adding extra hot water to a double shot",
-      "C": "Forcing steam instead of water through the puck",
-      "D": "A long extraction lasting over 50 seconds"
+      "A": "Colombia",
+      "B": "India",
+      "C": "Ethiopia",
+      "D": "Brazil"
     },
-    "correctAnswer": "A",
-    "explanation": "Ristretto means 'restricted' in Italian, meaning less water is passed through the same dose of grounds."
+    "correctAnswer": "B",
+    "explanation": "India's Malabar coast exposes raw beans to wet monsoon winds to reduce acidity."
   },
   {
     "id": 24,
-    "category": "Espresso Science & Extraction",
-    "question": "What standard pressure is utilized by commercial espresso machines to extract a shot?",
+    "category": "Fun Coffee Trivia",
+    "question": "What color is a coffee cherry when it is perfectly ripe to pick?",
     "options": {
-      "A": "3 Bars",
-      "B": "9 Bars",
-      "C": "15 Bars",
-      "D": "20 Bars"
+      "A": "Bright green",
+      "B": "Deep red or yellow",
+      "C": "Jet black",
+      "D": "Pure white"
     },
     "correctAnswer": "B",
-    "explanation": "9 bars of atmospheric pressure is the industry baseline standard for traditional espresso extraction."
+    "explanation": "Ripe coffee cherries turn a vibrant red or golden yellow depending on the specific variety."
   },
   {
     "id": 25,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the purpose of the 'crema' on an espresso shot?",
+    "category": "Fun Coffee Trivia",
+    "question": "What animal is famously tied to the discovery legend of coffee?",
     "options": {
-      "A": "It contains all the sugar of the drink.",
-      "B": "It is purely decorative.",
-      "C": "It traps the volatile aromatic compounds and indicates fresh bean degassing.",
-      "D": "It keeps the milk from mixing with the coffee."
+      "A": "A playful monkey",
+      "B": "An energetic goat",
+      "C": "A low-flying bird",
+      "D": "A farm ox"
     },
-    "correctAnswer": "C",
-    "explanation": "Crema is an emulsion of oils and carbon dioxide gas bubbles that seals in the aromatic notes of the shot."
+    "correctAnswer": "B",
+    "explanation": "Legend says Kaldi, an Ethiopian herder, noticed his goats dancing after eating coffee cherries."
   },
   {
     "id": 26,
-    "category": "Espresso Science & Extraction",
-    "question": "What is a 'Lungo' shot?",
+    "category": "Fun Coffee Trivia",
+    "question": "Which country produces the largest volume of coffee globally today?",
     "options": {
-      "A": "An espresso shot pulled with a higher water-to-coffee ratio, usually 1:3 or 1:4",
-      "B": "An espresso shot mixed with cold water",
-      "C": "A shot pulled using decaf beans only",
-      "D": "A drink containing three shots of espresso"
+      "A": "Vietnam",
+      "B": "Brazil",
+      "C": "Colombia",
+      "D": "Ethiopia"
     },
-    "correctAnswer": "A",
-    "explanation": "Lungo means 'long.' It passes more water through the coffee puck, extending the extraction yield and time."
+    "correctAnswer": "B",
+    "explanation": "Brazil dominates global coffee production, producing over a third of the world's total supply."
   },
   {
     "id": 27,
-    "category": "Espresso Science & Extraction",
-    "question": "What component inside an espresso machine generates the pressurized hot water required for extraction?",
+    "category": "Fun Coffee Trivia",
+    "question": "What is coffee 'chaff'?",
     "options": {
-      "A": "The steam wand",
-      "B": "The rotary or vibratory pump",
-      "C": "The portafilter basket",
-      "D": "The group head gasket"
+      "A": "Ground coffee skin residue",
+      "B": "The bean skin that flies off during roasting",
+      "C": "A type of coffee syrup",
+      "D": "The handle of a filter holder"
     },
     "correctAnswer": "B",
-    "explanation": "Pumps mechanically force water at high pressures from the reservoir or water line through the heating element."
+    "explanation": "Chaff is the paper-thin outer skin of the bean that naturally separates during the roasting phase."
   },
   {
     "id": 28,
-    "category": "Espresso Science & Extraction",
-    "question": "If you change your grinder setting to a finer grind, what happens to the extraction flow rate?",
+    "category": "Fun Coffee Trivia",
+    "question": "What basic flavor notes are Arabica beans best known for?",
     "options": {
-      "A": "It increases (faster pour)",
-      "B": "It decreases (slower pour)",
-      "C": "It stays exactly the same",
-      "D": "Water stops flowing entirely instantly"
+      "A": "Harsh and rubbery",
+      "B": "Sweet, complex, and acidic",
+      "C": "Salty and bitter",
+      "D": "No flavor variation"
     },
     "correctAnswer": "B",
-    "explanation": "Finer grinds pack tighter, increasing the resistance against pressurized water, slowing down the flow rate."
+    "explanation": "Arabica beans are highly prized for their dynamic, sweet, floral, and fruit-forward flavor profiles."
   },
   {
     "id": 29,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the 'brew ratio' of an espresso if you use 18 grams of dry grounds to get 36 grams of liquid espresso?",
+    "category": "Fun Coffee Trivia",
+    "question": "What is a 'peaberry' coffee bean?",
     "options": {
-      "A": "1:1",
-      "B": "1:2",
-      "C": "1:3",
-      "D": "2:1"
+      "A": "A bean flavored with berries",
+      "B": "A natural mutation yielding one round bean per cherry",
+      "C": "An oversized giant bean",
+      "D": "A bean grown underwater"
     },
     "correctAnswer": "B",
-    "explanation": "18 divided by 36 simplifies to a 1:2 brew ratio, which is the baseline standard for a modern double espresso (doppio)."
+    "explanation": "Normally two flat beans grow inside a cherry; a peaberry occurs when only one round seed forms."
   },
   {
     "id": 30,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the primary cause of a bitter-tasting espresso shot?",
+    "category": "Fun Coffee Trivia",
+    "question": "Why does hot steamed milk taste sweeter than cold milk?",
     "options": {
-      "A": "Coarse grind sizes",
-      "B": "Under-extraction",
-      "C": "Over-extraction",
-      "D": "Using water that is too cold"
+      "A": "Heat increases lactose solubility and perception",
+      "B": "The barista adds sugar secretly",
+      "C": "Fats turn into liquid syrup",
+      "D": "Water dilutes the heavy cream"
     },
-    "correctAnswer": "C",
-    "explanation": "Over-extraction happens when too much organic matter is dissolved, pulling out heavy, bitter compounds at the end of the shot cycle."
+    "correctAnswer": "A",
+    "explanation": "Warm temperatures expand our tongue's sensitivity to the natural lactose sugars present in milk."
   },
   {
     "id": 31,
-    "category": "Espresso Science & Extraction",
-    "question": "What is a 'bottomless' (naked) portafilter best used for?",
+    "category": "Fun Coffee Trivia",
+    "question": "What is the primary function of caffeine in a coffee plant?",
     "options": {
-      "A": "Making coffee hotter",
-      "B": "Filtering out oils",
-      "C": "Diagnosing extraction flaws like channeling visually",
-      "D": "Speeding up the workflow in high-volume cafes"
+      "A": "To attract honeybees",
+      "B": "A natural defense pesticide against bugs",
+      "C": "To accelerate leaf growth",
+      "D": "To change the soil color"
     },
-    "correctAnswer": "C",
-    "explanation": "A bottomless portafilter exposes the bottom of the basket, letting a barista see if the stream joins uniformly or sprays due to channeling."
+    "correctAnswer": "B",
+    "explanation": "Caffeine is toxic to insects, serving as the plant's built-in evolutionary pest repellent."
   },
   {
     "id": 32,
-    "category": "Espresso Science & Extraction",
-    "question": "Which compounds are extracted first during an espresso brewing cycle?",
+    "category": "Fun Coffee Trivia",
+    "question": "Which item does 'Cascara' refer to in a specialty cafe?",
     "options": {
-      "A": "Bitter phenols",
-      "B": "Heavy oils and woody structures",
-      "C": "Bright organic acids and sour fruit notes",
-      "D": "Complex sugars and caramel tones"
+      "A": "A Spanish espresso style",
+      "B": "Tea brewed from dried coffee cherry skins",
+      "C": "A brand of oat milk",
+      "D": "The base of a grinder machine"
     },
-    "correctAnswer": "C",
-    "explanation": "Acids dissolve fastest in hot water, followed by sugars, and lastly bitter plant material and phenols."
+    "correctAnswer": "B",
+    "explanation": "Cascara is Spanish for husk; it repurposes the sweet fruit skins into a unique tea."
   },
   {
     "id": 33,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the danger of 'under-tamping' a coffee puck?",
+    "category": "Fun Coffee Trivia",
+    "question": "Which coffee processing method yields a highly 'clean' flavor profile?",
     "options": {
-      "A": "The coffee will burn.",
-      "B": "The water pressure will break the portafilter.",
-      "C": "Loose grounds create structural voids, leading to immediate channeling.",
-      "D": "The espresso will be too thick."
+      "A": "Natural process",
+      "B": "Washed process",
+      "C": "Honey process",
+      "D": "Wet hulled"
     },
-    "correctAnswer": "C",
-    "explanation": "Tamping removes air pockets. Without it, water punches straight through the weakest area of loose grounds."
+    "correctAnswer": "B",
+    "explanation": "Washed processing strips all fruit flesh away before drying, emphasizing the clean, bright acidity of the seed."
   },
   {
     "id": 34,
-    "category": "Espresso Science & Extraction",
-    "question": "What chemical property makes espresso machine water scale problematic?",
+    "category": "Fun Coffee Trivia",
+    "question": "What component makes 'Nitro Cold Brew' unique?",
     "options": {
-      "A": "The presence of carbon dioxide gas",
-      "B": "The precipitation of calcium and magnesium minerals when heated",
-      "C": "High concentrations of dissolved sugar",
-      "D": "Acidic corrosion of plastic parts"
+      "A": "It is served boiling hot",
+      "B": "Infused with nitrogen gas for a creamy feel",
+      "C": "Contains carbonated soda juice",
+      "D": "It uses explosive chemical powders"
     },
     "correctAnswer": "B",
-    "explanation": "Heating hard water forces calcium and magnesium minerals out of solution, coating boiler walls and clogging internal pipes."
+    "explanation": "Nitrogen gas adds thousands of micro-bubbles, giving the black coffee a smooth, beer-like head."
   },
   {
     "id": 35,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the temperature range widely accepted for proper espresso extraction?",
+    "category": "Fun Coffee Trivia",
+    "question": "Where are the original wild roots of Arabica coffee traced back to?",
     "options": {
-      "A": "70°C–75°C",
-      "B": "90°C–96°C (approx. 195°F–205°F)",
-      "C": "100°C–110°C",
-      "D": "50°C–60°C"
+      "A": "The valleys of Colombia",
+      "B": "The highlands of Ethiopia",
+      "C": "The islands of Indonesia",
+      "D": "The mountains of Jamaica"
     },
     "correctAnswer": "B",
-    "explanation": "Boiling water burns coffee compounds, while water below 90°C fails to properly extract target solids."
+    "explanation": "Ethiopia is universally recognized as the geographical birthplace of the Arabica coffee tree species."
   },
   {
     "id": 36,
-    "category": "Espresso Science & Extraction",
-    "question": "What does 'PID' stand for on an espresso machine?",
+    "category": "Fun Coffee Trivia",
+    "question": "What does a 'Single Origin' label mean on a coffee bag?",
     "options": {
-      "A": "Pressure Indicator Device",
-      "B": "Proportional-Integral-Derivative (a temperature controller)",
-      "C": "Pump Injection Driver",
-      "D": "Portafilter Insulation Design"
+      "A": "A blend of multiple countries",
+      "B": "Sourced entirely from one specific farm or region",
+      "C": "Brewed using only one method",
+      "D": "Contains only one single bean"
     },
     "correctAnswer": "B",
-    "explanation": "A PID controller uses an advanced algorithm to keep boiler water temperatures incredibly stable compared to traditional thermostats."
+    "explanation": "Single origin signifies the coffee is traceable back to a single distinct geographic location or cooperative."
   },
   {
     "id": 37,
-    "category": "Espresso Science & Extraction",
-    "question": "What does 'pre-infusion' mean?",
+    "category": "Fun Coffee Trivia",
+    "question": "How long does a typical professional cold brew steep for?",
     "options": {
-      "A": "Steaming milk before pulling a shot",
-      "B": "Wetting the coffee puck with low-pressure water before ramping up to full extraction pressure",
-      "C": "Adding syrup to the bottom of the cup",
-      "D": "Soaking green beans before roasting"
+      "A": "5 minutes",
+      "B": "12 to 24 hours",
+      "C": "30 seconds",
+      "D": "Two full weeks"
     },
     "correctAnswer": "B",
-    "explanation": "Pre-infusion swells the coffee puck uniformly, preventing channeling before the intensive 9-bar pressure kicks in."
+    "explanation": "Without heat, cold brew relies on time, steeping at cold or ambient temperatures for up to a full day."
   },
   {
     "id": 38,
-    "category": "Espresso Science & Extraction",
-    "question": "A dual-boiler espresso machine allows you to do what simultaneously?",
+    "category": "Fun Coffee Trivia",
+    "question": "What structural layer sits directly under the coffee cherry skin?",
     "options": {
-      "A": "Grind beans and tamp coffee",
-      "B": "Brew espresso at one temperature and steam milk with high-pressure steam from a separate boiler",
-      "C": "Filter water and heat cups",
-      "D": "Serve hot espresso and cold brew instantly"
+      "A": "The wooden core",
+      "B": "Sticky fruit flesh or mucilage",
+      "C": "Pure liquid caffeine juice",
+      "D": "Dry brown paper flakes"
     },
     "correctAnswer": "B",
-    "explanation": "Separate boilers isolate the specific, differing temperatures needed for brewing coffee versus creating steam."
+    "explanation": "The sweet, gelatinous layer surrounding the internal seed parchment is called mucilage."
   },
   {
     "id": 39,
-    "category": "Espresso Science & Extraction",
-    "question": "What is the name of the tool used to break up clumps and distribute grounds evenly using thin needles?",
+    "category": "Fun Coffee Trivia",
+    "question": "What asset is removed from a coffee bean during decaffeination?",
     "options": {
-      "A": "Tamper",
-      "B": "WDT Tool (Weiss Distribution Technique)",
-      "C": "Blind Basket",
-      "D": "Knock box"
+      "A": "The entire flavor oil group",
+      "B": "The caffeine compound",
+      "C": "The outer shell color",
+      "D": "The moisture retention capability"
     },
     "correctAnswer": "B",
-    "explanation": "WDT tools use fine needles to homogenize the bed of coffee grounds, reducing density variance before tamping."
+    "explanation": "Decaffeination targets and safely flushes out caffeine while striving to lock in original tasting solids."
   },
   {
     "id": 40,
-    "category": "Espresso Science & Extraction",
-    "question": "What happens to extraction if the group head gasket wears out?",
+    "category": "Fun Coffee Trivia",
+    "question": "What happens to the color of raw coffee beans when they are roasted?",
     "options": {
-      "A": "Water will leak out from around the sides of the portafilter handle during a shot.",
-      "B": "The pump will lose electrical power.",
-      "C": "The coffee will taste instantly metallic.",
-      "D": "The grinder will lock up."
+      "A": "They turn from bright yellow to pink",
+      "B": "They transition from pale green to deep brown",
+      "C": "They turn translucent like glass",
+      "D": "They stay exactly the same shade"
     },
-    "correctAnswer": "A",
-    "explanation": "The rubber or silicone gasket seals the pressurized connection between the portafilter rim and the group head."
+    "correctAnswer": "B",
+    "explanation": "Raw coffee is green; heat caramelizes sugars and toasts structural fibers into deep brown shades."
   },
   {
     "id": 41,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What temperature range is optimal for serving steamed milk in a latte or cappuccino?",
+    "category": "Brewing Basics",
+    "question": "What type of filter does a traditional French Press utilize?",
     "options": {
-      "A": "40°C–45°C",
-      "B": "60°C–65°C (approx. 140°F–150°F)",
-      "C": "80°C–85°C",
-      "D": "95°C–100°C"
+      "A": "Thick round paper",
+      "B": "A built-in metal mesh screen",
+      "C": "Organic cotton cloth strips",
+      "D": "No filter at all"
     },
     "correctAnswer": "B",
-    "explanation": "At this temperature, the milk is hot enough to enjoy without breaking down sugars or scalding proteins, which destroys sweetness."
+    "explanation": "A French Press features a circular steel mesh plunger that pushes down sediment while passing oils."
   },
   {
     "id": 42,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What protein in cow's milk is primarily responsible for trapping air bubbles and stabilizing foam?",
+    "category": "Brewing Basics",
+    "question": "What type of grind size is ideal for a standard pour-over method?",
     "options": {
-      "A": "Lactose",
-      "B": "Whey",
-      "C": "Casein",
-      "D": "Lipase"
+      "A": "Fine powder like flour",
+      "B": "Medium like sand or sea salt",
+      "C": "Massive chunky boulders",
+      "D": "Whole unbroken beans"
     },
-    "correctAnswer": "C",
-    "explanation": "Casein structures unfold and wrap around air bubbles when heated, providing the framework that holds microfoam together."
+    "correctAnswer": "B",
+    "explanation": "Medium grinds provide the perfect surface resistance for gravity-fed water flowing through paper cones."
   },
   {
     "id": 43,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What component of milk breaks down at high temperatures (above 70°C/160°F), causing a distinct 'burnt' or sulfurous flavor?",
+    "category": "Brewing Basics",
+    "question": "What basic problem occurs if you brew coffee with boiling hot water (100°C)?",
     "options": {
-      "A": "Complex lipids",
-      "B": "Calcium crystals",
-      "C": "Whey proteins denaturing",
-      "D": "Natural plant fibers"
+      "A": "It will taste sour",
+      "B": "It over-extracts compounds, causing a bitter taste",
+      "C": "The caffeine will disappear",
+      "D": "The liquid will freeze"
     },
-    "correctAnswer": "C",
-    "explanation": "Scalding denatures whey proteins, releasing volatile sulfur compounds that ruin the sweetness of the milk."
+    "correctAnswer": "B",
+    "explanation": "Boiling water burns fragile solids and over-extracts heavy, bitter organic compounds."
   },
   {
     "id": 44,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is 'microfoam'?",
+    "category": "Brewing Basics",
+    "question": "What manual brewing method uses a flexible rubber plunger and air pressure?",
     "options": {
-      "A": "Large, soapy bubbles sitting loosely on top of liquid coffee",
-      "B": "A dense, velvety liquid where air bubbles are too small to be seen individually",
-      "C": "Whipped cream substitute made from sugar water",
-      "D": "Frozen milk crystals"
+      "A": "Chemex",
+      "B": "AeroPress",
+      "C": "Hario V60",
+      "D": "Moka Pot"
     },
     "correctAnswer": "B",
-    "explanation": "Microfoam is created when air is integrated into milk so thoroughly that it forms a uniform, glossy emulsion resembling wet paint."
+    "explanation": "The AeroPress utilizes manual hand force to slide a airtight plunger down a plastic cylinder tube."
   },
   {
     "id": 45,
-    "category": "Milk Texturing & Chemistry",
-    "question": "Why does milk taste sweeter when steamed to roughly 60°C than when it is cold?",
+    "category": "Brewing Basics",
+    "question": "What is the golden, creamy foam on top of a fresh espresso shot called?",
     "options": {
-      "A": "Sugar is added by the steam wand.",
-      "B": "Heating breaks down complex fats into fructose.",
-      "C": "Solubility increases, and our taste buds perceive lactose sugar more intensely at warm temperatures.",
-      "D": "Heat converts proteins into sucrose."
+      "A": "Microfoam",
+      "B": "Crema",
+      "C": "Froth",
+      "D": "Chaff"
     },
-    "correctAnswer": "C",
-    "explanation": "Lactose does not increase in volume, but heating increases its solubility, and human taste receptors perceive warmth as inherently sweeter."
+    "correctAnswer": "B",
+    "explanation": "Crema is a velvety layer of emulsified coffee oils and carbon dioxide bubbles generated by pressure."
   },
   {
     "id": 46,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is the process of adding air to milk at the very beginning of the steaming process called?",
+    "category": "Brewing Basics",
+    "question": "Why do baristas 'bloom' coffee during manual pour-overs?",
     "options": {
-      "A": "Rolling",
-      "B": "Streching (or aerating)",
-      "C": "Purging",
-      "D": "Emulsifying"
+      "A": "To make the coffee cool down",
+      "B": "To allow trapped gas to bubble out safely",
+      "C": "To dissolve extra white sugar",
+      "D": "To clean out the filter holder"
     },
     "correctAnswer": "B",
-    "explanation": "Stretching introduces air into cold milk via subtle, controlled paper-tearing sounds before heating it up fully."
+    "explanation": "Wetting grounds initially releases carbon dioxide gas, clearing the path for optimal extraction."
   },
   {
     "id": 47,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is the second phase of milk steaming, where the wand is submerged slightly deeper to mix the bubbles evenly?",
+    "category": "Brewing Basics",
+    "question": "What manual brewer is famously shaped like an elegant glass hourglass?",
     "options": {
-      "A": "Stretching",
-      "B": "Rolling (vortex creation)",
-      "C": "Crashing",
-      "D": "Frosting"
+      "A": "French Press",
+      "B": "Chemex",
+      "C": "Moka Pot",
+      "D": "Aeropress"
     },
     "correctAnswer": "B",
-    "explanation": "Creating a vortex rolls the milk, tearing up remaining large bubbles and integrating them completely into the liquid."
+    "explanation": "The Chemex is a classic, single-piece borosilicate glass flask designed by Peter Schlumbohm."
   },
   {
     "id": 48,
-    "category": "Milk Texturing & Chemistry",
-    "question": "Which alternative plant milk is notorious for curdling in high-acid light roast coffee due to temperature and pH shock?",
+    "category": "Brewing Basics",
+    "question": "What style of kettle features a long, curved neck for precision pouring?",
     "options": {
-      "A": "Soy Milk",
-      "B": "Oat Milk",
-      "C": "Almond Milk",
-      "D": "Coconut Milk"
+      "A": "Standard whistle pot",
+      "B": "Gooseneck kettle",
+      "C": "Wide spout pitcher",
+      "D": "Thermal airpot pump"
     },
-    "correctAnswer": "C",
-    "explanation": "Almond milk has less protein stability and structural buffering capacity, making it prone to curdling when hitting acidic or hot coffee environments."
+    "correctAnswer": "B",
+    "explanation": "Gooseneck paths give tight volumetric control over placement and flow speed during drip cycles."
   },
   {
     "id": 49,
-    "category": "Milk Texturing & Chemistry",
-    "question": "Why do commercial plant milks designated as 'Barista Blend' perform better during texturing?",
-    "options": {
-      "A": "They contain artificial food coloring.",
-      "B": "They are formulated with added stabilizers, fats, and acidity regulators (like dipotassium phosphate).",
-      "C": "They contain high amounts of added white sugar.",
-      "D": "They are watered down to blend easier."
-    },
-    "correctAnswer": "B",
-    "explanation": "Acidity regulators shield the plant milk from curdling in acidic coffee, while added emulsifiers mimic cow milk structures."
-  },
-  {
-    "id": 50,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is the architectural difference between a Latte and a traditional Macchiato?",
-    "options": {
-      "A": "A Latte has more chocolate.",
-      "B": "A Latte is a large volume drink with lots of steamed milk; a Macchiato is an espresso merely 'marked' with a dollop of foam.",
-      "C": "Macchiatos are always iced.",
-      "D": "Macchiatos use whipped cream instead of milk."
-    },
-    "correctAnswer": "B",
-    "explanation": "Macchiato means 'stained' or 'marked.' It is a concentrated espresso drink with minimal milk volume compared to a milk-heavy latte."
-  },
-  {
-    "id": 51,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What component in milk can inhibit foam stability if its concentration is too high (e.g., in non-homogenized whole milk)?",
-    "options": {
-      "A": "Free fatty acids and lipids when improperly stored",
-      "B": "Calcium minerals",
-      "C": "Lactose sugars",
-      "D": "Dissolved water molecules"
-    },
-    "correctAnswer": "A",
-    "explanation": "Free fatty acids can destabilize air bubble structures, causing microfoam to collapse quickly."
-  },
-  {
-    "id": 52,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is a 'Flat White' compared to a standard Caffè Latte?",
-    "options": {
-      "A": "It contains zero caffeine.",
-      "B": "It generally features a higher ratio of espresso to milk and a very thin layer of fine microfoam.",
-      "C": "It is served in a giant bowl-style cup.",
-      "D": "It is topped with cinnamon and chocolate powder."
-    },
-    "correctAnswer": "B",
-    "explanation": "Originating in Australia/New Zealand, the flat white is a stronger, smaller milk drink with smooth, velvety microfoam throughout."
-  },
-  {
-    "id": 53,
-    "category": "Milk Texturing & Chemistry",
-    "question": "Why must a barista 'purge' the steam wand immediately after texturing milk?",
-    "options": {
-      "A": "To cool down the machine boiler",
-      "B": "To blow out any milk sucked inside the wand tip by the cooling vacuum effect",
-      "C": "To polish the outer steel finish",
-      "D": "To save water"
-    },
-    "correctAnswer": "B",
-    "explanation": "When steam stops, a micro-vacuum forms. Purging blows out residual milk solids that would otherwise rot inside the wand steam tips."
-  },
-  {
-    "id": 54,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What does the term 'Dry' mean when ordering a cappuccino?",
-    "options": {
-      "A": "Served without a saucer",
-      "B": "Made with a much higher proportion of stiff foam and less liquid steamed milk",
-      "C": "Using powdered espresso crystals",
-      "D": "Made without any espresso shots"
-    },
-    "correctAnswer": "B",
-    "explanation": "A dry cappuccino prioritizes airy foam over liquid milk, whereas a 'wet' cappuccino leans closer to a traditional microfoam latte profile."
-  },
-  {
-    "id": 55,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What milk fat percentage is standard for a classic, heavy-bodied café whole milk?",
-    "options": {
-      "A": "0.5%–1%",
-      "B": "3.2%–4%",
-      "C": "10%–12%",
-      "D": "35%–40%"
-    },
-    "correctAnswer": "B",
-    "explanation": "Standard whole milk sits around 3.5% milkfat, providing the ideal balance of sweetness, body, and texturing capability."
-  },
-  {
-    "id": 56,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What happens if you try to create latte art using milk that was stretched too long?",
-    "options": {
-      "A": "The milk will turn completely translucent.",
-      "B": "The foam will be too thick and pillowy, plumping out in stiff blobs instead of drawing clean shapes.",
-      "C": "It will sink straight to the bottom without forming any surface pattern.",
-      "D": "The cup will crack from structural stress."
-    },
-    "correctAnswer": "B",
-    "explanation": "Excess aeration creates macro-foam or meringue-like textures that lose fluidity, making it impossible to flow out into precise design details."
-  },
-  {
-    "id": 57,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is the traditional drink called when you pour hot espresso over a scoop of vanilla ice cream?",
-    "options": {
-      "A": "Cortado",
-      "B": "Affogato",
-      "C": "Con Panna",
-      "D": "Café au Lait"
-    },
-    "correctAnswer": "B",
-    "explanation": "Affogato means 'drowned' in Italian, referencing a shot of espresso poured directly over ice cream or gelato."
-  },
-  {
-    "id": 58,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What makes skim milk foam distinct from whole milk foam?",
-    "options": {
-      "A": "It is much harder to create.",
-      "B": "It creates rigid, airy structures that lack a creamy, luxurious mouthfeel due to the absence of fats.",
-      "C": "It melts into the coffee instantly.",
-      "D": "It tastes heavily like caramel."
-    },
-    "correctAnswer": "B",
-    "explanation": "Skim milk stretches easily because proteins dominate, but without fats, the foam feels dry, airy, and lacks velvety richness."
-  },
-  {
-    "id": 59,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What drink consists of equal parts espresso and warm steamed milk, traditionally served in a small 4oz glass?",
-    "options": {
-      "A": "Latte",
-      "B": "Cortado",
-      "C": "Americano",
-      "D": "Breve"
-    },
-    "correctAnswer": "B",
-    "explanation": "A Cortado (from the Spanish 'cortar,' meaning to cut) uses a 1:1 ratio to cut the acidity of the espresso with smooth, warm milk."
-  },
-  {
-    "id": 60,
-    "category": "Milk Texturing & Chemistry",
-    "question": "What is a Caffè Breve?",
-    "options": {
-      "A": "An espresso diluted with mineral water",
-      "B": "An espresso drink made using steamed half-and-half cream instead of milk",
-      "C": "A coffee sweetened with brown sugar and honey",
-      "D": "Coffee brewed using cold milk extraction"
-    },
-    "correctAnswer": "B",
-    "explanation": "Breve replaces regular milk with rich half-and-half cream, creating an intensely creamy, high-fat dessert-like beverage."
-  },
-  {
-    "id": 61,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What type of filter is characteristic of a standard Chemex brewer?",
-    "options": {
-      "A": "Thin, porous metal mesh",
-      "B": "Thick, heavy paper filters that remove oils and sediments comprehensively",
-      "C": "Coarse cloth sheets that allow oils to pass through freely",
-      "D": "Synthetic plastic membranes"
-    },
-    "correctAnswer": "B",
-    "explanation": "Chemex filters are 20-30% thicker than regular paper filters, keeping oils out to produce an exceptionally clean cup of coffee."
-  },
-  {
-    "id": 62,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What is the primary extraction style utilized by a French Press?",
-    "options": {
-      "A": "Gravity drip filtration",
-      "B": "High-pressure percolation",
-      "C": "Full immersion brewing",
-      "D": "Vacuum siphon extraction"
-    },
-    "correctAnswer": "C",
-    "explanation": "In a French Press, coffee grounds are completely saturated and steeped in a pool of water for the duration of the brew time."
-  },
-  {
-    "id": 63,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What does the term 'blooming' mean during manual pour-over brewing?",
-    "options": {
-      "A": "The coffee turning a deep reddish-orange color",
-      "B": "The initial wetting of grounds to release trapped carbon dioxide gas",
-      "C": "Steering the coffee in a clockwise pattern",
-      "D": "The point when the coffee begins to cool down"
-    },
-    "correctAnswer": "B",
-    "explanation": "Freshly roasted coffee contains carbon dioxide. Wetting it initially allows the gas to escape, preventing it from repelling the rest of the brew water."
-  },
-  {
-    "id": 64,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What happens if your grind size is too coarse for a V60 pour-over?",
-    "options": {
-      "A": "Water flows too slowly, creating a bitter taste.",
-      "B": "Water flows straight through too quickly, causing under-extraction and a weak, sour cup.",
-      "C": "The filter paper will tear from pressure.",
-      "D": "The water will boil inside the cone."
-    },
-    "correctAnswer": "B",
-    "explanation": "Coarse grinds don't offer enough resistance to gravity-fed water, resulting in low contact time and under-extracted coffee."
-  },
-  {
-    "id": 65,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "Which device uses a combination of immersion, pressure, and a flexible rubber plunger to force coffee through a filter?",
-    "options": {
-      "A": "Hario V60",
-      "B": "AeroPress",
-      "C": "Kalita Wave",
-      "D": "Siphon Brewer"
-    },
-    "correctAnswer": "B",
-    "explanation": "Invented by Alan Adler, the AeroPress uses manual air pressure pushed down by a rubber plunger to complete extraction."
-  },
-  {
-    "id": 66,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What is a key design feature of the Kalita Wave brewer compared to a Hario V60?",
-    "options": {
-      "A": "It has a sharp, conical point with one huge hole.",
-      "B": "It has a flat bottom with three small extraction holes, promoting a more even extraction bed.",
-      "C": "It requires electricity to run.",
-      "D": "It uses a metal mesh plunger system."
-    },
-    "correctAnswer": "B",
-    "explanation": "The flat bottom and multi-hole setup of the Kalita Wave slow the flow down uniformly, making it less prone to barista pouring technique errors than the V60."
-  },
-  {
-    "id": 67,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "How does cold brew coffee differ fundamentally from iced coffee?",
-    "options": {
-      "A": "Cold brew uses hot water but adds double the amount of ice cubes.",
-      "B": "Cold brew is extracted entirely using cold or room-temperature water over an extended period (12–24 hours).",
-      "C": "Cold brew contains zero caffeine compared to iced coffee.",
-      "D": "Cold brew must be carbonated before serving."
-    },
-    "correctAnswer": "B",
-    "explanation": "Iced coffee is hot coffee brewed quickly over ice, while cold brew relies on time instead of heat to extract flavor compounds."
-  },
-  {
-    "id": 68,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What classic stovetop coffee maker uses steam pressure from a bottom chamber to force boiling water upward through a bed of coffee grounds?",
+    "category": "Brewing Basics",
+    "question": "What classic device brews strong coffee on a kitchen stovetop using vapor steam?",
     "options": {
       "A": "French Press",
       "B": "Moka Pot",
-      "C": "Chemex",
-      "D": "Clever Dripper"
+      "C": "Clever Dripper",
+      "D": "Siphon pot"
     },
     "correctAnswer": "B",
-    "explanation": "The Moka Pot creates moderate steam pressure to push water up through an internal funnel, producing a heavy, concentrated espresso-like coffee."
+    "explanation": "Moka Pots vaporize base water to push pressurized water up through internal coffee baskets."
+  },
+  {
+    "id": 50,
+    "category": "Brewing Basics",
+    "question": "If your brewed espresso pours out completely in under 10 seconds, your grind is:",
+    "options": {
+      "A": "Way too fine",
+      "B": "Way too coarse",
+      "C": "Perfectly balanced",
+      "D": "Irrelevant to speed"
+    },
+    "correctAnswer": "B",
+    "explanation": "Coarse grinds present zero resistance, allowing pressurized water to shoot past without picking up rich flavor body."
+  },
+  {
+    "id": 51,
+    "category": "Brewing Basics",
+    "question": "What is the solid metal tool used to pack down coffee grounds inside an espresso basket?",
+    "options": {
+      "A": "A portafilter handle",
+      "B": "A tamper",
+      "C": "A steaming pitcher",
+      "D": "A scale monitor"
+    },
+    "correctAnswer": "B",
+    "explanation": "A tamper flat-packs ground coffee down into a firm, level puck to prevent internal water channeling."
+  },
+  {
+    "id": 52,
+    "category": "Brewing Basics",
+    "question": "What happens to the taste of coffee if it is severely 'under-extracted'?",
+    "options": {
+      "A": "It tastes excessively bitter",
+      "B": "It tastes weak, sour, and sharp",
+      "C": "It turns perfectly sweet",
+      "D": "It loses all aroma elements"
+    },
+    "correctAnswer": "B",
+    "explanation": "Under-extraction drops out early acids but misses the balancing sugars that follow later in the cycle."
+  },
+  {
+    "id": 53,
+    "category": "Brewing Basics",
+    "question": "What type of grind size does a traditional French Press require?",
+    "options": {
+      "A": "Coarse and chunky",
+      "B": "Ultra-fine dust",
+      "C": "Medium table salt",
+      "D": "Flaky wood chips"
+    },
+    "correctAnswer": "A",
+    "explanation": "Coarse grinds prevent grounds from slipping past the steel mesh wires into your final mug."
+  },
+  {
+    "id": 54,
+    "category": "Brewing Basics",
+    "question": "What standard water temperature range is recommended for manual brewing?",
+    "options": {
+      "A": "50°C–60°C",
+      "B": "90°C–96°C",
+      "C": "100°C–110°C",
+      "D": "0°C–10°C"
+    },
+    "correctAnswer": "B",
+    "explanation": "90°C–96°C (195°F–205°F) dissolves desirable coffee metrics safely without scalding elements."
+  },
+  {
+    "id": 55,
+    "category": "Brewing Basics",
+    "question": "What is the primary style of extraction behind an immersion brewer?",
+    "options": {
+      "A": "Water passing straight through quickly",
+      "B": "Coffee steeping fully inside a static pool of water",
+      "C": "High pressure steam jets",
+      "D": "Centrifugal spinning force"
+    },
+    "correctAnswer": "B",
+    "explanation": "Immersion methods float coffee and water together continuously for a specific block of time."
+  },
+  {
+    "id": 56,
+    "category": "Brewing Basics",
+    "question": "What part of the espresso setup holds the metal basket containing the coffee?",
+    "options": {
+      "A": "The steam arm",
+      "B": "The portafilter",
+      "C": "The drip tray grate",
+      "D": "The water reservoir"
+    },
+    "correctAnswer": "B",
+    "explanation": "The portafilter is the detachable handle bar baristas snap into the main brewing group head."
+  },
+  {
+    "id": 57,
+    "category": "Brewing Basics",
+    "question": "What is the dangerous effect called when water carves high-speed holes through an uneven coffee puck?",
+    "options": {
+      "A": "Blooming",
+      "B": "Channeling",
+      "C": "Tamping",
+      "D": "Frothing"
+    },
+    "correctAnswer": "B",
+    "explanation": "Channeling breaks down flavor fidelity by over-extracting loose areas and leaving packed areas unreached."
+  },
+  {
+    "id": 58,
+    "category": "Brewing Basics",
+    "question": "What chemical liquid accounts for roughly 98% of a standard cup of black filter coffee?",
+    "options": {
+      "A": "Liquid caffeine extract",
+      "B": "Water",
+      "C": "Soluble fruit acids",
+      "D": "Caramel oils"
+    },
+    "correctAnswer": "B",
+    "explanation": "Black coffee is highly diluted; almost the entire volume is composed of standard water."
+  },
+  {
+    "id": 59,
+    "category": "Brewing Basics",
+    "question": "What component do blade grinders do to coffee beans that compromises grind quality?",
+    "options": {
+      "A": "They slice beans smoothly",
+      "B": "They unevenly smash beans into random sizes",
+      "C": "They melt the beans into fluid",
+      "D": "They do nothing to the bean shape"
+    },
+    "correctAnswer": "B",
+    "explanation": "Spinning metal blades act like blenders, chopping coffee into an uneven mix of huge chunks and fine dust."
+  },
+  {
+    "id": 60,
+    "category": "Brewing Basics",
+    "question": "What style of coffee grinder uses two interlocking cutting wheels to crush beans uniformly?",
+    "options": {
+      "A": "Blade grinder",
+      "B": "Burr grinder",
+      "C": "Pestle mortar block",
+      "D": "Hammer press tool"
+    },
+    "correctAnswer": "B",
+    "explanation": "Burr grinders force coffee through uniform gaps, ensuring reliable particle size consistency."
+  },
+  {
+    "id": 61,
+    "category": "Roasting & Beans",
+    "question": "Which roast profile preserves the most distinct, inherent single-origin fruit flavors?",
+    "options": {
+      "A": "Light roast",
+      "B": "Medium roast",
+      "C": "Dark roast",
+      "D": "Italian roast"
+    },
+    "correctAnswer": "A",
+    "explanation": "Light roasting stops early, keeping the bean's original regional identity from being masked by smoky tones."
+  },
+  {
+    "id": 62,
+    "category": "Roasting & Beans",
+    "question": "What physical structural change happens to a bean during roasting?",
+    "options": {
+      "A": "It shrinks in size",
+      "B": "It expands in volume and loses water weight",
+      "C": "It turns completely liquid",
+      "D": "It gains heavy moisture levels"
+    },
+    "correctAnswer": "B",
+    "explanation": "Internal moisture turns to steam, popping the bean to double its size while burning off water weight."
+  },
+  {
+    "id": 63,
+    "category": "Roasting & Beans",
+    "question": "What does the audible benchmark 'First Crack' signal during roasting?",
+    "options": {
+      "A": "The roast is ruined and burnt",
+      "B": "The bean has shed its internal water, marking a light roast profile",
+      "C": "The drum motor has snapped",
+      "D": "The cooling fan is active"
+    },
+    "correctAnswer": "B",
+    "explanation": "First crack sounds like popcorn, indicating the structural expanding point where coffee officially becomes drinkable."
+  },
+  {
+    "id": 64,
+    "category": "Roasting & Beans",
+    "question": "What oily surface sheen is common on Dark Roast coffee beans?",
+    "options": {
+      "A": "Shiny surface oils pushed out by heat",
+      "B": "A sugary honey coating",
+      "C": "Condensation from refrigeration",
+      "D": "An artificial chemical spray coating"
+    },
+    "correctAnswer": "A",
+    "explanation": "Extended roasting breaks internal cell walls, pulling natural coffee oils out to coat the outer bean shell."
+  },
+  {
+    "id": 65,
+    "category": "Roasting & Beans",
+    "question": "What basic flavor profile is prominent in extreme Dark Roasts?",
+    "options": {
+      "A": "Intense sour lemon notes",
+      "B": "Smoky, bitter, and chocolate tones",
+      "C": "Light floral lavender accents",
+      "D": "No noticeable flavor profile shift"
+    },
+    "correctAnswer": "B",
+    "explanation": "Long roast profiles focus on carbonized, caramelized elements that yield bold, bittersweet, roasty profiles."
+  },
+  {
+    "id": 66,
+    "category": "Roasting & Beans",
+    "question": "How should whole coffee beans be stored at home to stay fresh?",
+    "options": {
+      "A": "In an open bowl on a window sill",
+      "B": "In an airtight container in a cool, dark spot",
+      "C": "In a shallow dish in a warm oven",
+      "D": "Wrapped loosely in wet paper towels"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxygen, light, moisture, and heat accelerate staling. Keep your beans sealed away from these elements."
+  },
+  {
+    "id": 67,
+    "category": "Roasting & Beans",
+    "question": "What toxic element causes coffee beans to go stale quickly?",
+    "options": {
+      "A": "Nitrogen exposure",
+      "B": "Oxygen exposure",
+      "C": "Carbon dioxide presence",
+      "D": "Argon gas layers"
+    },
+    "correctAnswer": "B",
+    "explanation": "Oxidation degrades fragile aromatic oils, stripping freshness and leaving coffee tasting flat or papery."
+  },
+  {
+    "id": 68,
+    "category": "Roasting & Beans",
+    "question": "Why do fresh coffee bags include a tiny plastic round valve?",
+    "options": {
+      "A": "To add water into the bag later",
+      "B": "To vent carbon dioxide out without letting oxygen in",
+      "C": "To shake sugar into the beans",
+      "D": "To attach carrying straps"
+    },
+    "correctAnswer": "B",
+    "explanation": "Freshly roasted beans outgas CO2. One-way valves allow this gas to escape safely without introducing stale air."
   },
   {
     "id": 69,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What is the standard water-to-coffee brew ratio recommended for general filter coffee methods (The Golden Ratio)?",
+    "category": "Roasting & Beans",
+    "question": "Which bean variety is extensively used for budget instant coffees and commercial espresso blends?",
     "options": {
-      "A": "1:2",
-      "B": "1:5",
-      "C": "1:15 to 1:18",
-      "D": "1:30"
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Geisha variety",
+      "D": "Bourbon tree crops"
     },
-    "correctAnswer": "C",
-    "explanation": "A ratio of 1:15 to 1:18 (e.g., 60 grams of coffee per 1 liter of water) provides the ideal extraction balance for drip/filter coffee."
+    "correctAnswer": "B",
+    "explanation": "Robusta's high crop yields, disease resistance, and robust body make it an economical choice for mass-market production."
   },
   {
     "id": 70,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What does a 'Total Dissolved Solids' (TDS) meter measure in brewed coffee?",
+    "category": "Roasting & Beans",
+    "question": "What is 'Green Coffee'?",
     "options": {
-      "A": "The exact percentage of caffeine per ounce",
-      "B": "The concentration of dissolved coffee solids within the water yield",
-      "C": "The acidity level on the pH scale",
-      "D": "The temperature drop over time"
+      "A": "Coffee flavored with matcha green tea",
+      "B": "Unroasted, raw coffee beans",
+      "C": "Coffee beans that are stale and moldy",
+      "D": "Coffee grown using solar panels"
     },
     "correctAnswer": "B",
-    "explanation": "TDS meters use electrical conductivity or light refraction to determine exactly how much soluble coffee material was dissolved into the cup."
+    "explanation": "Before processing inside roasting drums, processed raw coffee seeds maintain a pale green hue."
   },
   {
     "id": 71,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "Why is distilled water bad for brewing flavorful manual coffee?",
+    "category": "Roasting & Beans",
+    "question": "Which of these is NOT a real roasting designation tier?",
     "options": {
-      "A": "It ruins the heating element of kettles.",
-      "B": "It lacks essential minerals like magnesium and calcium needed to bind with and extract flavor compounds.",
-      "C": "It makes the coffee too thick.",
-      "D": "It turns the coffee green."
+      "A": "City Roast",
+      "B": "French Roast",
+      "C": "Viennese Roast",
+      "D": "Boiled Roast"
     },
-    "correctAnswer": "B",
-    "explanation": "Positively charged magnesium and calcium ions act as magnets for the flavor compounds in coffee grounds. Distilled water lacks these, leading to flat extraction."
+    "correctAnswer": "D",
+    "explanation": "City, French, and Vienna are official naming protocols reflecting core color and roast depth criteria."
   },
   {
     "id": 72,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What is the primary function of a 'gooseneck' kettle?",
+    "category": "Roasting & Beans",
+    "question": "What chemical occurrence drives flavor changes during roasting?",
     "options": {
-      "A": "Boiling water faster than standard kettles",
-      "B": "Providing extreme control over the location and flow rate of water during pour-over brewing",
-      "C": "Filtering impurities out of tap water automatically",
-      "D": "Maintaining a low whistling noise when hot"
+      "A": "The Maillard reaction and sugar caramelization",
+      "B": "Acid neutralization using calcium powders",
+      "C": "Alcoholic yeast fermentation cycles",
+      "D": "Artificial color dye absorption"
     },
-    "correctAnswer": "B",
-    "explanation": "The long, curved neck allows baristas to pour water precisely and slowly, ensuring even saturation of the coffee bed."
+    "correctAnswer": "A",
+    "explanation": "The Maillard reaction binds amino acids and reducing sugars, generating hundreds of distinct taste metrics."
   },
   {
     "id": 73,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "Which manual brewing method functions as an immersion brewer until it is placed directly on top of a mug, opening a release valve?",
+    "category": "Roasting & Beans",
+    "question": "Which coffee variety has high market value for its complex tea-like jasmine profile?",
     "options": {
-      "A": "Kalita Wave",
-      "B": "Clever Dripper",
-      "C": "Chemex",
-      "D": "AeroPress"
+      "A": "Robusta standard",
+      "B": "Panama Geisha",
+      "C": "Catimor hybrid",
+      "D": "Excelsa crop"
     },
     "correctAnswer": "B",
-    "explanation": "The Clever Dripper combines immersion brewing with a weight-activated stopper valve that drops the liquid down when seated on a cup."
+    "explanation": "Geisha (or Gesha) profiles yield world-record prices at global specialty coffee auctions."
   },
   {
     "id": 74,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What element of coffee extraction increases exponentially as the water temperature increases?",
+    "category": "Roasting & Beans",
+    "question": "What happens to caffeine levels as a bean is roasted darker?",
     "options": {
-      "A": "Caffeine synthesis",
-      "B": "The extraction rate of soluble chemical compounds",
-      "C": "Bean moisture absorption capability",
-      "D": "The volume of chaff produced"
+      "A": "Caffeine content stays virtually identical",
+      "B": "Caffeine drops down to zero",
+      "C": "Caffeine concentration multiplies by ten",
+      "D": "Caffeine turns into regular sugar content"
     },
-    "correctAnswer": "B",
-    "explanation": "Hotter water has more kinetic energy, dissolving organic matter, acids, and sugars much faster than cold water."
+    "correctAnswer": "A",
+    "explanation": "Caffeine is highly stable at roasting temperatures; light and dark beans contain roughly the same amount of caffeine per bean."
   },
   {
     "id": 75,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What structural feature of the Hario V60 inner walls helps prevent the paper filter from sticking to the glass or ceramic?",
+    "category": "Roasting & Beans",
+    "question": "What physical feature differentiates Robusta beans from Arabica beans visually?",
     "options": {
-      "A": "Smooth polished enamel finish",
-      "B": "Curved spiral ribs that allow air to escape during brewing",
-      "C": "Small horizontal steps",
-      "D": "Circular metallic rings"
+      "A": "Robusta beans are perfectly square",
+      "B": "Robusta is smaller, rounder, with a straighter center cut",
+      "C": "Robusta beans look bright neon blue",
+      "D": "There is no visible difference"
     },
     "correctAnswer": "B",
-    "explanation": "The spiral ribs lift the paper slightly off the walls, letting air vent out and allowing the coffee to extract smoothly through the sides."
+    "explanation": "Arabica beans are oblong with a curved center line; Robusta seeds are compact and round with a straight center crease."
   },
   {
     "id": 76,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "How does agitation (stirring or swirling) affect a manual brew process?",
+    "category": "Roasting & Beans",
+    "question": "What is a 'Coffee Blend'?",
     "options": {
-      "A": "It slows down extraction.",
-      "B": "It increases the extraction rate by continuously bringing fresh water into contact with the coffee grounds.",
-      "C": "It eliminates all bitterness completely.",
-      "D": "It lowers the coffee's temperature to freezing."
+      "A": "A single bean chopped in half",
+      "B": "A mix of beans from different origins combined for a balanced flavor profile",
+      "C": "Coffee mixed with powdered cream",
+      "D": "A shake made with milk and ice"
     },
     "correctAnswer": "B",
-    "explanation": "Agitation breaks up stagnant layers of saturated water around the grounds, accelerating how fast compounds dissolve."
+    "explanation": "Blends fuse diverse bean assets to optimize a consistent, harmonious flavor standard throughout the year."
   },
   {
     "id": 77,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What happens to a manual coffee brew if the water used is far too hot (e.g., boiling at 100°C / 212°F)?",
+    "category": "Roasting & Beans",
+    "question": "How long should roasted coffee beans sit or 'degas' before brewing espresso?",
     "options": {
-      "A": "It extracts only sugars, making it too sweet.",
-      "B": "It can over-extract the coffee quickly, leading to harsh, bitter, and burnt flavors.",
-      "C": "It destroys all caffeine compounds instantly.",
-      "D": "It halts the brewing process entirely."
+      "A": "Zero seconds; brew immediately",
+      "B": "Roughly 3 to 10 days post-roast",
+      "C": "Exactly six full months",
+      "D": "Five minutes is the absolute max"
     },
     "correctAnswer": "B",
-    "explanation": "Boiling water extracts heavy bitter compounds from the grounds too aggressively, throwing off the flavor balance."
+    "explanation": "Allowing coffee to degas vents volatile CO2, preventing gas bubbles from disrupting water flow during extraction."
   },
   {
     "id": 78,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What manual brewer looks like an hourglass and uses two glass globes along with a cloth filter and a heat source below to create a vacuum?",
+    "category": "Roasting & Beans",
+    "question": "What region is famous for producing high-altitude 'Strictly Hard Beans'?",
     "options": {
-      "A": "French Press",
-      "B": "Siphon (Vacuum) Pot",
-      "C": "Moka Pot",
-      "D": "Toddy System"
+      "A": "Central America",
+      "B": "The plains of Europe",
+      "C": "The lowlands of Antarctica",
+      "D": "Siberian forest zones"
     },
-    "correctAnswer": "B",
-    "explanation": "Siphon brewers expand vapor pressure to push water up into a top chamber, then draw it back down through a filter when the heat source is removed."
+    "correctAnswer": "A",
+    "explanation": "Countries like Guatemala and Costa Rica utilize high volcanic altitudes to slow cherry maturation, yielding exceptionally dense coffee beans."
   },
   {
     "id": 79,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What type of grind size is ideal for a standard 4-minute French Press immersion brew?",
+    "category": "Roasting & Beans",
+    "question": "What major flavor element drops as a coffee bean is roasted darker?",
     "options": {
-      "A": "Extremely fine powder (like flour)",
-      "B": "Medium-fine (like table salt)",
-      "C": "Coarse (like sea salt)",
-      "D": "Whole unground beans"
+      "A": "The smoky aroma footprint",
+      "B": "The bright, fruity acidity profile",
+      "C": "The heavy, oily mouthfeel texture",
+      "D": "The bitter flavor baseline"
     },
-    "correctAnswer": "C",
-    "explanation": "Because the contact time is long (several minutes) and the filter is a coarse metal mesh, a large, coarse grind size is needed to prevent over-extraction and sludge."
+    "correctAnswer": "B",
+    "explanation": "Heat breaks down organic citric and malic acids, trading bright fruitiness for rich, deep caramelization."
   },
   {
     "id": 80,
-    "category": "Manual Brewing & Brew Dynamics",
-    "question": "What is a 'bypass' in coffee brewing terminology?",
+    "category": "Roasting & Beans",
+    "question": "What traditional tool do roasters use to pull samples out mid-roast to check color?",
     "options": {
-      "A": "Skipping the blooming phase entirely",
-      "B": "Clean hot water added directly to brewed coffee to dilute its strength without changing extraction parameters",
-      "C": "Running water backwards through a grinder",
-      "D": "Using two filters at the same time"
+      "A": "A thermal digital laser scope",
+      "B": "A trier or sampling trowel wand",
+      "C": "A built-in magnetic sifter screen",
+      "D": "A long kitchen mixing spoon"
     },
     "correctAnswer": "B",
-    "explanation": "Bypassing lets you achieve a lighter body or target strength by adding clean water directly to your final brew liquid (like an Americano recipe)."
+    "explanation": "The trier allows roasters to safely extract a small sample of beans from the spinning drum to check visual progression."
   },
   {
     "id": 81,
-    "category": "Cafe Equipment & Industry History",
-    "question": "Which style of grinder burrs is known for cutting coffee beans into highly uniform shapes with minimal heat transfer?",
+    "category": "History & Culture",
+    "question": "Which city opened Western Europe's earliest recorded public coffee houses?",
     "options": {
-      "A": "Blade grinders",
-      "B": "Conical or Flat ceramic/steel burrs",
-      "C": "Stone mill wheels",
-      "D": "Hammer mills"
+      "A": "Paris",
+      "B": "Venice",
+      "C": "London",
+      "D": "Amsterdam"
     },
     "correctAnswer": "B",
-    "explanation": "Burrs crush and slice coffee uniformly between two interlocking ridges, unlike spinning blades which chop coffee into uneven fragments."
+    "explanation": "Active Mediterranean trade routes positioned Venice to introduce coffee house culture to Western Europe in the 1600s."
   },
   {
     "id": 82,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What is the main historical milestone associated with the 'First Wave' of coffee culture?",
+    "category": "History & Culture",
+    "question": "What era or movement birthed the 'Third Wave Coffee' artisanal framework?",
     "options": {
-      "A": "The introduction of specialty espresso bars",
-      "B": "Mass-market commercialization and the widespread availability of cheap, pre-ground instant coffee in households",
-      "C": "The focus on single-origin traceability",
-      "D": "The invention of the electric espresso machine"
+      "A": "The industrial automation boom",
+      "B": "The early 2000s movement focusing on quality, traceability, and craft",
+      "C": "The instant coffee lifestyle push",
+      "D": "The 18th century shipping routes"
     },
     "correctAnswer": "B",
-    "explanation": "The First Wave made coffee a standard, accessible grocery commodity (e.g., Folgers, Maxwell House) focused on convenience."
+    "explanation": "Third Wave treatments reposition coffee from a standard grocery commodity to an artisanal, wine-like specialty craft."
   },
   {
     "id": 83,
-    "category": "Cafe Equipment & Industry History",
-    "question": "Who invented the first commercial espresso machine prototype that utilized steam to drive water through coffee in 1884?",
+    "category": "History & Culture",
+    "question": "What unique physical feature defines a professional coffee 'cupping' session?",
     "options": {
-      "A": "Angelo Moriondo",
-      "B": "Luigi Bezzera",
-      "C": "Achille Gaggia",
-      "D": "Ernesto Illy"
+      "A": "Drinking coffee blindfolded",
+      "B": "Slurping coffee loudly from shallow spoons to evaluate quality",
+      "C": "Adding diverse syrups systematically",
+      "D": "Baking coffee grounds into pastries"
     },
-    "correctAnswer": "A",
-    "explanation": "Angelo Moriondo of Turin patented the earliest recorded mechanism that used steam pressure to brew large volumes of coffee quickly."
+    "correctAnswer": "B",
+    "explanation": "Forceful slurping aerosolizes the liquid, spreading it across the palate and nasal passages for holistic sensory evaluation."
   },
   {
     "id": 84,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What crucial innovation did Achille Gaggia introduce to espresso machines in 1947?",
+    "category": "History & Culture",
+    "question": "What is a 'Barista'?",
     "options": {
-      "A": "Paper filter integration",
-      "B": "A spring-loaded piston lever system that eliminated reliance on steam pressure and allowed 9 bars of force",
-      "C": "Digital touchscreens",
-      "D": "Automatic milk frothing attachments"
+      "A": "A person who grows coffee on a farm",
+      "B": "A professional who prepares and serves espresso beverages",
+      "C": "A machine that roasts coffee seeds",
+      "D": "A style of cold brew bottle"
     },
     "correctAnswer": "B",
-    "explanation": "Gaggia's lever piston forced water through the coffee at higher pressures, creating the thick, golden 'crema' that defines modern espresso."
+    "explanation": "Barista is the Italian word for bartender, adapted globally to signify a skilled coffee preparation professional."
   },
   {
     "id": 85,
-    "category": "Cafe Equipment & Industry History",
-    "question": "Which historical espresso machine, released in 1961, introduced the rotary pump and the iconic E61 thermosiphon group head design?",
+    "category": "History & Culture",
+    "question": "What country invented the mechanical pump espresso machine infrastructure?",
     "options": {
-      "A": "La Marzocco Linea",
-      "B": "Faema E61",
-      "C": "Slayer Espresso",
-      "D": "Nuova Simonelli Aurelia"
+      "A": "France",
+      "B": "Italy",
+      "C": "Germany",
+      "D": "The United Kingdom"
     },
     "correctAnswer": "B",
-    "explanation": "The Faema E61 revolutionized the industry by using an internal mechanical pump instead of manual levers, keeping the group head hot via a continuous water loop."
+    "explanation": "Italy is the spiritual home of espresso, spearheading patents from Moriondo, Bezzera, and Gaggia."
   },
   {
     "id": 86,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What does the 'Second Wave' of coffee culture focus on?",
+    "category": "History & Culture",
+    "question": "What global historical trend defined the 'First Wave' of coffee culture?",
     "options": {
-      "A": "Exclusively drinking black filter coffee at home",
-      "B": "The global proliferation of coffee chains (like Starbucks), introducing espresso drinks, flavored syrups, and social cafe spaces",
-      "C": "Roasting coffee in micro-batches using solar power",
-      "D": "Direct-trade sourcing from small farms exclusively"
+      "A": "The rise of micro-lot single origin estates",
+      "B": "Mass market commercialization and instant coffee convenience",
+      "C": "The invention of latte art techniques",
+      "D": "Sourcing coffee using trade apps"
     },
     "correctAnswer": "B",
-    "explanation": "The Second Wave introduced consumers to European-style espresso drinks, specialty lattes, and the concept of the cafe as a community gathering space."
+    "explanation": "The First Wave focused on making affordable coffee an ubiquitous, easy-to-prepare household staple."
   },
   {
     "id": 87,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What is the defining philosophy of the 'Third Wave' coffee movement?",
+    "category": "History & Culture",
+    "question": "What is the primary objective behind 'Fair Trade' coffee sourcing certifications?",
     "options": {
-      "A": "Treating coffee as an artisanal specialty product, emphasizing traceability, distinct origin flavors, light roasting, and brewing craft",
-      "B": "Automation of all brewing steps using smart devices",
-      "C": "Making coffee as cheap and fast as humanly possible",
-      "D": "Combining coffee with energy drinks"
+      "A": "Ensuring coffee tastes identical global wide",
+      "B": "Guaranteeing fair wages and ethical conditions for small-scale farmers",
+      "C": "Lowering consumer retail costs aggressively",
+      "D": "Speeding up shipping vessel transit times"
     },
-    "correctAnswer": "A",
-    "explanation": "Third Wave treats coffee like fine wine, focusing on the hard work of farmers, regional microclimates, and precise extraction science."
+    "correctAnswer": "B",
+    "explanation": "Fair Trade establishes a pricing floor to shield vulnerable growers from volatile market drops."
   },
   {
     "id": 88,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What piece of equipment is used to backflush a commercial espresso machine at the end of a shift?",
+    "category": "History & Culture",
+    "question": "What is the trash container featuring a padded center bar for spent grounds called?",
     "options": {
-      "A": "A gooseneck kettle",
-      "B": "A blind (solid) filter basket insert used with specialized detergent",
-      "C": "A steel wire wire brush attached to the steam wand",
-      "D": "A high-powered shop vacuum"
+      "A": "A grind hopper tray",
+      "B": "A knockbox",
+      "C": "A blind storage basket",
+      "D": "An espresso tamper stand"
     },
     "correctAnswer": "B",
-    "explanation": "The blind basket has no holes, forcing cleaning solution backwards through the three-way solenoid valve to purge rancid coffee oils."
+    "explanation": "Baristas strike portafilters against the knockbox bar to dislodge compressed, spent coffee pucks cleanly."
   },
   {
     "id": 89,
-    "category": "Cafe Equipment & Industry History",
-    "question": "Why are flat burrs often preferred over conical burrs by high-end cafe baristas targeting high extraction clarity?",
+    "category": "History & Culture",
+    "question": "What asset does an electronic 'TDS meter' track inside brewed coffee?",
     "options": {
-      "A": "They are significantly cheaper to replace.",
-      "B": "They yield a highly unimodal grind size distribution, creating distinct, clean flavor separation.",
-      "C": "They require much less motor power to spin.",
-      "D": "They make no sound during operation."
+      "A": "The exact total milligrams of caffeine",
+      "B": "The percentage concentration of dissolved coffee solids",
+      "C": "The temperature breakdown graph",
+      "D": "The total carbon footprint score"
     },
     "correctAnswer": "B",
-    "explanation": "Flat burrs align parallel to each other, producing highly uniform grinds that extract evenly, highlighting delicate tasting notes."
+    "explanation": "Total Dissolved Solids (TDS) metrics indicate the scientific strength and extraction yield of a brew."
   },
   {
     "id": 90,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What is the standard size diameter for a traditional commercial espresso machine portafilter basket?",
+    "category": "History & Culture",
+    "question": "What standard size diameter defines a professional commercial espresso portafilter?",
     "options": {
-      "A": "45mm",
-      "B": "51mm",
-      "C": "58mm",
-      "D": "64mm"
+      "A": "45mm mini variant",
+      "B": "58mm standard dimension",
+      "C": "72mm oversized variant",
+      "D": "32mm micro dimension"
     },
-    "correctAnswer": "C",
-    "explanation": "58mm is the standard dimension for professional commercial group heads and portafilters across the coffee industry."
+    "correctAnswer": "B",
+    "explanation": "58mm is the standard baseline dimension for commercial espresso group heads and accessories worldwide."
   },
   {
     "id": 91,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What does 'Direct Trade' mean when sourcing specialty coffee?",
+    "category": "History & Culture",
+    "question": "What does 'Direct Trade' coffee signify?",
     "options": {
-      "A": "Buying coffee directly from a local grocery store broker",
-      "B": "Roasters purchasing beans directly from farmers, bypassing traditional middlemen to ensure fair pricing and quality standards",
-      "C": "Trading coffee beans for heavy machinery",
-      "D": "Shipping coffee via drones"
+      "A": "Trading coffee bags for cafe gear directly",
+      "B": "Roasters purchasing directly from farmers, cutting out middlemen",
+      "C": "Buying coffee from internet auction portals",
+      "D": "Sourcing coffee through government channels"
     },
     "correctAnswer": "B",
-    "explanation": "Direct Trade builds direct relationships between roasters and coffee growers, often paying premium prices far above fair-trade baselines."
+    "explanation": "Direct Trade builds a direct path from roaster to farm, paying quality premiums that bypass standard commodity networks."
   },
   {
     "id": 92,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What component of a coffee grinder holds the whole beans before they drop down into the burrs?",
+    "category": "History & Culture",
+    "question": "What global non-profit entity manages international specialty coffee standards and certifications?",
     "options": {
-      "A": "The doser chamber",
-      "B": "The hopper",
-      "C": "The chute",
-      "D": "The adjustment collar"
+      "A": "The Global Caffeine Alliance",
+      "B": "The Specialty Coffee Association (SCA)",
+      "C": "The United Coffee Committee",
+      "D": "The World Barista Federation"
     },
     "correctAnswer": "B",
-    "explanation": "The hopper is the plastic or glass container mounted on top of a grinder that stores whole beans before grinding."
+    "explanation": "The SCA establishes unified quality criteria, grading protocols, and educational curricula for the industry."
   },
   {
     "id": 93,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What happens to a coffee grinder if it encounters 'retention'?",
+    "category": "History & Culture",
+    "question": "What traditional vessel is utilized to serve authentic Turkish Coffee?",
     "options": {
-      "A": "The motor burns out instantly.",
-      "B": "A small amount of ground coffee gets trapped inside the internal chambers and chute between grind cycles.",
-      "C": "The burrs turn backward automatically.",
-      "D": "The coffee turns sour from static electricity."
+      "A": "A tall glass mug",
+      "B": "A small copper pot called a Cezve or Ibrik",
+      "C": "A French Press glass beaker",
+      "D": "A modern insulated metal bottle"
     },
     "correctAnswer": "B",
-    "explanation": "Retention refers to the stale grounds left behind inside the grinder housing, which can contaminate the fresh dose of the next shot if not purged."
+    "explanation": "Turkish coffee is boiled directly with ultra-fine grounds inside a long-handled copper pot called a Cezve."
   },
   {
     "id": 94,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What is the main benefit of using ceramic burrs instead of steel burrs in a manual hand grinder?",
+    "category": "History & Culture",
+    "question": "What does a 'Q Grader' certification mean in the industry?",
     "options": {
-      "A": "Ceramic burrs stay sharper indefinitely and do not conduct heat easily.",
-      "B": "Ceramic burrs cut through beans twice as fast as steel.",
-      "C": "Ceramic burrs are completely indestructible if dropped.",
-      "D": "Ceramic burrs filter out caffeine naturally."
+      "A": "A professional licensed to scientifically score coffee quality",
+      "B": "A technician who repairs commercial grinders",
+      "C": "A farmer managing organic composting",
+      "D": "A cafe manager tracking monthly revenue"
     },
     "correctAnswer": "A",
-    "explanation": "Ceramic components do not wear down as fast as steel and transfer minimal friction heat to the beans during long manual grinds."
+    "explanation": "Q Graders are the industry's certified palates, trained to evaluate coffee quality according to rigorous metrics."
   },
   {
     "id": 95,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What does the abbreviation 'SCA' stand for in the professional coffee industry?",
+    "category": "History & Culture",
+    "question": "What phenomenon occurs if a grinder displays high 'retention'?",
     "options": {
-      "A": "Specialty Coffee Association",
-      "B": "Standard Coffee Accreditation",
-      "C": "System for Caffeine Assessment",
-      "D": "Selective Cultivation Alliance"
+      "A": "It uses minimal electricity",
+      "B": "Stale coffee grounds get trapped inside the internal chute",
+      "C": "The burrs turn backward automatically",
+      "D": "Beans jump completely out of the machine"
     },
-    "correctAnswer": "A",
-    "explanation": "The Specialty Coffee Association (SCA) is the global nonprofit body that sets official standards for coffee quality, education, and barista competitions."
+    "correctAnswer": "B",
+    "explanation": "Retention is the volume of ground coffee that gets trapped in the grinder's internal channels between cycles."
   },
   {
     "id": 96,
-    "category": "Cafe Equipment & Industry History",
-    "question": "In a professional coffee cupping session, what is the standard protocol for tasting the coffee liquid?",
+    "category": "History & Culture",
+    "question": "What historical century saw coffee houses emerge across the Middle East?",
     "options": {
-      "A": "Drinking a full mug slowly",
-      "B": "Slurping the coffee forcefully from a shallow spoon to aerate the liquid across the palate",
-      "C": "Mixing the coffee with condensed milk",
-      "D": "Dipping crackers into the brew bowl"
+      "A": "The 21st century recently",
+      "B": "The 15th and 16th centuries",
+      "C": "The ancient Roman BC era",
+      "D": "The early 12th century"
     },
     "correctAnswer": "B",
-    "explanation": "Slurping aspirates the coffee into a fine mist, spreading it over the tongue and into the nasal passage to fully evaluate the aroma and taste."
+    "explanation": "Public coffee houses flourished across cities like Cairo, Mecca, and Istanbul during the 1500s."
   },
   {
     "id": 97,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What is 'knockbox' used for in a cafe setting?",
+    "category": "History & Culture",
+    "question": "What item serves as the raw container holding beans on top of a grinder?",
     "options": {
-      "A": "Storing expensive retail bean bags securely",
-      "B": "A reinforced container with a bar across it used to empty spent coffee pucks out of portafilters",
-      "C": "Testing the hardness of green coffee beans",
-      "D": "Tuning the acoustics of the cafe lounge"
+      "A": "The dosing scale hook",
+      "B": "The hopper bin",
+      "C": "The entry port needle",
+      "D": "The rubber catch cup"
     },
     "correctAnswer": "B",
-    "explanation": "Baristas strike the portafilter against the padded bar of a knockbox to cleanly drop out the wet coffee waste puck."
+    "explanation": "The hopper is the clear container that safely stores whole beans before they feed down into the burrs."
   },
   {
     "id": 98,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What critical problem occurs if a cafe's water filtration system fails to remove chlorine?",
+    "category": "History & Culture",
+    "question": "What basic technique involves swirling steamed milk into espresso to sketch visual designs?",
     "options": {
-      "A": "The water will become incredibly thick like oil.",
-      "B": "Chlorine reacts with coffee phenols, causing a strong, unpleasant chemical or medicinal taste in the cup.",
-      "C": "The espresso machine pump will stop spinning.",
-      "D": "The milk will curdle instantly inside the steam pitcher."
+      "A": "Etching art",
+      "B": "Free-pour Latte Art",
+      "C": "Stencil dusting",
+      "D": "Foam carving"
     },
     "correctAnswer": "B",
-    "explanation": "Chlorine chemically destroys the volatile flavor molecules of coffee, introducing harsh chemical notes that ruin quality."
+    "explanation": "Latte art uses fluid dynamics, pouring milk at precise heights and angles to create patterns like hearts and rosettas."
   },
   {
     "id": 99,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What does a 'doser' attachment do on a traditional commercial coffee grinder?",
+    "category": "History & Culture",
+    "question": "Which processing element is completely omitted in an absolute 'Black Coffee' serving?",
     "options": {
-      "A": "Weighs coffee electronically down to the microgram",
-      "B": "Drops pre-ground coffee into a front chamber, allowing a lever pull to dispense generic volumes into a portafilter",
-      "C": "Seals beans in a vacuum chamber",
-      "D": "Automatically tamps the coffee down"
+      "A": "Hot water dilution lines",
+      "B": "Milk, cream, or sweetening additives",
+      "C": "Filtering fine sediment out",
+      "D": "Grinding whole roasted seeds"
     },
     "correctAnswer": "B",
-    "explanation": "Doser grinders grind ahead into a chamber, allowing quick manual dispensing during rush hours. Modern cafes prefer 'on-demand' electronic dosing to minimize staling."
+    "explanation": "Black coffee is served pure, without any dairy, plant milks, or sweetening syrups."
   },
   {
     "id": 100,
-    "category": "Cafe Equipment & Industry History",
-    "question": "What does the term 'Single Dose Grinding' mean?",
+    "category": "History & Culture",
+    "question": "What operating framework defines 'Single Dose Grinding' workflows?",
     "options": {
-      "A": "Grinding an entire 5lb bag at one time",
-      "B": "Weighing and grinding only the specific amount of coffee beans needed for a single beverage, keeping the hopper empty",
-      "C": "Using a grinder that only has one button",
-      "D": "Grinding beans using a single hand-crank rotation"
+      "A": "Grinding an entire month's inventory ahead",
+      "B": "Weighing and grinding just the beans required for one exact drink",
+      "C": "Using a single massive cutting blade",
+      "D": "Grinding coffee using only one hand gesture"
     },
     "correctAnswer": "B",
-    "explanation": "Single dosing maximizes bean freshness and allows baristas to switch between different single-origin coffees fluidly without purging large hoppers."
+    "explanation": "Single dosing ensures maximum freshness and zero bean staling by keeping the hopper completely empty between orders."
   }
 ]
