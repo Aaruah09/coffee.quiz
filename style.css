@@ -1,178 +1,291 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
 
-:root {
-    --bg-dark: #5e4638;
-    --bg-mid: #7b5d4a;
-    --bg-light: #8f6b56;
+:root{
 
-    --card: #f8f7f5;
+    --bg1:#c4a484;
+    --bg2:#a67c5b;
+    --bg3:#6f4e37;
 
-    --primary: #6f4e37;
-    --primary-dark: #4f3527;
+    --card:#faf8f5;
 
-    --text: #2b211b;
-    --text-light: #6f6f6f;
+    --primary:#6f4e37;
+    --primary-dark:#563b29;
 
-    --success: #4CAF50;
-    --danger: #f44336;
+    --text:#2c241e;
+    --text-light:#7a746f;
 
-    --brand-font: 'Cormorant Garamond', serif;
-    --body-font: 'Sora', sans-serif;
+    --success:#4CAF50;
+    --danger:#f44336;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    min-height: 100vh;
-    font-family: var(--body-font);
+body{
 
-    background: linear-gradient(
-        180deg,
-        var(--bg-light),
-        var(--bg-mid),
-        var(--bg-dark)
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--bg1),
+        var(--bg2),
+        var(--bg3)
     );
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family:'Sora',sans-serif;
 
-    padding: 40px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    overflow:hidden;
 }
 
-.brand {
-    font-family: var(--brand-font);
-    font-size: 56px;
-    font-weight: 600;
-    color: #111;
-    letter-spacing: 2px;
-    margin-bottom: 60px;
+/* BRAND */
+
+.brand{
+
+    position:fixed;
+
+    top:45px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#1f1f1f;
+
+    z-index:100;
 }
 
-#app {
-    width: 100%;
-    max-width: 420px;
+/* MAIN CARD */
 
-    background: var(--card);
+#app{
 
-    border-radius: 36px;
+    width:100%;
 
-    padding: 34px;
+    max-width:390px;
 
-    text-align: center;
+    background:rgba(250,248,245,.97);
 
-    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    backdrop-filter:blur(10px);
 
-    animation: cardEnter 0.45s ease;
+    border-radius:32px;
+
+    padding:28px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.18);
+
+    animation:fadeUp .4s ease;
 }
 
-h2 {
-    color: var(--text);
-    font-size: 30px;
-    margin-bottom: 12px;
-    font-weight: 600;
+/* HEADINGS */
+
+h2{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+    margin-bottom:8px;
 }
 
-h3 {
-    color: var(--text);
-    margin-bottom: 14px;
+h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+    margin-bottom:12px;
 }
 
-p {
-    color: var(--text-light);
-    line-height: 1.6;
+p{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    line-height:1.5;
+
+    margin-bottom:12px;
 }
 
-input {
-    width: 100%;
-    padding: 16px;
-    margin-top: 14px;
+/* CATEGORY */
 
-    border: none;
-    border-radius: 18px;
+.category-tag{
 
-    background: #fff;
+    display:inline-block;
 
-    font-size: 16px;
-    font-family: var(--body-font);
+    padding:6px 12px;
 
-    outline: none;
+    background:#ece5dd;
 
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+    border-radius:999px;
+
+    font-size:12px;
+
+    margin-bottom:14px;
+
+    color:#5f4a3d;
 }
 
-button {
-    width: 100%;
-    margin-top: 18px;
-    padding: 16px;
+/* INPUT */
 
-    border: none;
-    border-radius: 18px;
+input{
 
-    background: var(--primary);
+    width:100%;
 
-    color: white;
+    padding:14px;
 
-    font-family: var(--body-font);
-    font-size: 15px;
-    font-weight: 600;
+    border:none;
 
-    cursor: pointer;
+    border-radius:16px;
 
-    transition: 0.25s;
+    background:white;
+
+    font-size:14px;
+
+    font-family:'Sora',sans-serif;
+
+    box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.08);
+
+    outline:none;
+
+    margin-top:10px;
 }
 
-button:hover {
-    transform: translateY(-2px);
-    background: var(--primary-dark);
+input:focus{
+
+    box-shadow:
+    inset 0 0 0 2px var(--primary);
 }
 
-.correct {
-    background: var(--success) !important;
+/* BUTTONS */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-family:'Sora',sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.25s;
 }
 
-.wrong {
-    background: var(--danger) !important;
+button:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
 }
 
-.reward {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--primary);
-    margin: 18px 0;
+/* QUIZ STATES */
+
+.correct{
+
+    background:var(--success)!important;
 }
 
-#timer {
-    margin-top: 12px;
-    font-size: 34px;
-    font-weight: 700;
-    color: var(--primary);
+.wrong{
+
+    background:var(--danger)!important;
 }
 
-@keyframes cardEnter {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
+/* REWARD */
+
+.reward{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin:14px 0;
+}
+
+/* TIMER */
+
+#timer{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-top:10px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
 
-@media (max-width: 480px) {
-    .brand {
-        font-size: 48px;
-        margin-bottom: 50px;
+/* MOBILE */
+
+@media(max-width:480px){
+
+    .brand{
+
+        font-size:38px;
+
+        top:35px;
     }
 
-    #app {
-        border-radius: 28px;
-        padding: 28px;
+    #app{
+
+        max-width:360px;
+
+        padding:24px;
     }
 }
