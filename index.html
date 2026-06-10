@@ -3,40 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VASASI Challenge</title>
+<title>VASASI Challenge V3</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="brand">VASASI</div>
+
+<div id="toast"></div>
 <div id="app">Loading...</div>
 
 <script>
+
 const TOTAL_QUESTIONS = 8;
 
 const welcomeMessages = [
- ["🎯 Think you know coffee?","Most visitors don't finish with a perfect score."],
- ["☕ Waiting for your order?","Let's make those few minutes worth it."],
- ["🏆 Only a few unlock today's reward.","Ready to try?"],
- ["⚡ 8 questions. One reward.","Let's see what you've got."],
- ["☕ Your coffee is brewing...","Challenge accepted?"]
+["☕ Your coffee is being prepared.","Think you know coffee better than our regulars?"],
+["🍰 Something delicious is on the way.","Let's see if you can earn today's reward."],
+["👨‍🍳 The kitchen is busy.","Your brain can be too."],
+["☕ Fresh coffee takes a moment.","The challenge takes less than a minute."],
+["🔥 Your order is getting ready.","Let's put your coffee knowledge to the test."],
+["🍪 The snacks are almost ready.","Can you conquer today's challenge first?"],
+["☕ Brewing in progress.","Challenge accepted?"]
 ];
 
 const quizComments = [
- "👀 No Googling...",
- "☕ Trust your instincts.",
- "🎯 Most visitors miss this one.",
- "⚡ First answer, best answer.",
- "🧠 Honest answers taste better.",
- "😏 Easier than it looks."
+"👀 No Googling...",
+"☕ Trust your instincts.",
+"🎯 Most visitors miss this one.",
+"⚡ First answer, best answer.",
+"🧠 Honest answers taste better.",
+"😏 Easier than it looks.",
+"🏆 Every point counts."
 ];
 
 const failMessages = [
- "☕ Not bad at all. You got closer than most visitors.",
- "⚡ Fast thinker. Next time might be the winning run.",
- "🎯 You were closer than you think.",
- "☕ Fresh questions await next time.",
- "🔥 Good effort. See you again soon."
+"☕ Not bad at all. You got closer than most visitors.",
+"⚡ Fast thinker. Next time might be the winning run.",
+"🎯 You were closer than you think.",
+"☕ Fresh questions await next time.",
+"🔥 Good effort. See you again soon."
 ];
 
 let allQuestions=[];
@@ -46,26 +52,39 @@ let score=0;
 
 async function init(){
  try{
-   const res = await fetch("questions.json");
+   const res = await fetch('questions.json');
    allQuestions = await res.json();
    showHome();
  }catch(e){
-   document.getElementById("app").innerHTML =
-   "<h2>questions.json not found</h2>";
+   document.getElementById('app').innerHTML =
+   '<h2>questions.json not found</h2>';
  }
-}
-
-function shuffle(arr){
- return [...arr].sort(()=>Math.random()-0.5);
 }
 
 function randomItem(arr){
  return arr[Math.floor(Math.random()*arr.length)];
 }
 
+function shuffle(arr){
+ return [...arr].sort(()=>Math.random()-0.5);
+}
+
+function showToast(text){
+
+ const toast = document.getElementById('toast');
+
+ toast.innerText = text;
+
+ toast.classList.add('show');
+
+ setTimeout(()=>{
+   toast.classList.remove('show');
+ },2000);
+}
+
 function showHome(){
 
- const nextPlay = localStorage.getItem("nextPlay");
+ const nextPlay = localStorage.getItem('nextPlay');
 
  if(nextPlay && Date.now() < Number(nextPlay)){
    showCooldown();
@@ -74,39 +93,52 @@ function showHome(){
 
  const msg = randomItem(welcomeMessages);
 
- document.getElementById("app").innerHTML = `
+ document.getElementById('app').innerHTML = `
  <h2>${msg[0]}</h2>
+
  <p>${msg[1]}</p>
- <button onclick="showNamePage()">Start Challenge</button>
+
+ <button onclick="showNamePage()">
+ Start Challenge
+ </button>
  `;
 }
 
 function showNamePage(){
 
- const saved = localStorage.getItem("playerName") || "";
+ const saved =
+ localStorage.getItem('playerName') || '';
 
- document.getElementById("app").innerHTML = `
+ document.getElementById('app').innerHTML = `
  <h2>What's your name?</h2>
- <input id="name" placeholder="Your name" value="${saved}">
- <button onclick="startQuiz()">Continue</button>
+
+ <input id="name"
+ placeholder="Your name"
+ value="${saved}">
+
+ <button onclick="startQuiz()">
+ Continue
+ </button>
  `;
 }
 
 function startQuiz(){
 
- const name = document.getElementById("name").value.trim();
+ const name =
+ document.getElementById('name').value.trim();
 
  if(!name){
-   alert("Enter your name");
+   alert('Enter your name');
    return;
  }
 
- localStorage.setItem("playerName",name);
+ localStorage.setItem('playerName',name);
 
- questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
+ questions =
+ shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
 
- current=0;
- score=0;
+ current = 0;
+ score = 0;
 
  showQuestion();
 }
@@ -114,57 +146,64 @@ function startQuiz(){
 function showQuestion(){
 
  const q = questions[current];
- const keys = Object.keys(q.options);
- const comment = randomItem(quizComments);
 
- let html = `
- <div class="progress-text">${current+1}/${TOTAL_QUESTIONS}</div>
+ const keys = Object.keys(q.options);
+
+ document.getElementById('app').innerHTML = `
+ <div class="progress-text">
+ ${current+1}/${TOTAL_QUESTIONS}
+ </div>
 
  <div class="progress-bar">
    <div class="progress-fill"
-   style="width:${((current)/TOTAL_QUESTIONS)*100}%">
-   </div>
+   style="width:${(current/TOTAL_QUESTIONS)*100}%"></div>
  </div>
 
- <p class="quiz-comment">${comment}</p>
-
  <h3>${q.question}</h3>
+
+ <div id="options"></div>
  `;
 
+ const options =
+ document.getElementById('options');
+
  keys.forEach(key=>{
-   html += `
+   options.innerHTML += `
    <button data-key="${key}"
    onclick="checkAnswer('${key}',this)">
-   <strong>${key}.</strong> ${q.options[key]}
+   <strong>${key}.</strong>
+   ${q.options[key]}
    </button>`;
  });
 
- document.getElementById("app").innerHTML = html;
+ showToast(randomItem(quizComments));
 }
 
 function checkAnswer(selected,btn){
 
- const correct = questions[current].correctAnswer;
+ const correct =
+ questions[current].correctAnswer;
 
  const buttons =
- document.querySelectorAll("#app button");
+ document.querySelectorAll('#options button');
 
  buttons.forEach(b=>b.disabled=true);
 
  if(selected===correct){
-   btn.classList.add("correct");
+   btn.classList.add('correct');
    score++;
  }else{
-   btn.classList.add("wrong");
+   btn.classList.add('wrong');
 
    buttons.forEach(b=>{
      if(b.dataset.key===correct){
-       b.classList.add("correct");
+       b.classList.add('correct');
      }
    });
  }
 
  setTimeout(()=>{
+
    current++;
 
    if(current<TOTAL_QUESTIONS){
@@ -172,41 +211,43 @@ function checkAnswer(selected,btn){
    }else{
      showResult();
    }
+
  },1000);
 }
 
 function showResult(){
 
  localStorage.setItem(
-   "nextPlay",
-   Date.now() + (10 * 1000)
+ 'nextPlay',
+ Date.now() + (10*1000)
  );
 
  if(score===8){
 
-   document.getElementById("app").innerHTML = `
-   <h2>🏆 Coffee Master</h2>
+ document.getElementById('app').innerHTML = `
+ <h2>🏆 Coffee Master</h2>
 
-   <div class="reward">
-   Reward Unlocked
-   </div>
+ <div class="reward">
+ Reward Unlocked
+ </div>
 
-   <p>Show this screen at the counter.</p>
+ <p>Show this screen at the counter.</p>
 
-   <div id="timer"></div>
-   `;
+ <div id="timer"></div>
+ `;
 
  }else{
 
-   document.getElementById("app").innerHTML = `
-   <h2>Challenge Complete</h2>
+ document.getElementById('app').innerHTML = `
+ <h2>Challenge Complete</h2>
 
-   <div class="reward">${score}/8</div>
+ <div class="reward">${score}/8</div>
 
-   <p>${randomItem(failMessages)}</p>
+ <p>${randomItem(failMessages)}</p>
 
-   <div id="timer"></div>
-   `;
+ <div id="timer"></div>
+ `;
+
  }
 
  startTimer();
@@ -214,13 +255,10 @@ function showResult(){
 
 function showCooldown(){
 
- const name =
- localStorage.getItem("playerName") || "Friend";
+ document.getElementById('app').innerHTML = `
+ <h2>See you soon 👋</h2>
 
- document.getElementById("app").innerHTML = `
- <h2>Welcome back, ${name}!</h2>
-
- <p>Your next challenge unlocks in</p>
+ <p>Fresh questions unlock shortly.</p>
 
  <div id="timer"></div>
  `;
@@ -230,29 +268,32 @@ function showCooldown(){
 
 function startTimer(){
 
- const interval = setInterval(()=>{
+ const interval=setInterval(()=>{
 
-   const nextPlay =
-   Number(localStorage.getItem("nextPlay"));
+ const nextPlay =
+ Number(localStorage.getItem('nextPlay'));
 
-   const remaining = nextPlay - Date.now();
+ const remaining =
+ nextPlay - Date.now();
 
-   if(remaining<=0){
-     clearInterval(interval);
-     localStorage.removeItem("nextPlay");
-     showHome();
-     return;
-   }
+ if(remaining<=0){
+   clearInterval(interval);
+   localStorage.removeItem('nextPlay');
+   showHome();
+   return;
+ }
 
-   const s = Math.floor((remaining/1000)%60);
+ const s =
+ Math.floor((remaining/1000)%60);
 
-   document.getElementById("timer").innerText =
-   s + "s";
+ document.getElementById('timer').innerText =
+ s + 's';
 
  },1000);
 }
 
 init();
+
 </script>
 
 </body>
