@@ -212,6 +212,17 @@ const failMessages = [
   "🔥 Good effort. See you again soon."
 ];
 
+const retryMessages = [
+  "☕ Ooh, that was close. One more shot?",
+  "🎯 Most winners didn't win on their first attempt.",
+  "🔥 Not bad at all. Try again before your coffee arrives.",
+  "☕ One answer away? Let's find out.",
+  "⚡ Round two might be your round."
+];
+
+let attempts = 0;
+const MAX_ATTEMPTS = 2;
+
 let allQuestions=[];
 let questions=[];
 let current=0;
@@ -271,9 +282,12 @@ function startQuiz(){
  if(!name){ alert('Enter your name'); return; }
  localStorage.setItem('playerName',name);
  questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
- current = 0;
- score = 0;
- showQuestion();
+
+current = 0;
+score = 0;
+attempts = 0;
+
+showQuestion();
 }
 
 function showQuestion() {
@@ -326,33 +340,85 @@ function checkAnswer(selected,btn){
  },1200);
 }
 
-function showResult(){
- 
-  
- 
-  savePlay(); // Fire data to Supabase
- localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
+function retryQuiz(){
 
- if(score === TOTAL_QUESTIONS){
-   document.getElementById('app').innerHTML = `
-     <h2>🏆 Coffee Master</h2>
-     <div class="reward">Reward Unlocked 🎉</div>
-     <p>Show this screen at the counter to claim your free drink reward.</p>
-     <div id="timer"></div>
-     ${timeStampHTML}
-   `;
- }else{
-   document.getElementById('app').innerHTML = `
-     <h2>Challenge Complete</h2>
-     <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
-     <p>${randomItem(failMessages)}</p>
-     <div id="timer"></div>
-     ${timeStampHTML}
-   `;
- }
- startTimer();
+ questions =
+ shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
+
+ current = 0;
+ score = 0;
+
+ showQuestion();
+
 }
 
+function showResult(){
+
+ attempts++;
+
+ savePlay();
+
+ if(score === TOTAL_QUESTIONS){
+
+   localStorage.setItem(
+     'nextPlay',
+     Date.now() + (10 * 1000)
+   );
+
+   document.getElementById('app').innerHTML = `
+     <h2>🏆 Coffee Master</h2>
+
+     <div class="reward">
+       Reward Unlocked 🎉
+     </div>
+
+     <p>Show this screen at the counter.</p>
+
+     <div id="timer"></div>
+   `;
+
+   startTimer();
+   return;
+ }
+
+ if(attempts < MAX_ATTEMPTS){
+
+   document.getElementById('app').innerHTML = `
+     <h2>Challenge Complete</h2>
+
+     <div class="reward">
+       ${score}/${TOTAL_QUESTIONS}
+     </div>
+
+     <p>${randomItem(retryMessages)}</p>
+
+     <button onclick="retryQuiz()">
+       Try Again
+     </button>
+   `;
+
+   return;
+ }
+
+ localStorage.setItem(
+   'nextPlay',
+   Date.now() + (10 * 1000)
+ );
+
+ document.getElementById('app').innerHTML = `
+   <h2>Challenge Complete</h2>
+
+   <div class="reward">
+     ${score}/${TOTAL_QUESTIONS}
+   </div>
+
+   <p>${randomItem(failMessages)}</p>
+
+   <div id="timer"></div>
+ `;
+
+ startTimer();
+}
 
 function showCooldown(){
  document.getElementById('app').innerHTML = `
