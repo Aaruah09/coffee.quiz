@@ -117,8 +117,8 @@ button:hover:not(:disabled){
 }
 button:active:not(:disabled){ transform:scale(.98); }
 
-.correct{ background:var(--success)!important; border-color: var(--success)!important; }
-.wrong{ background:var(--danger)!important; border-color: var(--danger)!important; }
+.correct{ background:var(--success)!important; border-color: var(--success)!important; color: white !important;}
+.wrong{ background:var(--danger)!important; border-color: var(--danger)!important; color: white !important;}
 
 .progress-text{ font-size:13px; color:var(--text-light); margin-bottom:8px; }
 .progress-bar{
@@ -163,7 +163,7 @@ button:active:not(:disabled){ transform:scale(.98); }
 // Supabase Configuration
 const supabaseUrl = "https://uuagsbpxjfspfiijjjup.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1YWdzYnB4amZzcGZpaWpqanVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMjg2NzAsImV4cCI6MjA5NjkwNDY3MH0.S1HO488DvYVJBj4yq41fYYCJj20BUBI4m8byZvDhgrM";
-let dbClient = null; // Renamed to fix namespace collision
+let dbClient = null;
 
 if (window.supabase) {
   dbClient = window.supabase.createClient(supabaseUrl, supabaseKey);
@@ -183,6 +183,7 @@ async function savePlay() {
 }
 
 const TOTAL_QUESTIONS = 8;
+const MAX_ATTEMPTS = 2;
 
 const welcomeMessages = [
   ["☕ Your coffee is being prepared.","Think you know coffee better than our regulars?"],
@@ -220,13 +221,11 @@ const retryMessages = [
   "⚡ Round two might be your round."
 ];
 
-let attempts = 0;
-const MAX_ATTEMPTS = 2;
-
 let allQuestions=[];
 let questions=[];
 let current=0;
 let score=0;
+let attempts=0;
 
 // Application Boot Sequence
 async function init(){
@@ -283,11 +282,11 @@ function startQuiz(){
  localStorage.setItem('playerName',name);
  questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
 
-current = 0;
-score = 0;
-attempts = 0;
+ current = 0;
+ score = 0;
+ attempts = 0;
 
-showQuestion();
+ showQuestion();
 }
 
 function showQuestion() {
@@ -341,83 +340,57 @@ function checkAnswer(selected,btn){
 }
 
 function retryQuiz(){
-
- questions =
- shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
-
+ questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
  current = 0;
  score = 0;
-
  showQuestion();
-
 }
 
 function showResult(){
+  attempts++;
+  savePlay();
 
- attempts++;
+  // Timestamp Generator
+  const now = new Date();
+  const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const dateString = now.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
+  const timeStampHTML = `<div style="font-size: 12px; color: var(--text-light); margin-top: 20px; font-weight: 500;">${dateString} at ${timeString}</div>`;
 
- savePlay();
+  // 1. Win State
+  if(score === TOTAL_QUESTIONS){
+    localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
+    document.getElementById('app').innerHTML = `
+      <h2>🏆 Coffee Master</h2>
+      <div class="reward">Reward Unlocked 🎉</div>
+      <p>Show this screen at the counter.</p>
+      <div id="timer"></div>
+      ${timeStampHTML}
+    `;
+    startTimer();
+    return;
+  }
 
- if(score === TOTAL_QUESTIONS){
+  // 2. Retry State
+  if(attempts < MAX_ATTEMPTS){
+    document.getElementById('app').innerHTML = `
+      <h2>Challenge Complete</h2>
+      <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
+      <p>${randomItem(retryMessages)}</p>
+      <button onclick="retryQuiz()">Try Again</button>
+    `;
+    return;
+  }
 
-   localStorage.setItem(
-     'nextPlay',
-     Date.now() + (10 * 1000)
-   );
-
-   document.getElementById('app').innerHTML = `
-     <h2>🏆 Coffee Master</h2>
-
-     <div class="reward">
-       Reward Unlocked 🎉
-     </div>
-
-     <p>Show this screen at the counter.</p>
-
-     <div id="timer"></div>
-   `;
-
-   startTimer();
-   return;
- }
-
- if(attempts < MAX_ATTEMPTS){
-
-   document.getElementById('app').innerHTML = `
-     <h2>Challenge Complete</h2>
-
-     <div class="reward">
-       ${score}/${TOTAL_QUESTIONS}
-     </div>
-
-     <p>${randomItem(retryMessages)}</p>
-
-     <button onclick="retryQuiz()">
-       Try Again
-     </button>
-   `;
-
-   return;
- }
-
- localStorage.setItem(
-   'nextPlay',
-   Date.now() + (10 * 1000)
- );
-
- document.getElementById('app').innerHTML = `
-   <h2>Challenge Complete</h2>
-
-   <div class="reward">
-     ${score}/${TOTAL_QUESTIONS}
-   </div>
-
-   <p>${randomItem(failMessages)}</p>
-
-   <div id="timer"></div>
- `;
-
- startTimer();
+  // 3. Fail State (Locked out)
+  localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
+  document.getElementById('app').innerHTML = `
+    <h2>Challenge Complete</h2>
+    <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
+    <p>${randomItem(failMessages)}</p>
+    <div id="timer"></div>
+    ${timeStampHTML}
+  `;
+  startTimer();
 }
 
 function showCooldown(){
