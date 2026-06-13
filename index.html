@@ -291,7 +291,8 @@ function startQuiz(){
 
 function showQuestion() {
   const q = questions[current];
-  const keys = Object.keys(q.options);
+  const shuffledOptions =
+shuffle(Object.entries(q.options));
   const calculatedPercentage = (current / TOTAL_QUESTIONS) * 100;
 
   document.getElementById('app').innerHTML = `
@@ -307,10 +308,10 @@ function showQuestion() {
   `;
 
   const optionsContainer = document.getElementById('options');
-  keys.forEach(key => {
+  shuffledOptions.forEach(([key, value]) => {
     optionsContainer.innerHTML += `
       <button data-key="${key}" onclick="checkAnswer('${key}', this)" style="text-align: left; padding-left: 20px;">
-        <strong>${key}.</strong> ${q.options[key]}
+        <strong>${key}.</strong> ${value}
       </button>`;
   });
 

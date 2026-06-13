@@ -1198,5 +1198,4816 @@
       "D": "Washing"
     },
     "correctAnswer": "A"
+  },
+
+  
+  {
+    "id": 101,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 102,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 103,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 104,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 105,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 106,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 107,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 108,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 109,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 110,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 111,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 112,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 113,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 114,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 115,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 116,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 117,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 118,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 119,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 120,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 121,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 122,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 123,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 124,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 125,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 126,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 127,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 128,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 129,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 130,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 131,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 132,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 133,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 134,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 135,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 136,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 137,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 138,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 139,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 140,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 141,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 142,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 143,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 144,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 145,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 146,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 147,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 148,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 149,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 150,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 151,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 152,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 153,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 154,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 155,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 156,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 157,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 158,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 159,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 160,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 161,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 162,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 163,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 164,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 165,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 166,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 167,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 168,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 169,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 170,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 171,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 172,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 173,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 174,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 175,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 176,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 177,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 178,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 179,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 180,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 181,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 182,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 183,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 184,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 185,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 186,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 187,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 188,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 189,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 190,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 191,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 192,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 193,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 194,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 195,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 196,
+    "category": "Easy",
+    "question": "Which drink is espresso plus water?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Mocha",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 197,
+    "category": "Easy",
+    "question": "Crema appears on:",
+    "options": {
+      "A": "Espresso",
+      "B": "Tea",
+      "C": "Milkshake",
+      "D": "Lemonade"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 198,
+    "category": "Easy",
+    "question": "Which bean is usually smoother?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Vanilla"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 199,
+    "category": "Easy",
+    "question": "Which drink contains the most milk?",
+    "options": {
+      "A": "Latte",
+      "B": "Espresso",
+      "C": "Ristretto",
+      "D": "Americano"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 200,
+    "category": "Easy",
+    "question": "Cold brew is usually served:",
+    "options": {
+      "A": "Cold",
+      "B": "Boiling",
+      "C": "Steamed",
+      "D": "Frozen"
+    },
+    "correctAnswer": "A"
+  },
+
+
+
+
+  {
+    "id": 201,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 202,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 203,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 204,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 205,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 206,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 207,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 208,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 209,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 210,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 211,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 212,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 213,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 214,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 215,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 216,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 217,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 218,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 219,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 220,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 221,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 222,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 223,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 224,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 225,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 226,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 227,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 228,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 229,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 230,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 231,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 232,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 233,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 234,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 235,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 236,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 237,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 238,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 239,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 240,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 241,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 242,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 243,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 244,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 245,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 246,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 247,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 248,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 249,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 250,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 251,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 252,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 253,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 254,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 255,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 256,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 257,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 258,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 259,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 260,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 261,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 262,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 263,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 264,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 265,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 266,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 267,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 268,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 269,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 270,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 271,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 272,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 273,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 274,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 275,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 276,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 277,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 278,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 279,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 280,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 281,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 282,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 283,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 284,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 285,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 286,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 287,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 288,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 289,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 290,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 291,
+    "category": "Normal",
+    "question": "Which drink usually has foam on top?",
+    "options": {
+      "A": "Cappuccino",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Espresso"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 292,
+    "category": "Normal",
+    "question": "Which bean generally contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 293,
+    "category": "Normal",
+    "question": "What sits on top of a fresh espresso?",
+    "options": {
+      "A": "Crema",
+      "B": "Foam",
+      "C": "Frost",
+      "D": "Steam"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 294,
+    "category": "Normal",
+    "question": "Which drink is usually served without milk?",
+    "options": {
+      "A": "Americano",
+      "B": "Latte",
+      "C": "Flat White",
+      "D": "Cappuccino"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 295,
+    "category": "Normal",
+    "question": "Which roast is usually darker?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Green Bean",
+      "D": "Raw Bean"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 296,
+    "category": "Normal",
+    "question": "Which drink contains chocolate?",
+    "options": {
+      "A": "Mocha",
+      "B": "Americano",
+      "C": "Espresso",
+      "D": "Cortado"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 297,
+    "category": "Normal",
+    "question": "Which coffee is brewed slowly in cold water?",
+    "options": {
+      "A": "Cold Brew",
+      "B": "Latte",
+      "C": "Macchiato",
+      "D": "Flat White"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 298,
+    "category": "Normal",
+    "question": "Which bean is known for smoother flavor?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Cocoa",
+      "D": "Liberica"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 299,
+    "category": "Normal",
+    "question": "Espresso is usually extracted in:",
+    "options": {
+      "A": "Seconds",
+      "B": "Hours",
+      "C": "Days",
+      "D": "Weeks"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 300,
+    "category": "Normal",
+    "question": "Which drink has equal espresso and steamed milk?",
+    "options": {
+      "A": "Cortado",
+      "B": "Americano",
+      "C": "Cold Brew",
+      "D": "Drip Coffee"
+    },
+    "correctAnswer": "A"
+  },
+
+  
+  {
+    "id": 301,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 302,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 303,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 304,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 305,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 306,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 307,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 308,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 309,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 310,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 311,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 312,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 313,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 314,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 315,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 316,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 317,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 318,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 319,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 320,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 321,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 322,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 323,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 324,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 325,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 326,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 327,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 328,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 329,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 330,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 331,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 332,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 333,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 334,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 335,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 336,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 337,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 338,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 339,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 340,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 341,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 342,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 343,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 344,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 345,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 346,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 347,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 348,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 349,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 350,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 351,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 352,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 353,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 354,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 355,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 356,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 357,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 358,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 359,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 360,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 361,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 362,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 363,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 364,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 365,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 366,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 367,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 368,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 369,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 370,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 371,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 372,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 373,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 374,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 375,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 376,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 377,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 378,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 379,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 380,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 381,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 382,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 383,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 384,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 385,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 386,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 387,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 388,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 389,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 390,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 391,
+    "category": "Hard",
+    "question": "A sour espresso usually indicates:",
+    "options": {
+      "A": "Over extraction",
+      "B": "Under extraction",
+      "C": "Old cup",
+      "D": "Too much milk"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 392,
+    "category": "Hard",
+    "question": "Which grind is best for espresso?",
+    "options": {
+      "A": "Coarse",
+      "B": "Fine",
+      "C": "Extra Coarse",
+      "D": "Chunky"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 393,
+    "category": "Hard",
+    "question": "Which factor affects extraction most?",
+    "options": {
+      "A": "Cup color",
+      "B": "Grind size",
+      "C": "Cafe music",
+      "D": "Logo"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 394,
+    "category": "Hard",
+    "question": "Arabica generally has:",
+    "options": {
+      "A": "More bitterness",
+      "B": "Smoother flavor",
+      "C": "More saltiness",
+      "D": "No aroma"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 395,
+    "category": "Hard",
+    "question": "Cold brew is typically brewed for:",
+    "options": {
+      "A": "Minutes",
+      "B": "Several hours",
+      "C": "Seconds",
+      "D": "1 minute"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 396,
+    "category": "Hard",
+    "question": "Which roast shows more origin character?",
+    "options": {
+      "A": "Dark Roast",
+      "B": "Light Roast",
+      "C": "Burnt Roast",
+      "D": "Charcoal Roast"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 397,
+    "category": "Hard",
+    "question": "Over-extracted coffee often tastes:",
+    "options": {
+      "A": "Sour",
+      "B": "Bitter",
+      "C": "Sweet",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 398,
+    "category": "Hard",
+    "question": "Crema is a sign of:",
+    "options": {
+      "A": "Milk quality",
+      "B": "Espresso extraction",
+      "C": "Cup temperature",
+      "D": "Roast age only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 399,
+    "category": "Hard",
+    "question": "A barista adjusts grind size mainly to control:",
+    "options": {
+      "A": "Bean color",
+      "B": "Extraction speed",
+      "C": "Milk foam",
+      "D": "Cup weight"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 400,
+    "category": "Hard",
+    "question": "Which bean usually contains more caffeine?",
+    "options": {
+      "A": "Arabica",
+      "B": "Robusta",
+      "C": "Liberica",
+      "D": "Excelsa"
+    },
+    "correctAnswer": "B"
+  },
+
+  
+  {
+    "id": 401,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 402,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 403,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 404,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 405,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 406,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 407,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 408,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 409,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 410,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 411,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 412,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 413,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 414,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 415,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 416,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 417,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 418,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 419,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 420,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 421,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 422,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 423,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 424,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 425,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 426,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 427,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 428,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 429,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 430,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 431,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 432,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 433,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 434,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 435,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 436,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 437,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 438,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 439,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 440,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 441,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 442,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 443,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 444,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 445,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 446,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 447,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 448,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 449,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 450,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 451,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 452,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 453,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 454,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 455,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 456,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 457,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 458,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 459,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 460,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 461,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 462,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 463,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 464,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 465,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 466,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 467,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 468,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 469,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 470,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 471,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 472,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 473,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 474,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 475,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 476,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 477,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 478,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 479,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 480,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 481,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 482,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 483,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 484,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 485,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 486,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 487,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 488,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 489,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 490,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 491,
+    "category": "Insane",
+    "question": "Under-extracted espresso usually tastes:",
+    "options": {
+      "A": "Bitter",
+      "B": "Sour",
+      "C": "Smoky",
+      "D": "Salty"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 492,
+    "category": "Insane",
+    "question": "Which variable can dramatically change extraction?",
+    "options": {
+      "A": "Cup logo",
+      "B": "Grind size",
+      "C": "Apron color",
+      "D": "Cafe playlist"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 493,
+    "category": "Insane",
+    "question": "A ristretto is typically:",
+    "options": {
+      "A": "Longer than espresso",
+      "B": "Shorter than espresso",
+      "C": "Milkier than latte",
+      "D": "A cold drink"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 494,
+    "category": "Insane",
+    "question": "Which roast generally preserves more origin notes?",
+    "options": {
+      "A": "Dark",
+      "B": "Light",
+      "C": "Burnt",
+      "D": "French"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 495,
+    "category": "Insane",
+    "question": "Channeling during espresso extraction often causes:",
+    "options": {
+      "A": "Uneven extraction",
+      "B": "More foam only",
+      "C": "Cooler milk",
+      "D": "Bean growth"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 496,
+    "category": "Insane",
+    "question": "Robusta is often known for:",
+    "options": {
+      "A": "Lower caffeine",
+      "B": "Higher caffeine",
+      "C": "No crema",
+      "D": "Sweetness only"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 497,
+    "category": "Insane",
+    "question": "Extraction that runs too long often tastes:",
+    "options": {
+      "A": "Bright",
+      "B": "Bitter",
+      "C": "Juicy",
+      "D": "Floral"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 498,
+    "category": "Insane",
+    "question": "The main purpose of tamping is:",
+    "options": {
+      "A": "Decorating grounds",
+      "B": "Even resistance",
+      "C": "Cooling coffee",
+      "D": "Reducing caffeine"
+    },
+    "correctAnswer": "B"
+  },
+  {
+    "id": 499,
+    "category": "Insane",
+    "question": "Which affects brew strength most directly?",
+    "options": {
+      "A": "Coffee-to-water ratio",
+      "B": "Cup size",
+      "C": "Table height",
+      "D": "Bean color"
+    },
+    "correctAnswer": "A"
+  },
+  {
+    "id": 500,
+    "category": "Insane",
+    "question": "A flat white is known for:",
+    "options": {
+      "A": "Microfoam milk",
+      "B": "Whipped cream",
+      "C": "Ice only",
+      "D": "Chocolate syrup"
+    },
+    "correctAnswer": "A"
   }
 ]
+
