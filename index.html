@@ -327,8 +327,15 @@ function checkAnswer(selected,btn){
 }
 
 function showResult(){
- savePlay(); // Fire data to Supabase
- localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
+ savePlay(); 
+ localStorage.setItem('nextPlay', Date.now() + (10 * 1000)); 
+
+ const now = new Date();
+ const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+ const dateString = now.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
+ 
+ // Adjusted CSS margins to fit perfectly at the bottom of the card
+ const timeStampHTML = `<div style="font-size: 12px; color: var(--text-light); margin-top: 20px; font-weight: 500;">${dateString} at ${timeString}</div>`;
 
  if(score === TOTAL_QUESTIONS){
    document.getElementById('app').innerHTML = `
@@ -336,6 +343,7 @@ function showResult(){
      <div class="reward">Reward Unlocked 🎉</div>
      <p>Show this screen at the counter to claim your free drink reward.</p>
      <div id="timer"></div>
+     ${timeStampHTML}
    `;
  }else{
    document.getElementById('app').innerHTML = `
@@ -343,10 +351,12 @@ function showResult(){
      <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
      <p>${randomItem(failMessages)}</p>
      <div id="timer"></div>
+     ${timeStampHTML}
    `;
  }
  startTimer();
 }
+
 
 function showCooldown(){
  document.getElementById('app').innerHTML = `
