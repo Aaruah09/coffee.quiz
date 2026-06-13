@@ -327,7 +327,10 @@ function checkAnswer(selected,btn){
 }
 
 function showResult(){
- savePlay(); // Fire data to Supabase
+ 
+  
+ 
+  savePlay(); // Fire data to Supabase
  localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
 
  if(score === TOTAL_QUESTIONS){
