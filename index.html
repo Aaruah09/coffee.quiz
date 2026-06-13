@@ -341,7 +341,45 @@ function checkAnswer(selected,btn){
 }
 
 function retryQuiz(){
- questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
+ const easyQuestions =
+shuffle(
+  allQuestions.filter(
+    q => q.category === "Easy"
+  )
+).slice(0,2);
+
+const normalQuestions =
+shuffle(
+  allQuestions.filter(
+    q => q.category === "Normal"
+  )
+).slice(0,2);
+
+const hardQuestions =
+shuffle(
+  allQuestions.filter(
+    q => q.category === "Hard"
+  )
+).slice(0,2);
+
+const insaneQuestions =
+shuffle(
+  allQuestions.filter(
+    q => q.category === "Insane"
+  )
+).slice(0,2);
+
+questions = [
+
+  ...easyQuestions,
+
+  ...normalQuestions,
+
+  ...hardQuestions,
+
+  ...insaneQuestions
+
+];
  current = 0;
  score = 0;
  showQuestion();
