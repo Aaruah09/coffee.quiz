@@ -339,6 +339,7 @@ function showResult(){
      <div class="reward">Reward Unlocked 🎉</div>
      <p>Show this screen at the counter to claim your free drink reward.</p>
      <div id="timer"></div>
+     ${timeStampHTML}
    `;
  }else{
    document.getElementById('app').innerHTML = `
@@ -346,10 +347,12 @@ function showResult(){
      <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
      <p>${randomItem(failMessages)}</p>
      <div id="timer"></div>
+     ${timeStampHTML}
    `;
  }
  startTimer();
 }
+
 
 function showCooldown(){
  document.getElementById('app').innerHTML = `
