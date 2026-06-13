@@ -4,7 +4,151 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VASASI Challenge V3</title>
-<link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+:root{
+    --coffee-dark:#5c4033;
+    --coffee:#6f4e37;
+    --coffee-light:#a67c52;
+    --cream:#faf8f5;
+    --cream-dark:#f1ede7;
+    --text:#2b211b;
+    --text-light:#786e67;
+    --success:#4CAF50;
+    --danger:#f44336;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+    min-height:100vh;
+    font-family:'Sora',sans-serif;
+    background: linear-gradient(135deg, #c49a6c, #8b6b4a, #5c4033);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+.brand{
+    position:fixed;
+    top:40px;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#111;
+    z-index:100;
+}
+
+#toast{
+    position:fixed;
+    top:110px;
+    left:50%;
+    transform: translateX(-50%) translateY(-20px);
+    opacity:0;
+    background:white;
+    padding:12px 18px;
+    border-radius:999px;
+    font-size:13px;
+    color:var(--text);
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    transition: opacity .4s ease, transform .4s ease;
+    z-index:999;
+}
+
+#toast.show{
+    opacity:1;
+    transform: translateX(-50%) translateY(0);
+}
+
+#app{
+    width:100%;
+    max-width:420px;
+    background:rgba(250,248,245,.96);
+    backdrop-filter:blur(15px);
+    border-radius:32px;
+    padding:30px;
+    text-align:center;
+    box-shadow: 0 25px 60px rgba(0,0,0,.18);
+    animation:cardEnter .45s ease;
+}
+
+h2{ font-size:22px; font-weight:600; color:var(--text); margin-bottom:10px; }
+h3{ font-size:20px; font-weight:600; color:var(--text); line-height:1.5; margin-bottom:20px; }
+p{ color:var(--text-light); font-size:14px; line-height:1.6; margin-bottom:14px; }
+
+input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:18px;
+    background:white;
+    font-size:14px;
+    font-family:'Sora',sans-serif;
+    outline:none;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+    margin-top:10px;
+}
+input:focus{ box-shadow: inset 0 0 0 2px var(--coffee); }
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:12px;
+    border:none;
+    border-radius:18px;
+    background:var(--coffee);
+    color:white;
+    font-family:'Sora',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+button:hover:not(:disabled){
+    transform:translateY(-2px);
+    background:var(--coffee-dark);
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+button:active:not(:disabled){ transform:scale(.98); }
+
+.correct{ background:var(--success)!important; border-color: var(--success)!important; }
+.wrong{ background:var(--danger)!important; border-color: var(--danger)!important; }
+
+.progress-text{ font-size:13px; color:var(--text-light); margin-bottom:8px; }
+.progress-bar{
+    height:8px;
+    background:var(--cream-dark);
+    border-radius:999px;
+    overflow:hidden;
+    margin-bottom:24px;
+}
+.progress-fill{
+    height:100%;
+    background:var(--coffee);
+    border-radius:999px;
+    transition: width .6s ease;
+}
+
+.reward{ font-size:30px; font-weight:700; color:var(--coffee); margin:15px 0; }
+#timer{ font-size:28px; font-weight:700; color:var(--coffee); margin-top:15px; }
+
+@keyframes cardEnter{
+    from{ opacity:0; transform: translateY(20px); }
+    to{ opacity:1; transform: translateY(0); }
+}
+
+@media(max-width:480px){
+    .brand{ font-size:38px; top:30px; }
+    #app{ max-width:380px; padding:25px; }
+    #toast{ width:85%; text-align:center; }
+}
+</style>
 </head>
 <body>
 
@@ -15,62 +159,61 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-
-
 <script>
+<<<<<<< HEAD
   const supabaseUrl = "https://uuagsbpxjfspfiijjjup.supabase.co";
+=======
+// Supabase Configuration
+const supabaseUrl = "https://uuagsbpxjfspfiijjjup.supabase.co/";
+>>>>>>> 76b1fe159322cdb6df3dc6a5569b0fc7bd5538b0
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1YWdzYnB4amZzcGZpaWpqanVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzMjg2NzAsImV4cCI6MjA5NjkwNDY3MH0.S1HO488DvYVJBj4yq41fYYCJj20BUBI4m8byZvDhrM";
-const supabase = window.supabase.createClient(
-  supabaseUrl,
-  supabaseKey
-);
+let dbClient = null; // Renamed to fix namespace collision
 
-async function savePlay() {
-
-const name =
-localStorage.getItem("playerName")
-|| "Guest";
-
-await supabase
-.from('plays')
-.insert([
-{
-player_name: name,
-score: score,
-completed: true
+if (window.supabase) {
+  dbClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+} else {
+  console.error("Supabase CDN failed to load.");
 }
-]);
 
+// Analytics Write Execution
+async function savePlay() {
+  if (!dbClient) return;
+  const name = localStorage.getItem("playerName") || "Guest";
+  try {
+    await dbClient.from('plays').insert([{ player_name: name, score: score, completed: true }]);
+  } catch (dbError) {
+    console.error("Database write failed:", dbError);
+  }
 }
 
 const TOTAL_QUESTIONS = 8;
 
 const welcomeMessages = [
-["☕ Your coffee is being prepared.","Think you know coffee better than our regulars?"],
-["🍰 Something delicious is on the way.","Let's see if you can earn today's reward."],
-["👨‍🍳 The kitchen is busy.","Your brain can be too."],
-["☕ Fresh coffee takes a moment.","The challenge takes less than a minute."],
-["🔥 Your order is getting ready.","Let's put your coffee knowledge to the test."],
-["🍪 The snacks are almost ready.","Can you conquer today's challenge first?"],
-["☕ Brewing in progress.","Challenge accepted?"]
+  ["☕ Your coffee is being prepared.","Think you know coffee better than our regulars?"],
+  ["🍰 Something delicious is on the way.","Let's see if you can earn today's reward."],
+  ["👨‍🍳 The kitchen is busy.","Your brain can be too."],
+  ["☕ Fresh coffee takes a moment.","The challenge takes less than a minute."],
+  ["🔥 Your order is getting ready.","Let's put your coffee knowledge to the test."],
+  ["🍪 The snacks are almost ready.","Can you conquer today's challenge first?"],
+  ["☕ Brewing in progress.","Challenge accepted?"]
 ];
 
 const quizComments = [
-"👀 No Googling...",
-"☕ Trust your instincts.",
-"🎯 Most visitors miss this one.",
-"⚡ First answer, best answer.",
-"🧠 Honest answers taste better.",
-"😏 Easier than it looks.",
-"🏆 Every point counts."
+  "👀 No Googling...",
+  "☕ Trust your instincts.",
+  "🎯 Most visitors miss this one.",
+  "⚡ First answer, best answer.",
+  "🧠 Honest answers taste better.",
+  "😏 Easier than it looks.",
+  "🏆 Every point counts."
 ];
 
 const failMessages = [
-"☕ Not bad at all. You got closer than most visitors.",
-"⚡ Fast thinker. Next time might be the winning run.",
-"🎯 You were closer than you think.",
-"☕ Fresh questions await next time.",
-"🔥 Good effort. See you again soon."
+  "☕ Not bad at all. You got closer than most visitors.",
+  "⚡ Fast thinker. Next time might be the winning run.",
+  "🎯 You were closer than you think.",
+  "☕ Fresh questions await next time.",
+  "🔥 Good effort. See you again soon."
 ];
 
 let allQuestions=[];
@@ -78,146 +221,96 @@ let questions=[];
 let current=0;
 let score=0;
 
+// Application Boot Sequence
 async function init(){
  try{
    const res = await fetch('questions.json');
+   if(!res.ok) throw new Error("File asset unreadable");
    allQuestions = await res.json();
    showHome();
  }catch(e){
-   document.getElementById('app').innerHTML =
-   '<h2>questions.json not found</h2>';
+   document.getElementById('app').innerHTML = `
+     <h2 style="color: var(--danger);">Critical Error</h2>
+     <p>The system cannot find <strong>questions.json</strong>. Ensure the file is deployed in the exact same directory as this HTML file.</p>
+   `;
+   console.error(e);
  }
 }
 
-function randomItem(arr){
- return arr[Math.floor(Math.random()*arr.length)];
-}
-
-function shuffle(arr){
- return [...arr].sort(()=>Math.random()-0.5);
-}
+function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-0.5); }
 
 function showToast(text){
-
  const toast = document.getElementById('toast');
-
  toast.innerText = text;
-
  toast.classList.add('show');
-
- setTimeout(()=>{
-   toast.classList.remove('show');
- },2000);
+ setTimeout(()=>{ toast.classList.remove('show'); },2000);
 }
 
 function showHome(){
-
  const nextPlay = localStorage.getItem('nextPlay');
-
  if(nextPlay && Date.now() < Number(nextPlay)){
    showCooldown();
    return;
  }
-
  const msg = randomItem(welcomeMessages);
-
  document.getElementById('app').innerHTML = `
  <h2>${msg[0]}</h2>
-
  <p>${msg[1]}</p>
-
- <button onclick="showNamePage()">
- Start Challenge
- </button>
+ <button onclick="showNamePage()">Start Challenge</button>
  `;
 }
 
 function showNamePage(){
-
- const saved =
- localStorage.getItem('playerName') || '';
-
+ const saved = localStorage.getItem('playerName') || '';
  document.getElementById('app').innerHTML = `
  <h2>What's your name?</h2>
-
- <input id="name"
- placeholder="Your name"
- value="${saved}">
-
- <button onclick="startQuiz()">
- Continue
- </button>
+ <input id="name" placeholder="Your name" value="${saved}">
+ <button onclick="startQuiz()">Continue</button>
  `;
 }
 
 function startQuiz(){
-
-
-
- const name =
- document.getElementById('name').value.trim();
-
- if(!name){
-   alert('Enter your name');
-   return;
- }
-
+ const name = document.getElementById('name').value.trim();
+ if(!name){ alert('Enter your name'); return; }
  localStorage.setItem('playerName',name);
-
- questions =
- shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
-
+ questions = shuffle(allQuestions).slice(0,TOTAL_QUESTIONS);
  current = 0;
  score = 0;
-
- saveQuizStart();
-showQuestion();
+ showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
+  const q = questions[current];
+  const keys = Object.keys(q.options);
+  const calculatedPercentage = (current / TOTAL_QUESTIONS) * 100;
 
- const q = questions[current];
+  document.getElementById('app').innerHTML = `
+    <div class="progress-text">${current + 1}/${TOTAL_QUESTIONS}</div>
+    <div class="progress-bar">
+       <div class="progress-fill" style="width: ${calculatedPercentage}%"></div>
+    </div>
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--coffee-light); font-weight:700; margin-bottom:5px;">
+      ${q.category}
+    </div>
+    <h3>${q.question}</h3>
+    <div id="options"></div>
+  `;
 
- const keys = Object.keys(q.options);
+  const optionsContainer = document.getElementById('options');
+  keys.forEach(key => {
+    optionsContainer.innerHTML += `
+      <button data-key="${key}" onclick="checkAnswer('${key}', this)" style="text-align: left; padding-left: 20px;">
+        <strong>${key}.</strong> ${q.options[key]}
+      </button>`;
+  });
 
- document.getElementById('app').innerHTML = `
- <div class="progress-text">
- ${current+1}/${TOTAL_QUESTIONS}
- </div>
-
- <div class="progress-bar">
-   <div class="progress-fill"
-  style="width:$(current/TOTAL_QUESTIONS)*100}%"></div>
- </div>
-
- <h3>${q.question}</h3>
-
- <div id="options"></div>
- `;
-
- const options =
- document.getElementById('options');
-
- keys.forEach(key=>{
-   options.innerHTML += `
-   <button data-key="${key}"
-   onclick="checkAnswer('${key}',this)">
-   <strong>${key}.</strong>
-   ${q.options[key]}
-   </button>`;
- });
-
- showToast(randomItem(quizComments));
+  showToast(randomItem(quizComments));
 }
 
 function checkAnswer(selected,btn){
-
- const correct =
- questions[current].correctAnswer;
-
- const buttons =
- document.querySelectorAll('#options button');
-
+ const correct = questions[current].correctAnswer;
+ const buttons = document.querySelectorAll('#options button');
  buttons.forEach(b=>b.disabled=true);
 
  if(selected===correct){
@@ -225,109 +318,70 @@ function checkAnswer(selected,btn){
    score++;
  }else{
    btn.classList.add('wrong');
-
    buttons.forEach(b=>{
-     if(b.dataset.key===correct){
-       b.classList.add('correct');
-     }
+     if(b.dataset.key===correct){ b.classList.add('correct'); }
    });
  }
 
  setTimeout(()=>{
-
    current++;
-
-   if(current<TOTAL_QUESTIONS){
-     showQuestion();
-   }else{
-     showResult();
-   }
-
- },1000);
+   if(current < TOTAL_QUESTIONS){ showQuestion(); }
+   else{ showResult(); }
+ },1200);
 }
 
 function showResult(){
+ savePlay(); // Fire data to Supabase
+ localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
 
-saveQuizResult();
-
- localStorage.setItem(
- 'nextPlay',
- Date.now() + (10*1000)
- );
-
- if(score===8){
-
- document.getElementById('app').innerHTML = `
- <h2>🏆 Coffee Master</h2>
-
- <div class="reward">
- Reward Unlocked
- </div>
-
- <p>Show this screen at the counter.</p>
-
- <div id="timer"></div>
- `;
-
+ if(score === TOTAL_QUESTIONS){
+   document.getElementById('app').innerHTML = `
+     <h2>🏆 Coffee Master</h2>
+     <div class="reward">Reward Unlocked 🎉</div>
+     <p>Show this screen at the counter to claim your free drink reward.</p>
+     <div id="timer"></div>
+   `;
  }else{
-
- document.getElementById('app').innerHTML = `
- <h2>Challenge Complete</h2>
-
- <div class="reward">${score}/8</div>
-
- <p>${randomItem(failMessages)}</p>
-
- <div id="timer"></div>
- `;
-
+   document.getElementById('app').innerHTML = `
+     <h2>Challenge Complete</h2>
+     <div class="reward">${score}/${TOTAL_QUESTIONS}</div>
+     <p>${randomItem(failMessages)}</p>
+     <div id="timer"></div>
+   `;
  }
-
  startTimer();
 }
 
 function showCooldown(){
-
  document.getElementById('app').innerHTML = `
  <h2>See you soon 👋</h2>
-
  <p>Fresh questions unlock shortly.</p>
-
  <div id="timer"></div>
  `;
-
  startTimer();
 }
 
 function startTimer(){
-
  const interval=setInterval(()=>{
+   const nextPlay = Number(localStorage.getItem('nextPlay'));
+   const remaining = nextPlay - Date.now();
 
- const nextPlay =
- Number(localStorage.getItem('nextPlay'));
+   if(remaining<=0){
+     clearInterval(interval);
+     localStorage.removeItem('nextPlay');
+     showHome();
+     return;
+   }
 
- const remaining =
- nextPlay - Date.now();
-
- if(remaining<=0){
-   clearInterval(interval);
-   localStorage.removeItem('nextPlay');
-   showHome();
-   return;
- }
-
- const s =
- Math.floor((remaining/1000)%60);
-
- document.getElementById('timer').innerText =
- s + 's';
-
+   const h = Math.floor(remaining / 3600000);
+   const m = Math.floor((remaining % 3600000) / 60000);
+   const s = Math.floor((remaining % 60000) / 1000);
+   document.getElementById('timer').innerText = `${h}h ${m}m ${s}s`;
  },1000);
 }
 
+// Start the app
 init();
-
 </script>
-
 </body>
 </html>
