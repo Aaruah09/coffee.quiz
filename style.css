@@ -1,377 +1,428 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
 
 :root{
 
-    --coffee-dark:#5c4033;
-    --coffee:#6f4e37;
-    --coffee-light:#a67c52;
 
-    --cream:#faf8f5;
-    --cream-dark:#f1ede7;
+--rabbit-red:#e11d2f;
+--rabbit-red-dark:#b11221;
 
-    --text:#2b211b;
-    --text-light:#786e67;
+--black:#0b0b0d;
+--card:#17181b;
 
-    --success:#4CAF50;
-    --danger:#f44336;
+--text:#ffffff;
+--text-soft:#9ca3af;
+
+--success:#22c55e;
+--danger:#ef4444;
+
+
 }
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-    min-height:100vh;
 
-    font-family:'Sora',sans-serif;
+min-height:100vh;
 
-    background:
-    linear-gradient(
-        135deg,
-        #c49a6c,
-        #8b6b4a,
-        #5c4033
-    );
+font-family:'Sora',sans-serif;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+background:
+radial-gradient(
+    circle at top,
+    rgba(225,29,47,.18),
+    transparent 40%
+),
+linear-gradient(
+    135deg,
+    #0b0b0d,
+    #141416,
+    #0b0b0d
+);
 
-    padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
 
-    overflow-x:hidden;
+padding:20px;
+
+overflow-x:hidden;
+
+
 }
-
-/* VASASI */
 
 .brand{
 
-    position:fixed;
 
-    top:40px;
+position:fixed;
 
-    left:50%;
+top:30px;
 
-    transform:translateX(-50%);
+left:50%;
 
-    font-family:'Cormorant Garamond',serif;
+transform:translateX(-50%);
 
-    font-size:42px;
+color:white;
 
-    font-weight:700;
+font-size:40px;
 
-    letter-spacing:2px;
+font-weight:700;
 
-    color:#111;
+letter-spacing:4px;
 
-    z-index:100;
+text-transform:uppercase;
+
+z-index:100;
+
+
 }
-
-/* TOAST */
 
 #toast{
 
-    position:fixed;
 
-    top:110px;
+position:fixed;
 
-    left:50%;
+top:95px;
 
-    transform:
-    translateX(-50%)
-    translateY(-20px);
+left:50%;
 
-    opacity:0;
+transform:
+translateX(-50%)
+translateY(-20px);
 
-    background:white;
+opacity:0;
 
-    padding:12px 18px;
+background:#1e1f23;
 
-    border-radius:999px;
+color:white;
 
-    font-size:13px;
+padding:12px 18px;
 
-    color:var(--text);
+border-radius:999px;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.12);
+font-size:13px;
 
-    transition:
-    opacity .4s ease,
-    transform .4s ease;
+border:1px solid rgba(255,255,255,.05);
 
-    z-index:999;
+transition:
+opacity .35s ease,
+transform .35s ease;
+
+z-index:999;
+
+
 }
 
 #toast.show{
 
-    opacity:1;
 
-    transform:
-    translateX(-50%)
-    translateY(0);
+opacity:1;
+
+transform:
+translateX(-50%)
+translateY(0);
+
+
 }
-
-/* CARD */
 
 #app{
 
-    width:100%;
 
-    max-width:420px;
+width:100%;
 
-    background:rgba(250,248,245,.96);
+max-width:430px;
 
-    backdrop-filter:blur(15px);
+background:#17181b;
 
-    border-radius:32px;
+border:1px solid rgba(255,255,255,.05);
 
-    padding:30px;
+border-radius:30px;
 
-    text-align:center;
+padding:32px;
 
-    box-shadow:
-    0 25px 60px rgba(0,0,0,.18);
+text-align:center;
 
-    animation:cardEnter .45s ease;
+color:white;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.6);
+
+animation:cardEnter .4s ease;
+
+
 }
-
-/* HEADINGS */
 
 h2{
 
-    font-size:22px;
 
-    font-weight:600;
+color:white;
 
-    color:var(--text);
+font-size:24px;
 
-    margin-bottom:10px;
+font-weight:700;
+
+margin-bottom:10px;
+
+
 }
 
 h3{
 
-    font-size:20px;
 
-    font-weight:600;
+color:white;
 
-    color:var(--text);
+font-size:21px;
 
-    line-height:1.5;
+line-height:1.5;
 
-    margin-bottom:20px;
+margin-bottom:20px;
+
+
 }
 
 p{
 
-    color:var(--text-light);
 
-    font-size:14px;
+color:var(--text-soft);
 
-    line-height:1.6;
+line-height:1.7;
 
-    margin-bottom:14px;
+font-size:14px;
+
+margin-bottom:12px;
+
+
 }
-
-/* INPUT */
 
 input{
 
-    width:100%;
 
-    padding:15px;
+width:100%;
 
-    border:none;
+padding:16px;
 
-    border-radius:18px;
+margin-top:10px;
 
-    background:white;
+border:none;
 
-    font-size:14px;
+border-radius:16px;
 
-    font-family:'Sora',sans-serif;
+background:#222327;
 
-    outline:none;
+color:white;
 
-    box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,.08);
+font-size:14px;
 
-    margin-top:10px;
+outline:none;
+
+border:1px solid rgba(255,255,255,.05);
+
+
 }
 
 input:focus{
 
-    box-shadow:
-    inset 0 0 0 2px var(--coffee);
-}
 
-/* BUTTONS */
+border-color:var(--rabbit-red);
+
+
+}
 
 button{
 
-    width:100%;
 
-    padding:15px;
+width:100%;
 
-    margin-top:12px;
+padding:16px;
 
-    border:none;
+margin-top:12px;
 
-    border-radius:18px;
+border:none;
 
-    background:var(--coffee);
+border-radius:18px;
 
-    color:white;
+background:var(--rabbit-red);
 
-    font-family:'Sora',sans-serif;
+color:white;
 
-    font-size:14px;
+font-size:14px;
 
-    font-weight:600;
+font-weight:600;
 
-    cursor:pointer;
+cursor:pointer;
 
-    transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    background .25s ease;
+transition:.25s;
+
+
 }
 
 button:hover{
 
-    transform:translateY(-2px);
 
-    background:var(--coffee-dark);
+transform:translateY(-2px);
 
-    box-shadow:
-    0 8px 25px rgba(0,0,0,.15);
+background:var(--rabbit-red-dark);
+
+
 }
 
 button:active{
 
-    transform:scale(.98);
-}
 
-/* ANSWERS */
+transform:scale(.98);
+
+
+}
 
 .correct{
 
-    background:var(--success)!important;
+
+background:var(--success)!important;
+
+
 }
 
 .wrong{
 
-    background:var(--danger)!important;
-}
 
-/* PROGRESS */
+background:var(--danger)!important;
+
+
+}
 
 .progress-text{
 
-    font-size:13px;
 
-    color:var(--text-light);
+color:#8a8a8a;
 
-    margin-bottom:8px;
+font-size:13px;
+
+margin-bottom:8px;
+
+
 }
 
 .progress-bar{
 
-    height:8px;
 
-    background:var(--cream-dark);
+height:8px;
 
-    border-radius:999px;
+background:#232428;
 
-    overflow:hidden;
+border-radius:999px;
 
-    margin-bottom:24px;
+overflow:hidden;
+
+margin-bottom:24px;
+
+
 }
 
 .progress-fill{
 
-    height:100%;
 
-    background:var(--coffee);
+height:100%;
 
-    border-radius:999px;
+background:
+linear-gradient(
+    90deg,
+    #e11d2f,
+    #ff5a6d
+);
 
-    transition:
-    width .6s ease;
+border-radius:999px;
+
+transition:.5s;
+
+
 }
-
-/* REWARD */
 
 .reward{
 
-    font-size:30px;
 
-    font-weight:700;
+font-size:34px;
 
-    color:var(--coffee);
+font-weight:700;
 
-    margin:15px 0;
+color:#ff4b5f;
+
+margin:15px 0;
+
+text-shadow:
+0 0 20px rgba(225,29,47,.35);
+
+
 }
-
-/* TIMER */
 
 #timer{
 
-    font-size:28px;
 
-    font-weight:700;
+font-size:30px;
 
-    color:var(--coffee);
+font-weight:700;
 
-    margin-top:15px;
+color:#ff4b5f;
+
+margin-top:15px;
+
+
 }
 
-/* ANIMATION */
+.result-time{
+
+
+margin-top:12px;
+
+font-size:11px;
+
+color:#7a7a7a;
+
+
+}
 
 @keyframes cardEnter{
 
-    from{
 
-        opacity:0;
+from{
 
-        transform:
-        translateY(20px);
-    }
+    opacity:0;
 
-    to{
-
-        opacity:1;
-
-        transform:
-        translateY(0);
-    }
+    transform:
+    translateY(20px);
 }
 
-/* MOBILE */
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+}
+
+
+}
 
 @media(max-width:480px){
 
-    .brand{
+.brand{
 
-        font-size:38px;
+    font-size:34px;
+}
 
-        top:30px;
-    }
+#app{
 
-    #app{
+    padding:26px;
+}
 
-        max-width:380px;
+#toast{
 
-        padding:25px;
-    }
+    width:85%;
+    text-align:center;
+}
 
-    #toast{
 
-        width:85%;
-
-        text-align:center;
-    }
 }
