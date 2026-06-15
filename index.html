@@ -122,7 +122,27 @@ function showToast(text){
  setTimeout(()=>{ toast.classList.remove('show'); },2000);
 }
 
-function showHome(){
+function showHome()
+
+{
+  const quizInProgress =
+localStorage.getItem('quizInProgress');
+
+if(quizInProgress){
+
+ document.getElementById('app').innerHTML = `
+ <h2>Challenge Interrupted</h2>
+
+ <p>
+ Refreshing ends the challenge.
+ </p>
+
+ <div id="timer"></div>
+ `;
+
+ return;
+}
+
  const nextPlay = localStorage.getItem('nextPlay');
  if(nextPlay && Date.now() < Number(nextPlay)){
    showCooldown();
@@ -146,9 +166,18 @@ function showNamePage(){
 }
 
 function startQuiz(){
+  localStorage.setItem(
+'quizInProgress',
+'true'
+);
+
  const name = document.getElementById('name').value.trim();
  if(!name){ alert('Enter your name'); return; }
  localStorage.setItem('playerName',name);
+ localStorage.setItem(
+ 'quizInProgress',
+ 'true'
+);
  const easyQuestions =
 shuffle(
   allQuestions.filter(
@@ -303,7 +332,8 @@ function showResult(){
   const timeStampHTML = `<div style="font-size: 12px; color: var(--text-light); margin-top: 20px; font-weight: 500;">${dateString} at ${timeString}</div>`;
 
   // 1. Win State
-  if(score === TOTAL_QUESTIONS){
+  if(score === TOTAL_QUESTIONS)
+  localStorage.removeItem('quizInProgress');{
     localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
     document.getElementById('app').innerHTML = `
       <h2>🏆 Coffee Master</h2>
