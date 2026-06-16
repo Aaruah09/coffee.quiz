@@ -385,9 +385,31 @@ localStorage.setItem(
 Date.now() + (10 * 1000)
 );
 
-document.getElementById('app').innerHTML = `     <h2>🏆 Coffee Master</h2>     <div class="reward">Reward Unlocked 🎉</div>     <p>Show this screen at the counter.</p>     <div id="timer"></div>
-    ${timeStampHTML}
-  `;
+document.getElementById('app').innerHTML = `
+  <h2>🏆 Coffee Master</h2>
+
+  <div class="reward">
+    Challenge Complete 🎉
+  </div>
+
+  <p>
+    You passed today's challenge.
+  </p>
+
+  <p style="margin-top:10px;">
+    Rewards aren't live just yet —
+    we're currently testing and fine-tuning
+    the experience.
+  </p>
+
+  <p style="margin-top:10px;">
+    Keep sharpening your coffee knowledge ☕
+  </p>
+
+  <div id="timer"></div>
+
+  ${timeStampHTML}
+`;
 
 startTimer();
 
