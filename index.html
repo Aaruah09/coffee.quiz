@@ -125,24 +125,6 @@ function showToast(text){
 function showHome()
 
 {
-  const quizInProgress =
-localStorage.getItem('quizInProgress');
-
-if(quizInProgress){
-
- document.getElementById('app').innerHTML = `
- <h2>Challenge Interrupted</h2>
-
- <p>
- Refreshing ends the challenge.
- </p>
-
- <div id="timer"></div>
- `;
-
- return;
-}
-
  const nextPlay = localStorage.getItem('nextPlay');
  if(nextPlay && Date.now() < Number(nextPlay)){
    showCooldown();
