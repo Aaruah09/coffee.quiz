@@ -376,19 +376,24 @@ console.log("TOTAL QUESTIONS =", TOTAL_QUESTIONS);
   const timeStampHTML = `<div style="font-size: 12px; color: var(--text-light); margin-top: 20px; font-weight: 500;">${dateString} at ${timeString}</div>`;
 
   // 1. Win State
-  if(score === TOTAL_QUESTIONS)
-  localStorage.removeItem('quizInProgress');{
-    localStorage.setItem('nextPlay', Date.now() + (10 * 1000));
-    document.getElementById('app').innerHTML = `
-      <h2>🏆 Coffee Master</h2>
-      <div class="reward">Reward Unlocked 🎉</div>
-      <p>Show this screen at the counter.</p>
-      <div id="timer"></div>
-      ${timeStampHTML}
-    `;
-    startTimer();
-    return;
-  }
+  if(score === TOTAL_QUESTIONS){
+
+localStorage.removeItem('quizInProgress');
+
+localStorage.setItem(
+'nextPlay',
+Date.now() + (10 * 1000)
+);
+
+document.getElementById('app').innerHTML = `     <h2>🏆 Coffee Master</h2>     <div class="reward">Reward Unlocked 🎉</div>     <p>Show this screen at the counter.</p>     <div id="timer"></div>
+    ${timeStampHTML}
+  `;
+
+startTimer();
+
+return;
+}
+
 
   // 2. Retry State
   if(attempts < MAX_ATTEMPTS){
