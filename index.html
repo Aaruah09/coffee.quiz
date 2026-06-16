@@ -98,19 +98,62 @@ let attempts=0;
 
 // Application Boot Sequence
 async function init(){
- try{
-   const res = await fetch('questions.json');
-   if(!res.ok) throw new Error("File asset unreadable");
-   allQuestions = await res.json();
-   showHome();
- }catch(e){
-   document.getElementById('app').innerHTML = `
-     <h2 style="color: var(--danger);">Critical Error</h2>
-     <p>The system cannot find <strong>questions.json</strong>. Ensure the file is deployed in the exact same directory as this HTML file.</p>
-   `;
-   console.error(e);
- }
+
+try{
+
+const res = await fetch('questions.json');
+
+if(!res.ok)
+throw new Error("File asset unreadable");
+
+allQuestions = await res.json();
+
+const savedQuiz =
+localStorage.getItem('quizState');
+
+if(savedQuiz){
+
+
+ const state =
+ JSON.parse(savedQuiz);
+
+ current = state.current;
+ score = state.score;
+ attempts = state.attempts;
+ questions = state.questions;
+
+ showQuestion();
+
+
+}else{
+
+
+ showHome();
+
+
 }
+
+}catch(e){
+
+document.getElementById('app').innerHTML = ` <h2 style="color: var(--danger);">
+Critical Error </h2>
+
+
+ <p>
+   The system cannot find
+   <strong>questions.json</strong>.
+ </p>
+
+
+`;
+
+console.error(e);
+
+}
+
+}
+
+
 
 function randomItem(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-0.5); }
