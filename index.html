@@ -223,9 +223,22 @@ questions = [
  attempts = 0;
 
  showQuestion();
+}function saveQuizState(){
+
+ localStorage.setItem(
+   'quizState',
+   JSON.stringify({
+     current,
+     score,
+     attempts,
+     questions
+   })
+ );
+
 }
 
 function showQuestion() {
+
   const q = questions[current];
   const shuffledOptions =
 shuffle(Object.entries(q.options));
@@ -271,6 +284,7 @@ function checkAnswer(selected,btn){
 
  setTimeout(()=>{
    current++;
+   saveQuizState();
    if(current < TOTAL_QUESTIONS){ showQuestion(); }
    else{ showResult(); }
  },1200);
@@ -322,6 +336,9 @@ questions = [
 }
 
 function showResult(){
+  localStorage.removeItem(
+ 'quizState'
+);
   attempts++;
   savePlay();
 
@@ -386,6 +403,26 @@ function startTimer(){
    if(remaining<=0){
      clearInterval(interval);
      localStorage.removeItem('nextPlay');
+     const savedQuiz =
+localStorage.getItem('quizState');
+
+if(savedQuiz){
+
+ const state =
+ JSON.parse(savedQuiz);
+
+ current = state.current;
+ score = state.score;
+ attempts = state.attempts;
+ questions = state.questions;
+
+ showQuestion();
+
+}else{
+
+ showHome();
+
+}
      showHome();
      return;
    }
