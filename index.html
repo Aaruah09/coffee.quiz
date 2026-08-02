@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<title>RED RABBIT Challenge V3</title>
+<title>Cafe Challenge V1</title>
 <style>
 
 
@@ -19,7 +19,7 @@
 
 <div class="brand-text">RED RABBIT</div>
 
-<div class="brand-sub">CAFÉ</div>
+<div class="brand-sub">cafe</div>
 
 </div>
 
@@ -45,7 +45,14 @@ async function savePlay() {
   if (!dbClient) return;
   const name = localStorage.getItem("playerName") || "Guest";
   try {
-    await dbClient.from('plays').insert([{ player_name: name, score: score, completed: true }]);
+    await dbClient.from('plays').insert([
+  {
+    cafe: "redrabbit",
+    player_name: name,
+    score: score,
+    completed: true
+  }
+]);
   } catch (dbError) {
     console.error("Database write failed:", dbError);
   }
