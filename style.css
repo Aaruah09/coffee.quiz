@@ -453,3 +453,51 @@ font-size:22px;
 }
 
 }
+
+/* TIMER */
+
+.timer{
+
+display:flex;
+
+justify-content:flex-end;
+
+margin-bottom:18px;
+
+}
+
+.timer svg{
+
+transform:rotate(-90deg);
+
+}
+
+.bg{
+
+fill:none;
+
+stroke:rgba(255,255,255,.08);
+
+stroke-width:4;
+
+}
+
+.progress-ring{
+
+fill:none;
+
+stroke:#6E9B76;
+
+stroke-width:4;
+
+stroke-linecap:round;
+
+stroke-dasharray:113;
+
+stroke-dashoffset:0;
+
+transition:
+stroke-dashoffset 1s linear,
+stroke .3s;
+
+}

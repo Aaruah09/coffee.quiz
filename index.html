@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-<title>RedRAbbit Challenge V1</title>
+<title>GREVO Challenge </title>
 <style>
 
 
@@ -15,11 +15,11 @@
 
 <div class="brand">
 
-<img src="rr.logo.png" class="logo">
+<img src="grevo.png" class="logo">
 
-<div class="brand-text">RED RABBIT</div>
+<div class="brand-text">GREVO</div>
 
-<div class="brand-sub">cafe</div>
+<div class="brand-sub">CAFÉ</div>
 
 </div>
 
@@ -40,6 +40,9 @@ if (window.supabase) {
   console.error("Supabase CDN failed to load.");
 }
 
+const radius = 18;
+const circumference = 2 * Math.PI * radius;
+
 // Analytics Write Execution
 async function savePlay() {
   if (!dbClient) return;
@@ -47,7 +50,7 @@ async function savePlay() {
   try {
     await dbClient.from('plays').insert([
   {
-    cafe: "redrabbit",
+    cafe: "grevo",
     player_name: name,
     score: score,
     completed: true
@@ -153,6 +156,11 @@ Critical Error </h2>
 
 
 `;
+
+const ring = document.getElementById("timer-ring");
+
+ring.style.strokeDasharray = circumference;
+ring.style.strokeDashoffset = 0;
 
 console.error(e);
 
@@ -271,35 +279,71 @@ questions = [
 
 function showQuestion() {
 
+
   const q = questions[current];
-  const shuffledOptions =
-shuffle(Object.entries(q.options));
+  const shuffledOptions = shuffle(Object.entries(q.options));
   const calculatedPercentage = (current / TOTAL_QUESTIONS) * 100;
 
   document.getElementById('app').innerHTML = `
     <div class="progress-text">${current + 1}/${TOTAL_QUESTIONS}</div>
+
     <div class="progress-bar">
-       <div class="progress-fill" style="width: ${calculatedPercentage}%"></div>
+      <div class="progress-fill" style="width:${calculatedPercentage}%"></div>
     </div>
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--coffee-light); font-weight:700; margin-bottom:5px;">
+
+    <div class="timer">
+      <svg width="46" height="46">
+        <circle
+          class="bg"
+          cx="23"
+          cy="23"
+          r="18">
+        </circle>
+
+        <circle
+          id="timer-ring"
+          class="progress-ring"
+          cx="23"
+          cy="23"
+          r="18">
+        </circle>
+      </svg>
+    </div>
+
+    <div style="font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--coffee-light);font-weight:700;margin-bottom:5px;">
       ${q.category}
     </div>
+
     <h3>${q.question}</h3>
+
     <div id="options"></div>
   `;
 
   const optionsContainer = document.getElementById('options');
-  shuffledOptions.forEach(([key, value]) => {
-    optionsContainer.innerHTML += `
-      <button data-key="${key}" onclick="checkAnswer('${key}', this)" style="text-align: left; padding-left: 20px;">
-        <strong>${key}.</strong> ${value}
-      </button>`;
-  });
 
+  const labels = ["A", "B", "C", "D"];
+
+shuffledOptions.forEach(([key, value], index) => {
+  optionsContainer.innerHTML += `
+    <button
+      data-key="${key}"
+      onclick="checkAnswer('${key}', this)"
+      style="text-align:left;padding-left:20px;">
+
+      <strong>${labels[index]}.</strong> ${value}
+
+    </button>
+  `;
+});
   showToast(randomItem(quizComments));
-}
 
+  // ✅ START THE TIMER HERE
+  startTimer();
+
+}
 function checkAnswer(selected,btn){
+clearInterval(timerInterval);
+
  const correct = questions[current].correctAnswer;
  const buttons = document.querySelectorAll('#options button');
  buttons.forEach(b=>b.disabled=true);
@@ -418,7 +462,7 @@ document.getElementById('app').innerHTML = `
   ${timeStampHTML}
 `;
 
-startTimer();
+startCooldownTimer();
 
 return;
 }
@@ -444,7 +488,7 @@ return;
     <div id="timer"></div>
     ${timeStampHTML}
   `;
-  startTimer();
+  startCooldownTimer();
 }
 
 function showCooldown(){
@@ -453,10 +497,60 @@ function showCooldown(){
  <p>Fresh questions unlock shortly.</p>
  <div id="timer"></div>
  `;
- startTimer();
+ startCooldownTimer();
 }
 
-function startTimer(){
+let timerInterval;
+const QUESTION_TIME = 20;
+
+function startTimer() {
+
+    clearInterval(timerInterval);
+
+    const ring = document.getElementById("timer-ring");
+
+    if (!ring) return;
+
+    ring.style.strokeDasharray = circumference;
+    ring.style.strokeDashoffset = 0;
+
+    let timeLeft = QUESTION_TIME;
+
+    timerInterval = setInterval(() => {
+
+        timeLeft--;
+
+        const progress =
+            (QUESTION_TIME - timeLeft) / QUESTION_TIME;
+
+        ring.style.strokeDashoffset =
+            circumference * progress;
+
+        if (timeLeft <= 0) {
+
+            clearInterval(timerInterval);
+
+            current++;
+
+            saveQuizState();
+
+            if (current < TOTAL_QUESTIONS) {
+
+                showQuestion();
+
+            } else {
+
+                showResult();
+
+            }
+
+        }
+
+    },1000);
+
+}
+
+function startCooldownTimer(){
  const interval=setInterval(()=>{
    const nextPlay = Number(localStorage.getItem('nextPlay'));
    const remaining = nextPlay - Date.now();
