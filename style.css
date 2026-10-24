@@ -1,503 +1,2685 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
-:root{
 
---bg:#0e0e10;
---card:#17181b;
+/* =========================================================
+   ROOT
+========================================================= */
 
---accent:#7a1d2b;
---accent-soft:rgba(122,29,43,.15);
+:root {
+    --bg: #0e0e10;
+    --card: #17181b;
+    --primary: #f7f4f2;
+    --primary-light: #c4475a;
+    --text: #f7f4f2;
+    --text-soft: #a09da0;
+    --border: rgba(255,255,255,.08);
+    --success: #245c36;
+    --danger: #7a1d2b;
+}
 
---text:#ffffff;
---text-soft:#9b9b9b;
 
---success:#2e7d32;
---danger:#c0392b;
+/* =========================================================
+   RESET
+========================================================= */
 
---border:rgba(255,255,255,.06);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(122,29,43,.20), transparent 48%),
+        linear-gradient(180deg, #100d0e 0%, #0e0e10 58%, #111113 100%);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+#app {
+    width: 100%;
+    max-width: 430px;
+
+    min-height: 100svh;
+
+    margin: 0 auto;
+}
+
+#toast {
+    position: fixed;
+
+    top: 22px;
+    left: 50%;
+
+    z-index: 9999;
+
+    transform:
+        translateX(-50%)
+        translateY(-10px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    padding: 11px 19px;
+
+    background: #17181b;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--primary);
+
+    font-size: 11px;
+
+    box-shadow:
+        0 10px 30px rgba(255,255,255,.08);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+#toast.show {
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+/* =========================================================
+   GENERIC / QUIZ
+========================================================= */
+
+h2 {
+    margin-bottom: 14px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.1;
+
+    text-align: center;
+
+    color: var(--primary);
+}
+
+h3 {
+    margin-bottom: 28px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.35;
+
+    text-align: center;
+
+    color: var(--text);
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+
+    color: var(--text-soft);
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+input {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 16px 17px;
+
+    background: #202126;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    outline: none;
+
+    color: var(--text);
+    font-size: 14px;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+input:focus {
+    border-color: var(--primary-light);
+
+    box-shadow:
+        0 0 0 3px rgba(122,29,43,.18);
+}
+
+
+/* =========================================================
+   GENERIC BUTTON
+========================================================= */
+
+button {
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 16px;
+
+    background: #252126;
+
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 16px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        border-color .25s ease;
+}
+
+button:hover {
+    background: #ECE5DC;
+    border-color: #a83a4c;
+
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: scale(.985);
+}
+
+
+/* =========================================================
+   QUIZ STATES
+========================================================= */
+
+.correct {
+    background: #245c36 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.wrong {
+    background: #6e252c !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+
+/* =========================================================
+   QUIZ PROGRESS
+========================================================= */
+
+.progress-text {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    color: var(--text-soft);
+}
+
+.progress-bar {
+    height: 5px;
+
+    margin-bottom: 28px;
+
+    overflow: hidden;
+
+    background: #292a2f;
+
+    border-radius: 999px;
+}
+
+.progress-fill {
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #7a1d2b,
+            #c4475a
+        );
+
+    border-radius: 999px;
+
+    transition: width .5s ease;
+}
+
+
+/* =========================================================
+   QUIZ TIMER
+========================================================= */
+
+.timer {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 18px;
+}
+
+.timer svg {
+    transform: rotate(-90deg);
+}
+
+.bg {
+    fill: none;
+
+    stroke: rgba(255,255,255,.08);
+
+    stroke-width: 4;
+}
+
+.progress-ring {
+    fill: none;
+
+    stroke: #6E9B76;
+
+    stroke-width: 4;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 113;
+    stroke-dashoffset: 0;
+
+    transition:
+        stroke-dashoffset 1s linear,
+        stroke .3s;
+}
+
+
+/* =========================================================
+   RESULT
+========================================================= */
+
+.reward {
+    margin: 16px 0;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    text-align: center;
+
+    color: var(--primary-light);
+}
+
+#timer {
+    margin-top: 16px;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    text-align: center;
+
+    color: var(--primary-light);
+}
+
+.result-time {
+    margin-top: 16px;
+
+    font-size: 11px;
+
+    text-align: right;
+
+    color: #77737a;
+}
+
+
+/* =========================================================
+   redrabbit EXPERIENCE
+========================================================= */
+
+.redrabbit-experience {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+
+/* =========================================================
+   ENTRANCE
+========================================================= */
+
+.redrabbit-entrance {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 24px;
+
+    overflow: hidden;
+
+    perspective: 1200px;
+
+    transform-style: preserve-3d;
+}
+
+
+/* Soft central glow */
+
+.redrabbit-entrance::before {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(122,29,43,.16),
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   ENTRANCE DEPTH
+========================================================= */
+
+.entrance-depth {
+    position: absolute;
+
+    pointer-events: none;
+
+    border: 1px solid rgba(255,255,255,.035);
+
+    transform-style: preserve-3d;
+}
+
+.depth-one {
+    inset: 12%;
+
+    transform:
+        translateZ(-80px)
+        scale(.9);
+
+    opacity: .45;
+}
+
+.depth-two {
+    inset: 22%;
+
+    transform:
+        translateZ(-160px)
+        scale(.75);
+
+    opacity: .25;
+}
+
+
+/* =========================================================
+   ENTRANCE CONTENT
+========================================================= */
+
+.entrance-content {
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transform-style: preserve-3d;
+
+    animation:
+        entranceReveal
+        1s
+        cubic-bezier(.22,1,.36,1)
+        both;
+}
+
+.entrance-eyebrow {
+    margin-bottom: 13px;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: var(--text-soft);
+}
+
+.entrance-logo {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 52px;
+    font-weight: 600;
+
+    line-height: .9;
+
+    letter-spacing: 8px;
+
+    color: var(--primary);
+
+    transform:
+        translateZ(40px);
+}
+
+.entrance-cafe {
+    margin-top: 10px;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    color: var(--primary-light);
+
+    transform:
+        translateZ(25px);
+}
+
+.entrance-rule {
+    width: 32px;
+    height: 1px;
+
+    margin-top: 25px;
+
+    background: var(--primary-light);
+
+    opacity: .6;
+}
+
+
+/* =========================================================
+   ENTER BUTTON
+========================================================= */
+
+.enter-button {
+    width: auto;
+
+    margin-top: 24px;
+
+    padding: 13px 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7a1d2b;
+
+    border: none;
+    outline: none;
+    border-radius: 999px;
+
+    color: var(--primary);
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    box-shadow: none;
+
+    transform: translateZ(30px);
+
+    transition:
+        background .3s ease,
+        transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.enter-button:hover {
+    background: #922638;
+
+    border: none;
+    box-shadow: none;
+
+    transform:
+        translateZ(30px)
+        translateY(-2px);
+}
+
+.enter-button:active {
+    transform:
+        translateZ(30px)
+        scale(.97);
+}
+
+/* =========================================================
+   SVG ENTER ARROW
+========================================================= */
+
+.enter-arrow {
+    width: 14px;
+    height: 14px;
+
+    display: block;
+
+    flex-shrink: 0;
+
+    color: currentColor;
+
+    overflow: visible;
+
+    transition:
+        transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.enter-button:hover .enter-arrow {
+    transform:
+        translate(3px,-3px);
+}
+
+
+/* =========================================================
+   ENTRANCE FOOTER
+========================================================= */
+
+.entrance-footer {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #77737a;
+
+    animation:
+        fadeOnly
+        .8s
+        .5s
+        both;
+}
+
+
+/* =========================================================
+   ENTRANCE ANIMATIONS
+========================================================= */
+
+@keyframes entranceReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px)
+            translateZ(-80px)
+            scale(.96);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            translateZ(0)
+            scale(1);
+    }
+}
+
+@keyframes fadeOnly {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   MAIN CAFÉ
+========================================================= */
+
+.redrabbit-main {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    padding:
+        22px
+        24px
+        45px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform:
+        translateY(30px)
+        scale(.985);
+
+    z-index: 1;
+}
+
+.redrabbit-entering .redrabbit-main {
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 2;
+
+    animation:
+        cafeReveal
+        .8s
+        .1s
+        cubic-bezier(.22,1,.36,1)
+        forwards;
+}
+
+@keyframes cafeReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(.985);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.redrabbit-nav {
+    position: sticky;
+
+    top: 12px;
+
+    z-index: 50;
+
+    display: flex;
+
+    justify-content: center;
+
+    pointer-events: none;
+}
+
+.nav-logo {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 5px 0;
+
+    background:
+        rgba(248,245,240,.92);
+
+    backdrop-filter:
+        blur(8px);
+}
+
+.nav-logo span {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: var(--primary);
+}
+
+.nav-logo small {
+    margin-top: 4px;
+
+    font-size: 6px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: var(--primary-light);
+}
+
+
+/* =========================================================
+   CAFÉ INTRO
+========================================================= */
+
+.cafe-intro {
+    margin-top: 68px;
+
+    animation:
+        introReveal
+        .8s
+        .2s
+        cubic-bezier(.22,1,.36,1)
+        both;
+}
+
+.section-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: var(--primary-light);
+}
+
+/* OPTION A — LORA */
+.cafe-intro h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(40px, 7vw, 52px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.12;
+    color: #f4eeeb;
+}
+
+.cafe-intro h1 em {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #c4475a;
+}
+
+.cafe-intro p {
+    margin-top: 14px;
+
+    font-size: 11px;
+
+    text-align: left;
+}
+
+@keyframes introReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HOME OPTIONS
+========================================================= */
+
+.redrabbit-main .home-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 48px;
+}
+
+.home-option {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 74px;
+
+    margin: 0;
+
+    padding:
+        15px
+        2px;
+
+    display: grid;
+
+    grid-template-columns:
+        30px
+        minmax(0,1fr)
+        24px;
+
+    align-items: center;
+
+    gap: 13px;
+
+    text-align: left;
+
+    background: transparent;
+
+    border: none;
+
+    border-top:
+        1px solid var(--border);
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    color: var(--primary);
+
+    opacity: 0;
+
+    transform:
+        translateY(15px);
+
+    animation:
+        optionReveal
+        .65s
+        cubic-bezier(.22,1,.36,1)
+        forwards;
+}
+
+.home-option:last-child {
+    border-bottom:
+        1px solid var(--border);
+}
+
+.home-option:nth-child(1) {
+    animation-delay: .25s;
+}
+
+.home-option:nth-child(2) {
+    animation-delay: .36s;
+}
+
+.home-option:nth-child(3) {
+    animation-delay: .47s;
+}
+
+
+/* =========================================================
+   OPTION CONTENT
+========================================================= */
+
+.option-number {
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #88848a;
+}
+
+.option-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+}
+
+.option-content strong {
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: var(--primary);
+}
+
+.option-content small {
+    font-size: 9px;
+    font-weight: 400;
+
+    color: var(--text-soft);
+}
+
+
+/* =========================================================
+   HOME SVG ARROW
+========================================================= */
+
+.option-arrow {
+    width: 19px;
+    height: 19px;
+
+    display: block;
+
+    justify-self: end;
+
+    color: var(--primary);
+
+    overflow: visible;
+
+    transition:
+        transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.home-option:hover {
+    background: transparent;
+
+    border-color: var(--border);
+
+    box-shadow: none;
+
+    transform:
+        translateX(4px);
+}
+
+.home-option:hover .option-arrow {
+    transform:
+        translate(3px,-3px);
+}
+
+.home-option:active {
+    transform:
+        translateX(2px)
+        scale(.99);
+}
+
+
+/* =========================================================
+   OPTION ANIMATION
+========================================================= */
+
+@keyframes optionReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HOME FOOTER
+========================================================= */
+
+.redrabbit-main .home-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 28px;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #77737a;
+}
+
+
+/* =========================================================
+   ENTRANCE → MAIN
+========================================================= */
+
+.redrabbit-entrance {
+    z-index: 3;
+}
+
+.redrabbit-entering .redrabbit-entrance {
+    animation:
+        entranceExit
+        .75s
+        cubic-bezier(.76,0,.24,1)
+        forwards;
+}
+
+.redrabbit-entering .entrance-content {
+    animation:
+        entrancePush
+        .75s
+        cubic-bezier(.76,0,.24,1)
+        forwards;
+}
+
+@keyframes entranceExit {
+
+    from {
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+
+    to {
+        opacity: 0;
+
+        transform:
+            scale(1.08);
+    }
+}
+
+@keyframes entrancePush {
+
+    to {
+        opacity: 0;
+
+        transform:
+            scale(1.18)
+            translateZ(120px);
+    }
+}
+
+
+/* =========================================================
+   GAMES PAGE
+========================================================= */
+
+.games-page {
+    min-height: 100svh;
+
+    padding:
+        18px
+        2px
+        40px;
+
+    animation:
+        introReveal
+        .6s
+        cubic-bezier(.22,1,.36,1)
+        both;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-button {
+    width: auto;
+
+    margin: 0;
+
+    padding: 7px 0;
+
+    background: transparent;
+
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+
+    color: var(--text-soft);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+.back-button:hover {
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    color: var(--primary);
+
+    transform:
+        translateX(-3px);
+}
+
+
+/* =========================================================
+   GAMES HEADER
+========================================================= */
+
+.games-heading {
+    margin-top: 42px;
+}
+
+.games-heading > span {
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: var(--primary-light);
+}
+
+.games-heading h1 {
+    margin-top: 11px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+    font-weight: 600;
+
+    line-height: .98;
+
+    color: var(--primary);
+}
+
+.games-heading h1 em {
+    font-weight: 500;
+
+    color: var(--primary-light);
+}
+
+.games-heading p {
+    margin-top: 12px;
+
+    font-size: 11px;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   GAME LIST
+========================================================= */
+
+.games-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 34px;
+}
+
+.game-entry {
+    position: relative;
+
+    min-height: 205px;
+
+    margin: 0;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    border-radius: 24px;
+
+    opacity: 0;
+
+    transform:
+        translateY(20px);
+
+    animation:
+        cardReveal
+        .7s
+        cubic-bezier(.22,1,.36,1)
+        forwards;
+
+    transition:
+        transform .5s cubic-bezier(.22,1,.36,1),
+        opacity .4s ease,
+        filter .4s ease,
+        box-shadow .4s ease;
+}
+
+.game-entry:nth-child(2) {
+    animation-delay: .1s;
+}
+
+@keyframes cardReveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================================
+   COFFEE QUIZ
+========================================================= */
+
+.quiz-entry {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(141,110,74,.15),
+            transparent 35%
+        ),
+        #17181b;
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   THE pour
+========================================================= */
+
+.pour-entry {
+    background:
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(196,164,116,.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #1b1114,
+            #0e0e10
+        );
+
+    border:
+        1px solid #3a2026;
+
+    color: #f7f4f2;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.04),
+        0 12px 30px rgba(0,0,0,.12);
+}
+
+.pour-entry h2 {
+    color: #f7f4f2;
+}
+
+.pour-entry p {
+    color: #aaa5a8;
+}
+
+.pour-entry .game-entry-top {
+    color: #8e888d;
+}
+
+.pour-entry .game-entry-action {
+    color: #d04a5e;
+}
+
+.pour-entry .game-entry-icon {
+    filter: none;
+
+    text-shadow:
+        0 8px 25px rgba(0,0,0,.35);
+}
+
+
+/* =========================================================
+   GAME CONTENT
+========================================================= */
+
+.game-entry-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: var(--text-soft);
+}
+
+.game-entry-icon {
+    position: absolute;
+
+    right: 22px;
+    top: 48px;
+
+    font-size: 42px;
+
+    transition:
+        transform .45s cubic-bezier(.22,1,.36,1);
+}
+
+.game-entry h2 {
+    margin-top: 48px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    text-align: left;
+
+    color: var(--primary);
+}
+
+.game-entry p {
+    margin-top: 8px;
+
+    font-size: 11px;
+    line-height: 1.55;
+
+    text-align: left;
+}
+
+
+/* =========================================================
+   GAME ACTION
+========================================================= */
+
+.game-entry-action {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: var(--primary-light);
+
+    transition:
+        transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+
+/* SVG ONLY — NO UNICODE ARROW */
+
+.game-action-arrow {
+    width: 17px;
+    height: 17px;
+
+    display: block;
+
+    color: currentColor;
+
+    overflow: visible;
+
+    transition:
+        transform .35s cubic-bezier(.22,1,.36,1);
+}
+
+.game-entry:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.28);
+}
+
+.game-entry:hover .game-entry-icon {
+    transform:
+        translateY(-4px)
+        rotate(-4deg)
+        scale(1.06);
+}
+
+.game-entry:hover .game-entry-action {
+    transform:
+        translateX(4px);
+}
+
+.game-entry:hover .game-action-arrow {
+    transform:
+        translate(3px,-3px);
+}
+
+
+/* =========================================================
+   GAME SELECTION
+========================================================= */
+
+.games-page.games-transition {
+    pointer-events: none;
+}
+
+.game-entry.game-active {
+    transform:
+        scale(1.025)
+        translateY(-3px);
+
+    z-index: 5;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35);
+
+    filter:
+        brightness(1.02);
+}
+
+.game-entry.game-dismiss {
+    opacity: 0;
+
+    transform:
+        scale(.94)
+        translateY(10px);
+
+    filter:
+        blur(4px);
+}
+
+.games-page.games-transition .games-heading {
+    animation:
+        headingExit
+        .5s
+        ease
+        forwards;
+}
+
+.games-page.games-transition .back-button {
+    pointer-events: none;
+}
+
+@keyframes headingExit {
+
+    to {
+        opacity: 0;
+
+        transform:
+            translateY(-12px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 0;
+    }
+
+    #app {
+        width: 100%;
+        max-width: 430px;
+
+        min-height: 100svh;
+    }
+
+
+    /* Entrance */
+
+    .redrabbit-entrance {
+        height: 100%;
+        min-height: 0;
+
+        padding:
+            0 22px;
+    }
+
+    .entrance-logo {
+        font-size: 46px;
+
+        letter-spacing: 7px;
+    }
+
+    .entrance-cafe {
+        font-size: 8px;
+
+        letter-spacing: 5px;
+    }
+
+
+    /* Main */
+
+    .redrabbit-main {
+        height: 100%;
+        min-height: 0;
+
+        padding:
+            20px
+            20px
+            38px;
+    }
+
+    .cafe-intro {
+        margin-top: 68px;
+    }
+
+    .cafe-intro h1 {
+        font-size: 40px;
+    }
+
+
+    /* Home */
+
+    .redrabbit-main .home-actions {
+        margin-top: 42px;
+    }
+
+    .home-option {
+        min-height: 70px;
+
+        grid-template-columns:
+            28px
+            minmax(0,1fr)
+            22px;
+
+        gap: 11px;
+    }
+
+    .option-content strong {
+        font-size: 11px;
+    }
+
+    .option-content small {
+        font-size: 8px;
+    }
+
+    .option-arrow {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* Nav */
+
+    .nav-logo span {
+        font-size: 19px;
+
+        letter-spacing: 4px;
+    }
+
+
+    /* Games */
+
+    .games-heading {
+        margin-top: 38px;
+    }
+
+    .games-heading h1 {
+        font-size: 39px;
+    }
+
+    .game-entry {
+        min-height: 195px;
+
+        border-radius: 22px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .entrance-logo {
+        font-size: 41px;
+
+        letter-spacing: 6px;
+    }
+
+    .cafe-intro h1 {
+        font-size: 36px;
+    }
+
+    .redrabbit-main {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .home-option {
+        min-height: 66px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+}
+
+/* =========================================
+   QUIZ NAME SCREEN
+========================================= */
+
+.name-page {
+    min-height: 100dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+
+    animation: namePageIn .6s cubic-bezier(.22,1,.36,1) both;
+}
+
+.name-card {
+    width: 100%;
+    max-width: 390px;
+
+    text-align: center;
+}
+
+.name-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    color: var(--primary-light);
+}
+
+.name-card h2 {
+    margin: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 48px;
+    line-height: .95;
+
+    font-weight: 600;
+
+    color: var(--primary);
+}
+
+.name-card h2 em {
+    color: var(--primary-light);
+    font-weight: 500;
+}
+
+.name-card p {
+    margin-top: 14px;
+
+    font-size: 13px;
+    color: var(--text-soft);
+}
+
+.name-card input {
+    margin-top: 30px;
+
+    height: 54px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.name-continue {
+    width: auto;
+
+    margin-top: 12px;
+
+    padding: 13px 25px;
+
+    background: #7a1d2b;
+
+    border: none;
+    border-radius: 999px;
+
+    color: var(--primary);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    box-shadow: none;
+}
+
+.name-continue:hover {
+    background: #922638;
+
+    border: none;
+    box-shadow: none;
+
+    transform: translateY(-2px);
+}
+
+.name-continue:active {
+    transform: scale(.97);
+}
+
+@keyframes namePageIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+@media (max-width: 480px) {
 
-body{
+    .name-page {
+        min-height: 100dvh;
+        padding: 20px;
+    }
 
-min-height:100vh;
-
-font-family:'Inter',sans-serif;
-
-background:
-radial-gradient(
-circle at top,
-rgba(122,29,43,.18),
-transparent 45%
-),
-linear-gradient(
-180deg,
-#0e0e10,
-#121214,
-#0e0e10
-);
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-padding:20px;
-
-color:var(--text);
-
-overflow-x:hidden;
+    .name-card h2 {
+        font-size: 44px;
+    }
 
 }
 
-/* HEADER */
-
-.brand{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-margin-top:10px;
-
-margin-bottom:25px;
-
+.entrance-state {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.logo{
-
-width:140px;
-
-height:auto;
-
-margin-bottom:6px;
-
+.home-state {
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
 }
 
-.brand-text{
-
-font-family:'Cinzel',serif;
-
-font-size:58px;
-
-font-weight:600;
-
-letter-spacing:4px;
-
-line-height:1;
-
-white-space:nowrap;
-
+.redrabbit-experience.entered .entrance-state {
+    opacity: 0;
+    transform: translateY(-30px);
+    pointer-events: none;
 }
 
-.brand-sub{
-
-margin-top:10px;
-
-font-size:14px;
-
-letter-spacing:10px;
-
-font-weight:600;
-
-color:var(--accent);
-
+.redrabbit-experience.entered .home-state {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
-.difficulty{
+.redrabbit-entering .redrabbit-entrance {
+    pointer-events: none;
+}
+/* =========================================================
+   QUIZ — CENTERED COMPOSITION
+   Keeps the quiz visually centered in the viewport.
+========================================================= */
 
-display:inline-block;
+#app:has(#options) {
+    min-height: 100svh;
+    box-sizing: border-box;
 
-padding:6px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-border-radius:999px;
-
-background:rgba(122,29,43,.15);
-
-border:1px solid rgba(122,29,43,.4);
-
-color:#c74b5c;
-
-font-size:12px;
-
-font-weight:700;
-
-letter-spacing:1px;
-
+    padding: 28px 0;
 }
 
-/* TOAST */
-
-#toast{
-
-position:fixed;
-
-top:100px;
-
-left:50%;
-
-transform:
-translateX(-50%)
-translateY(-10px);
-
-opacity:0;
-
-background:#202126;
-
-padding:12px 18px;
-
-border-radius:999px;
-
-font-size:13px;
-
-border:1px solid var(--border);
-
-transition:.3s;
-
-z-index:999;
-
+#app:has(#options) .progress-text {
+    margin-bottom: 8px;
 }
 
-#toast.show{
-
-opacity:1;
-
-transform:
-translateX(-50%)
-translateY(0);
-
+#app:has(#options) .progress-bar {
+    width: 100%;
+    margin-bottom: 22px;
 }
 
-/* MAIN CARD */
-
-#app{
-
-width:100%;
-
-max-width:520px;
-
-background:rgba(23,24,27,.96);
-
-border:1px solid var(--border);
-
-border-radius:28px;
-
-padding:30px;
-
-box-shadow:
-0 20px 60px rgba(0,0,0,.45);
-
-backdrop-filter:blur(15px);
-
+#app:has(#options) .timer {
+    justify-content: center;
+    margin-bottom: 18px;
 }
 
-/* TEXT */
-
-h2{
-
-font-size:34px;
-
-font-weight:700;
-
-margin-bottom:12px;
-
-text-align:center;
-
+#app:has(#options) h3 {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 24px;
 }
 
-h3{
-
-font-size:28px;
-
-font-weight:600;
-
-line-height:1.5;
-
-margin-bottom:24px;
-
-text-align:center;
-
+#app:has(#options) #options {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
 }
 
-p{
-
-font-size:15px;
-
-line-height:1.7;
-
-color:var(--text-soft);
-
-text-align:center;
-
+#app:has(#options) #options button {
+    margin-top: 0;
 }
 
-/* INPUT */
+@media (max-width: 480px) {
+    #app:has(#options) {
+        padding: 22px 20px;
+    }
 
-input{
+    #app:has(#options) h3 {
+        max-width: 330px;
+        margin-bottom: 22px;
+    }
 
-width:100%;
-
-padding:16px;
-
-margin-top:14px;
-
-background:#202126;
-
-border:1px solid var(--border);
-
-border-radius:18px;
-
-outline:none;
-
-color:white;
-
-font-size:15px;
-
+    #app:has(#options) #options {
+        max-width: 100%;
+    }
 }
 
-input:focus{
+/* =========================================================
+   QUIZ — BRAND + QUESTION COUNT + BAR COUNTDOWN
+========================================================= */
 
-border-color:var(--accent);
-
+#app:has(#options) .quiz-brand {
+    text-align: center;
+    margin: 0 0 15px;
+    line-height: 1;
 }
 
-/* BUTTON */
-
-button{
-
-width:100%;
-
-padding:16px;
-
-margin-top:14px;
-
-background:#212226;
-
-border:1px solid var(--border);
-
-border-radius:18px;
-
-color:white;
-
-font-size:15px;
-
-font-weight:600;
-
-cursor:pointer;
-
-transition:.25s;
-
+#app:has(#options) .quiz-brand span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    color: var(--primary);
 }
 
-button:hover{
-
-border-color:var(--accent);
-
-transform:translateY(-2px);
-
+#app:has(#options) .quiz-brand small {
+    display: block;
+    margin-top: 4px;
+    font-size: 5px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    color: var(--primary-light);
 }
 
-button:active{
-
-transform:scale(.98);
-
+/* question count only — no progression bar */
+#app:has(#options) .progress-text {
+    margin: 0 0 13px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--text-soft);
 }
+
+#app:has(#options) .progress-bar {
+    display: none;
+}
+
+/* horizontal question countdown */
+#app:has(#options) .timer {
+    width: 100%;
+    margin: 0 auto 25px;
+    display: block;
+}
+
+#app:has(#options) .quiz-countdown {
+    width: 100%;
+    max-width: 300px;
+    height: 3px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #292a2f;
+    border-radius: 999px;
+}
+
+#app:has(#options) .quiz-countdown-fill {
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    background: #7a1d2b;
+    border-radius: inherit;
+    transition: transform 1s linear;
+}
+
+#app:has(#options) h3 {
+    max-width: 380px;
+    margin: 0 auto 25px;
+}
+
+#app:has(#options) #options {
+    max-width: 430px;
+}
+
+#app:has(#options) #options button {
+    min-height: 57px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-align: left;
+}
+
+#app:has(#options) #options button strong {
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--text-soft);
+}
+
+@media (max-width: 480px) {
+    #app:has(#options) {
+        padding: 20px;
+    }
+
+    #app:has(#options) .quiz-brand {
+        margin-bottom: 13px;
+    }
+
+    #app:has(#options) .quiz-brand span {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    #app:has(#options) .quiz-countdown {
+        max-width: 280px;
+    }
+
+    #app:has(#options) .timer {
+        margin-bottom: 22px;
+    }
+
+    #app:has(#options) h3 {
+        max-width: 330px;
+        margin-bottom: 22px;
+        font-size: 27px;
+        line-height: 1.15;
+    }
+
+    #app:has(#options) #options button {
+        min-height: 55px;
+        padding: 13px 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    #app:has(#options) .quiz-brand span {
+        font-size: 14px;
+    }
+
+    #app:has(#options) h3 {
+        font-size: 25px;
+    }
+
+    #app:has(#options) #options button {
+        min-height: 52px;
+    }
+}
+
+/* =========================================
+   NEW QUIZ HEADER
+========================================= */
+
+.quiz-brand {
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+.quiz-brand span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    color: var(--primary);
+}
+
+.quiz-brand small {
+    display: block;
+    margin-top: 4px;
+    font-size: 5px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    color: var(--primary-light);
+}
+
+
+/* QUESTION COUNT */
+
+.progress-text {
+    margin-bottom: 8px !important;
+    font-size: 9px !important;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+
+/* COUNTDOWN */
+
+.countdown {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 28px;
+    overflow: hidden;
+    background: #292a2f;
+    border-radius: 999px;
+}
+
+#countdown-bar {
+    width: 100%;
+    height: 100%;
+    background: #7a1d2b;
+    border-radius: 999px;
+    transition: width 1s linear;
+}
+
+
+/* REMOVE OLD QUIZ PROGRESS */
+
+.progress-bar {
+    display: none !important;
+}
+
+
+/* REMOVE OLD CIRCLE TIMER */
+
+.timer {
+    display: none !important;
+}
+
 
 /* ANSWERS */
 
-.correct{
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 
-background:var(--success)!important;
+#options button {
+    min-height: 57px;
+    margin: 0;
+    padding: 14px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    text-align: left;
+
+    background: rgba(255,255,255,.52);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+#options button strong {
+    flex: 0 0 24px;
+
+    width: 24px;
+    height: 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 50%;
+
+    font-size: 8px;
+    font-weight: 600;
+    color: var(--text-soft);
+}
+
+/* =========================================
+   CENTER RESULT SCREEN
+========================================= */
+
+#app:has(.reward) {
+    height: 100svh !important;
+    min-height: 100svh !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   COMING SOON
+========================================= */
+
+.coming-soon-page {
+    min-height: 100svh;
+    width: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+.coming-soon-page .back-button {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.coming-soon-content {
+    text-align: center;
+}
+
+.coming-soon-icon {
+    font-size: 32px;
+    margin-bottom: 22px;
+
+    opacity: .75;
+
+    animation: pourPulse 2.5s ease-in-out infinite;
+}
+
+.coming-soon-content h1 {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: var(--primary);
+}
+
+.coming-soon-content p {
+    margin: 14px 0 22px;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--text-soft);
+}
+
+.coming-soon-content span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--primary-light);
+}
+
+@keyframes pourPulse {
+
+    0%, 100% {
+        transform: scale(1);
+        opacity: .6;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
 
 }
 
-.wrong{
-
-background:var(--danger)!important;
-
+/* =========================================================
+   RED RABBIT PATCH — entrance transition + dark navigation
+   ========================================================= */
+body {
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(122,29,43,.20), transparent 48%),
+        linear-gradient(180deg, #100d0e 0%, #0e0e10 58%, #111113 100%);
+    color: #f7f4f2;
+}
+#app { width:100%; max-width:430px; min-height:100svh; margin:0 auto; }
+.redrabbit-experience {
+    position:relative; width:100%; min-height:100svh; height:100svh;
+    overflow:hidden; background:transparent; color:#f7f4f2;
+}
+.redrabbit-entrance {
+    position:absolute; inset:0; z-index:5; display:flex;
+    align-items:center; justify-content:center; background:transparent;
+    transition:opacity .7s ease, transform .7s ease;
+}
+.redrabbit-entrance .entrance-logo {
+    font-family:'Cormorant Garamond',serif; font-size:clamp(38px,10vw,64px);
+    font-weight:600; letter-spacing:clamp(3px,1vw,8px); color:#f7f4f2;
+    white-space:nowrap;
+}
+.redrabbit-entrance .entrance-cafe { color:#c4475a; }
+.redrabbit-entrance .entrance-eyebrow,
+.redrabbit-entrance .entrance-footer { color:#9b8d91; }
+.redrabbit-entrance .enter-button {
+    background:#7a1d2b; color:#fff; border:1px solid rgba(255,255,255,.08);
+}
+.redrabbit-entrance .enter-button:hover { background:#922638; }
+.redrabbit-main {
+    position:absolute; inset:0; z-index:1; width:100%; height:100%;
+    overflow-y:auto; overflow-x:hidden; padding:22px 24px 45px;
+    opacity:0; visibility:hidden; pointer-events:none;
+    transform:translateY(22px);
+    transition:opacity .65s ease, transform .65s ease, visibility .65s;
+}
+.redrabbit-experience.entered .redrabbit-entrance {
+    opacity:0; transform:translateY(-12px) scale(1.015); pointer-events:none;
+}
+.redrabbit-experience.entered .redrabbit-main {
+    opacity:1; visibility:visible; pointer-events:auto; transform:translateY(0);
+    z-index:6;
+}
+.redrabbit-nav { position:relative; top:auto; }
+.redrabbit-nav .nav-logo {
+    background:transparent !important; backdrop-filter:none; padding:0;
+}
+.redrabbit-nav .nav-logo span {
+    color:#f7f4f2; font-family:'Cormorant Garamond',serif;
+    font-size:22px; letter-spacing:4px;
+}
+.redrabbit-nav .nav-logo small { color:#c4475a; }
+.cafe-intro .section-label { color:#c4475a; }
+.cafe-intro h1, .cafe-intro h1 em { color:#f7f4f2; }
+.cafe-intro h1 em { color:#c4475a; }
+.cafe-intro p { color:#a09da0; }
+.home-option { color:#f7f4f2; border-color:rgba(255,255,255,.10); }
+.option-content strong, .option-arrow { color:#f7f4f2; }
+.option-content small, .option-number, .home-footer { color:#858087; }
+@media(max-width:480px) {
+    .redrabbit-experience { min-height:100svh; height:100svh; }
+    .redrabbit-main { padding:20px 20px 38px; }
+}
+@media(prefers-reduced-motion:reduce) {
+    .redrabbit-entrance,.redrabbit-main { transition:none !important; }
 }
 
-/* PROGRESS */
-
-.progress-text{
-
-font-size:13px;
-
-color:var(--text-soft);
-
-margin-bottom:10px;
-
-text-align:center;
-
+.redrabbit-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 24px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
-.progress-bar{
-
-height:8px;
-
-background:#25262b;
-
-border-radius:999px;
-
-overflow:hidden;
-
-margin-bottom:24px;
-
+.nav-logo-image {
+    display: block;
+    width: 110px;
+    height: auto;
+    max-height: 90px;
+    object-fit: contain;
+    background: transparent;
 }
 
-.progress-fill{
-
-height:100%;
-
-background:var(--accent);
-
-border-radius:999px;
-
-transition:.5s;
-
+@media (max-width: 480px) {
+    .nav-logo-image {
+        width: 95px;
+        max-height: 75px;
+    }
 }
 
-/* REWARD */
-
-.reward{
-
-font-size:40px;
-
-font-weight:700;
-
-color:#ffffff;
-
-text-align:center;
-
-margin:14px 0;
-
+/* RED RABBIT — LOGO AT TOP, TEXT STAYS CENTRED */
+.redrabbit-entrance {
+    position: relative;
 }
 
-#timer{
-
-font-size:28px;
-
-font-weight:700;
-
-text-align:center;
-
-margin-top:15px;
-
-color:var(--accent);
-
+.redrabbit-entrance .entrance-content {
+    position: static !important;
 }
 
-.result-time{
+.redrabbit-entrance .entrance-logo-image {
+    position: absolute !important;
+    top: 25px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
 
-font-size:11px;
+    width: 100px !important;
+    height: auto !important;
+    max-height: 100px !important;
+    object-fit: contain;
 
-text-align:right;
-
-color:#777;
-
-margin-top:14px;
-
+    z-index: 1000;
 }
 
-/* MOBILE */
-
-@media(max-width:480px){
-
-.logo{
-
-width:140px;
-
+/* RED RABBIT — PREMIUM EDITORIAL HEADLINE */
+.cafe-intro h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(42px, 8vw, 54px);
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    line-height: 1.05;
+    color: #f7f0ed;
 }
 
-.brand-text{
-
-font-size:42px;
-
-letter-spacing:2px;
-
+.cafe-intro h1 em {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #c4475a;
+    letter-spacing: -1.5px;
 }
 
-.brand-sub{
-
-font-size:12px;
-
-letter-spacing:7px;
-
+/* OPTION A — LORA */
+.cafe-intro h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(40px, 7vw, 52px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.12;
+    color: #f4eeeb;
 }
 
-#app{
-
-padding:24px;
-
+.cafe-intro h1 em {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #c4475a;
 }
 
-h2{
+/* RED RABBIT — DARK GAME CARDS */
+.games-list .quiz-entry,
+.games-list .pour-entry {
+    background: linear-gradient(
+        135deg,
+        #21191c 0%,
+        #171416 100%
+    ) !important;
 
-font-size:24px;
-
+    border: 1px solid rgba(139, 43, 59, 0.4) !important;
+    color: #f7f4f2 !important;
 }
 
-h3{
-
-font-size:22px;
-
+/* Keep headings and descriptions readable */
+.games-list .game-entry h2 {
+    color: #f7f4f2 !important;
 }
 
+.games-list .game-entry p {
+    color: #a09da0 !important;
 }
 
-/* TIMER */
-
-.timer{
-
-display:flex;
-
-justify-content:flex-end;
-
-margin-bottom:18px;
-
+/* REMOVE GAME CARD ARROWS — KEEP ANIMATIONS */
+.game-action-arrow {
+    display: none !important;
 }
 
-.timer svg{
-
-transform:rotate(-90deg);
-
+/* RED RABBIT — FASTER ENTER TRANSITION */
+.redrabbit-entering .redrabbit-entrance {
+    animation-duration: 0.4s !important;
 }
 
-.bg{
-
-fill:none;
-
-stroke:rgba(255,255,255,.08);
-
-stroke-width:4;
-
+.redrabbit-entering .entrance-content {
+    animation-duration: 0.4s !important;
 }
 
-.progress-ring{
+.redrabbit-entering .redrabbit-main {
+    animation-duration: 0.45s !important;
+}
 
-fill:none;
+/* RED RABBIT — SNAPPY GAME TRANSITION */
 
-stroke:#6E9B76;
+/* FIX — KEEP ENTRANCE SCREEN CENTRED */
+.redrabbit-experience:not(.entered) .redrabbit-entrance {
+    transform: none;
+}
 
-stroke-width:4;
+.redrabbit-experience:not(.entered) .entrance-content {
+    margin-top: 0;
+}
 
-stroke-linecap:round;
+/* RED RABBIT — PREMIUM QUIZ OPTIONS */
 
-stroke-dasharray:113;
+/* Default answer buttons */
+#options button {
+    background: #171416 !important;
+    color: #f4efed !important;
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: 14px !important;
+    box-shadow: none !important;
 
-stroke-dashoffset:0;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease !important;
+}
 
-transition:
-stroke-dashoffset 1s linear,
-stroke .3s;
+/* Letter tokens: A, B, C, D */
+#options button span {
+    color: #f4efed !important;
+}
 
+/* Hover: subtle burgundy tint */
+#options button:hover {
+    background: #241619 !important;
+    border-color: rgba(145, 39, 58, 0.7) !important;
+    transform: translateY(-1px);
+}
+
+/* Selected answer */
+#options button.selected {
+    background: #35171f !important;
+    border-color: #8b263b !important;
+    color: #ffffff !important;
+}
+
+/* Entrance logo — larger and prominent */
+.redrabbit-entrance > .entrance-logo-image {
+    width: 185px !important;
+    max-height: 150px !important;
+}
+
+
+/* RED RABBIT — REFINE SMALL LABELS */
+
+.redrabbit-entrance .entrance-eyebrow {
+    font-size: 8px !important;
+    letter-spacing: 4px !important;
+}
+
+.redrabbit-entrance .entrance-cafe {
+    font-size: 7px !important;
+    letter-spacing: 4px !important;
+}
+
+/* RED RABBIT — PREMIUM INTERACTIVE ROWS */
+
+/* Remove arrows */
+.home-option .option-arrow {
+    display: none !important;
+}
+
+/* Smooth, elevated card interaction */
+.home-option {
+    position: relative;
+    border: 1px solid transparent !important;
+    border-radius: 12px !important;
+    transition:
+        transform 260ms cubic-bezier(.2, .8, .2, 1),
+        background 260ms ease,
+        border-color 260ms ease,
+        box-shadow 260ms ease !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Desktop: card rises forward */
+@media (hover: hover) and (pointer: fine) {
+    .home-option:hover {
+        transform: translateY(-4px) scale(1.015) !important;
+        background: rgba(255, 255, 255, 0.035) !important;
+        border-color: rgba(255, 255, 255, 0.09) !important;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    }
+}
+
+/* Touch: subtle physical press */
+.home-option:active {
+    transform: translateY(-2px) scale(0.985) !important;
+    background: rgba(255, 255, 255, 0.045) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+/* Keyboard focus */
+.home-option:focus-visible {
+    outline: 1px solid rgba(255, 255, 255, 0.45);
+    outline-offset: 3px;
+}
+
+/* =========================================
+   RED RABBIT — UNIFIED DEEP RED PALETTE
+========================================= */
+
+:root {
+    --primary-light: #982337;
+    --accent: #982337;
+}
+
+/* Main homepage statement */
+.cafe-intro h1 em {
+    color: #982337 !important;
+}
+
+/* Entrance screen */
+.redrabbit-entrance .entrance-cafe,
+.redrabbit-entrance .entrance-eyebrow {
+    color: #982337 !important;
+}
+
+/* ENTER button */
+.redrabbit-entrance .enter-button {
+    background: #791c2b !important;
+    border-color: rgba(152, 35, 55, 0.4) !important;
+}
+
+.redrabbit-entrance .enter-button:hover {
+    background: #8a2032 !important;
+}
+
+/* Games page headings and labels */
+.games-heading h1 em,
+.games-heading > span {
+    color: #982337 !important;
+}
+
+/* Game card borders and interactive states */
+.game-entry:hover,
+.game-entry:focus-visible {
+    border-color: rgba(152, 35, 55, 0.5) !important;
+}
+
+/* Quiz progress bar */
+.progress-bar > span,
+.progress-bar-fill {
+    background-color: #982337 !important;
+}
+
+/* Quiz selection and focus */
+#options button:hover,
+#options button:focus-visible {
+    border-color: rgba(152, 35, 55, 0.65) !important;
+}
+
+/* Buttons throughout the experience */
+button:focus-visible {
+    outline-color: #982337;
 }
