@@ -2683,3 +2683,64 @@ body {
 button:focus-visible {
     outline-color: #982337;
 }
+
+/* RED RABBIT — MOBILE SPACING REFINEMENT */
+
+@media (max-width: 480px) {
+
+    /* Main page spacing */
+    .games-page {
+        padding: 24px 18px 36px !important;
+    }
+
+    /* Back button */
+    .back-button {
+        margin-bottom: 8px;
+    }
+
+    /* Heading section */
+    .games-heading {
+        margin-top: 46px !important;
+        margin-bottom: 32px;
+    }
+
+    .games-heading h1 {
+        font-size: clamp(36px, 9vw, 42px) !important;
+        line-height: 1.08 !important;
+        letter-spacing: -1px;
+    }
+
+    .games-heading p {
+        max-width: 280px;
+        line-height: 1.7;
+    }
+
+    /* Space between game cards */
+    .games-list {
+        gap: 20px !important;
+    }
+
+    /* Game cards */
+    .game-entry {
+        padding: 25px 22px !important;
+        min-height: 220px;
+        border-radius: 24px !important;
+    }
+
+    /* Card titles */
+    .game-entry h2 {
+        font-size: clamp(28px, 7.5vw, 34px) !important;
+        line-height: 1.15;
+        max-width: 100%;
+    }
+
+    /* Card descriptions */
+    .game-entry p {
+        line-height: 1.65;
+    }
+
+    /* Action labels */
+    .game-entry-action {
+        letter-spacing: 2px;
+    }
+}
