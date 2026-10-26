@@ -2744,3 +2744,404 @@ button:focus-visible {
         letter-spacing: 2px;
     }
 }
+
+/* ============================================
+   RED RABBIT — DIGITAL MENU
+============================================ */
+
+.rr-menu-page {
+    min-height: 100vh;
+    padding: 26px 24px 40px;
+    color: #f2ece9;
+    background:
+        radial-gradient(
+            ellipse at 50% 8%,
+            rgba(91, 18, 29, 0.19),
+            transparent 42%
+        ),
+        #100e0f;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.rr-menu-page * {
+    box-sizing: border-box;
+}
+
+.rr-menu-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 0;
+    border: 0;
+    background: transparent;
+    color: #aaa1a2;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 180ms ease;
+}
+
+.rr-menu-back:hover {
+    color: #f2ece9;
+}
+
+.rr-menu-hero {
+    max-width: 850px;
+    margin: 76px auto 48px;
+}
+
+.rr-menu-eyebrow {
+    color: #a52a3b;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.rr-menu-hero h1 {
+    margin: 17px 0 10px;
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(48px, 8vw, 76px);
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    line-height: 1.08;
+}
+
+.rr-menu-hero h1 em,
+.rr-category-heading h2 em {
+    color: #8e2334;
+    font-weight: 400;
+}
+
+.rr-menu-hero p {
+    margin: 15px 0 0;
+    color: #a7a0a1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Compact, horizontal, swipeable categories */
+
+.rr-menu-categories {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 60px;
+    padding: 14px 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    background: rgba(16, 14, 15, 0.94);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.rr-menu-categories::-webkit-scrollbar {
+    display: none;
+}
+
+.rr-menu-categories button {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: max-content;
+
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 30px;
+
+    background: #171415;
+    color: #bcb4b4;
+
+    font-family: inherit;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition:
+        color 180ms ease,
+        border-color 180ms ease,
+        background 180ms ease;
+}
+
+.rr-menu-categories button:hover,
+.rr-menu-categories button.active {
+    color: #f5eeeb;
+    border-color: #70202e;
+    background: #211417;
+}
+
+/* Menu content */
+
+.rr-menu-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.rr-menu-category {
+    margin: 0 0 76px;
+    scroll-margin-top: 90px;
+}
+
+.rr-category-heading {
+    margin-bottom: 24px;
+}
+
+.rr-category-heading > span {
+    display: block;
+    margin-bottom: 13px;
+    color: #82797b;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.rr-category-heading h2 {
+    margin: 0;
+    color: #f2ece9;
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(30px, 5vw, 42px);
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.rr-heading-plain {
+    font: inherit;
+}
+
+.rr-menu-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 18px;
+
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+    color: #e5dedd;
+    font-size: 14px;
+    line-height: 1.6;
+
+    transition:
+        padding-left 180ms ease,
+        border-color 180ms ease;
+}
+
+.rr-menu-item:hover {
+    padding-left: 5px;
+    border-color: rgba(142, 35, 52, 0.55);
+}
+
+.rr-menu-item strong {
+    flex: 0 0 auto;
+    color: #f2ece9;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.rr-menu-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+
+    width: 100%;
+    max-width: 850px;
+    margin: 75px auto 0;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rr-menu-footer span {
+    color: #93898b;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .rr-menu-page {
+        padding: 20px 20px 30px;
+    }
+
+    .rr-menu-hero {
+        margin: 58px 0 35px;
+    }
+
+    .rr-menu-hero h1 {
+        font-size: clamp(46px, 12vw, 62px);
+        letter-spacing: -1.8px;
+    }
+
+    .rr-menu-categories {
+        gap: 7px;
+        margin-bottom: 46px;
+        padding: 12px 0;
+    }
+
+    .rr-menu-categories button {
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+
+    .rr-menu-category {
+        margin-bottom: 58px;
+        scroll-margin-top: 75px;
+    }
+
+    .rr-category-heading h2 {
+        font-size: 32px;
+    }
+
+    .rr-menu-item {
+        gap: 12px;
+        padding: 17px 0;
+        font-size: 13px;
+    }
+
+    .rr-menu-item strong {
+        font-size: 12px;
+    }
+
+    .rr-menu-footer span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rr-menu-page *,
+    .rr-menu-page *::before,
+    .rr-menu-page *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+/* RED RABBIT — FAST MENU ENTRANCE */
+
+@keyframes rrMenuReveal {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rr-menu-page {
+    animation: rrMenuReveal 180ms ease-out both;
+}
+
+.rr-menu-page::before {
+    animation: none;
+    opacity: 1;
+}
+
+.rr-menu-back,
+.rr-menu-hero .rr-menu-eyebrow,
+.rr-menu-hero h1,
+.rr-menu-hero p,
+.rr-menu-categories,
+.rr-menu-category,
+.rr-menu-footer {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+}
+
+/* Subtle hover response */
+.rr-menu-categories button,
+.rr-menu-item,
+.rr-menu-back {
+    transition: color 150ms ease, border-color 150ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rr-menu-page {
+        animation: none;
+    }
+}
+
+/* RED RABBIT — MENU POLISH */
+
+.rr-menu-page .rr-menu-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    width: auto;
+    padding: 8px 0;
+    border: none;
+    border-radius: 0;
+
+    background: transparent !important;
+    color: #a79b9d;
+
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: color 180ms ease;
+}
+
+.rr-menu-page .rr-menu-back:hover {
+    background: transparent !important;
+    color: #f4eeec;
+}
+
+.rr-menu-page .rr-menu-hero {
+    margin-top: 54px;
+}
+
+.rr-menu-page .rr-menu-hero h1 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.rr-menu-page .rr-menu-hero p {
+    margin-top: 10px;
+}
+
+/* RED RABBIT — PREMIUM SCROLLBAR */
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #64202c #100e0f;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #100e0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #64202c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b293a;
+}

@@ -1010,3 +1010,289 @@ function showComingSoon() {
 
     `;
 }
+
+/* ============================================
+   RED RABBIT — PREMIUM DIGITAL MENU
+============================================ */
+
+function showMenu() {
+    const app = document.getElementById("app");
+
+    app.innerHTML = `
+        <main class="rr-menu-page">
+
+            <button class="rr-menu-back" onclick="showHome()">
+                <span>←</span> Back
+            </button>
+
+            <header class="rr-menu-hero">
+                <span class="rr-menu-eyebrow">RED RABBIT CAFÉ</span>
+
+                <h1>Our <em>Menu</em></h1>
+
+                <p></p>
+            </header>
+
+            <nav class="rr-menu-categories" aria-label="Menu categories">
+                <button class="active" data-category="combos"
+                    onclick="scrollToMenuCategory('combos', this)">Combos</button>
+
+                <button data-category="iced-tea"
+                    onclick="scrollToMenuCategory('iced-tea', this)">Iced Tea</button>
+
+                <button data-category="mojitos"
+                    onclick="scrollToMenuCategory('mojitos', this)">Mojitos</button>
+
+                <button data-category="shakes"
+                    onclick="scrollToMenuCategory('shakes', this)">Thick Shakes</button>
+
+                <button data-category="slushies"
+                    onclick="scrollToMenuCategory('slushies', this)">Slushies</button>
+
+                <button data-category="coffee"
+                    onclick="scrollToMenuCategory('coffee', this)">Coffee</button>
+
+                <button data-category="pasta"
+                    onclick="scrollToMenuCategory('pasta', this)">Pasta</button>
+
+                <button data-category="burgers"
+                    onclick="scrollToMenuCategory('burgers', this)">Burgers</button>
+
+                <button data-category="snacks"
+                    onclick="scrollToMenuCategory('snacks', this)">Snacks</button>
+
+                <button data-category="salads"
+                    onclick="scrollToMenuCategory('salads', this)">Salads</button>
+
+                <button data-category="maggie"
+                    onclick="scrollToMenuCategory('maggie', this)">Maggie</button>
+
+                <button data-category="sandwiches"
+                    onclick="scrollToMenuCategory('sandwiches', this)">Sandwiches</button>
+
+                <button data-category="omelettes"
+                    onclick="scrollToMenuCategory('omelettes', this)">Omelettes</button>
+
+                <button data-category="desserts"
+                    onclick="scrollToMenuCategory('desserts', this)">Desserts</button>
+            </nav>
+
+            <div class="rr-menu-content">
+
+                <section id="combos" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>01 / COMBOS</span>
+                        <h2>Combo <em>Deals</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Burger + Fries + Mojito</span><strong>₹169</strong></div>
+                    <div class="rr-menu-item"><span>Chicken Burger Combo</span><strong>₹189</strong></div>
+                    <div class="rr-menu-item"><span>Veg Sandwich + Shake</span><strong>₹179</strong></div>
+                    <div class="rr-menu-item"><span>Maggi + Shake</span><strong>₹149</strong></div>
+                    <div class="rr-menu-item"><span>Fries + Mojito</span><strong>₹119</strong></div>
+                </section>
+
+                <section id="iced-tea" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>02 / REFRESHERS</span>
+                        <h2>Iced <em>Teas</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Green Apple Iced Tea</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Blueberry Iced Tea</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Kiwi Iced Tea</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Strawberry Iced Tea</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Peach Iced Tea</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Lemon Iced Tea</span><strong>—</strong></div>
+                </section>
+
+                <section id="mojitos" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>03 / FRESH & FIZZY</span>
+                        <h2>Our <em>Mojitos</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Strawberry Mojito</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Blueberry Mojito</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Green Apple Mojito</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Peach Mojito</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Passion Fruit Mojito</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Basil Orange Mojito</span><strong>—</strong></div>
+                </section>
+
+                <section id="shakes" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>04 / SOMETHING CREAMY</span>
+                        <h2>Thick <em>Shakes</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Nutella Thick Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Blueberry Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Strawberry Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Almond Banana Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Mango Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Oreo Shake</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>KitKat Shake</span><strong>—</strong></div>
+                </section>
+
+                <section id="slushies" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>05 / ICE COLD</span>
+                        <h2>Fruit <em>Slushies</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Blueberry Slushie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Strawberry Slushie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Kiwi Slushie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Green Apple Slushie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Mango Slushie</span><strong>—</strong></div>
+                </section>
+
+                <section id="coffee" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>06 / COFFEE BAR</span>
+                        <h2>Iced <em>Coffee</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Iced Americano</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Orange Espresso</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Café Latte</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Cranberry Espresso</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Iced Mocha</span><strong>—</strong></div>
+                </section>
+
+                <section id="pasta" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>07 / COMFORT FOOD</span>
+                        <h2>Past<span class="rr-heading-plain">a</span> <em>Love</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>White Sauce Pasta</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Chicken White Sauce Pasta</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Red Sauce Pasta</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Chicken Red Sauce Pasta</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Aglio Olio</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Aglio Olio Chicken</span><strong>—</strong></div>
+                </section>
+
+                <section id="burgers" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>08 / HANDHELD FAVOURITES</span>
+                        <h2>The <em>Burgers</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Veg Classic Burger</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Paneer Burger</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Peri Peri Burger</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Japanese Burger</span><strong>—</strong></div>
+                </section>
+
+                <section id="snacks" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>09 / LITTLE CRAVINGS</span>
+                        <h2>Snack <em>Bites</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Paneer Bites</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>French Fries (Salted)</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>French Fries (Peri Peri)</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Potato Wedges</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Salted Potato Wedges</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Chicken Popcorn</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Crispy Chicken</span><strong>—</strong></div>
+                </section>
+
+                <section id="salads" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>10 / FRESH & LIGHT</span>
+                        <h2>Garden <em>Bowls</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Caesar Salad (Veg / Non-Veg)</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Greek Salad</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Maize Salad</span><strong>—</strong></div>
+                </section>
+
+                <section id="maggie" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>11 / QUICK BITES</span>
+                        <h2>Maggi <em>Corner</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Veg Classic Maggi</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Fried Egg Maggi</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Veg Cheese Maggi</span><strong>—</strong></div>
+                </section>
+
+                <section id="sandwiches" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>12 / TOASTED & TASTY</span>
+                        <h2>Sandwiches</h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Veg Sandwich</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Chicken Sandwich</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Paneer Sandwich</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Cucumber Cheese Sandwich</span><strong>—</strong></div>
+                </section>
+
+                <section id="omelettes" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>13 / BREAKFAST FAVOURITES</span>
+                        <h2>Bread <em>Omelettes</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Basic Bread Omelette</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Butter Bread Omelette</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Double Egg Bread Omelette</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Cheese Bread Omelette</span><strong>—</strong></div>
+                </section>
+
+                <section id="desserts" class="rr-menu-category">
+                    <div class="rr-category-heading">
+                        <span>14 / SOMETHING SWEET</span>
+                        <h2>Sweet <em>Finishes</em></h2>
+                    </div>
+
+                    <div class="rr-menu-item"><span>Brownie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Brownie with Ice Cream</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Chocolate Loaded Brownie</span><strong>—</strong></div>
+                    <div class="rr-menu-item"><span>Cheesecake</span><strong>—</strong></div>
+                </section>
+
+            </div>
+
+            <footer class="rr-menu-footer">
+                <span>RED RABBIT EXPERIENCE</span>
+                <span>GOOD FOOD. GOOD MOOD.</span>
+            </footer>
+
+        </main>
+    `;
+
+    window.scrollTo(0, 0);
+}
+
+function scrollToMenuCategory(categoryId, button) {
+    const category = document.getElementById(categoryId);
+
+    if (!category) return;
+
+    document.querySelectorAll(".rr-menu-categories button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    if (button) {
+        button.classList.add("active");
+        button.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+        });
+    }
+
+    category.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
